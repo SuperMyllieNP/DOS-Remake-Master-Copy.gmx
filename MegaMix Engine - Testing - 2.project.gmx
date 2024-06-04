@@ -1845,6 +1845,11 @@
       <sounds name="DOS">
         <sound>sound\sfxSonicManSonicMine</sound>
       </sounds>
+      <sounds name="DOSPERFECTION">
+        <sound>sound\sfxVolt2Charge</sound>
+        <sound>sound\sfxVolt2Launch</sound>
+        <sound>sound\sfxVolt2Loop</sound>
+      </sounds>
     </sounds>
     <sounds name="Gimmick">
       <sounds name="General">
@@ -3750,6 +3755,18 @@
           <sprite>sprites\sprVoltBarrier</sprite>
           <sprite>sprites\sprVoltTossedShield</sprite>
           <sprite>sprites\sprVoltShot</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="DOSPERFECTION">
+        <sprites name="Volt">
+          <sprite>sprites\sprVolt2Barrier</sprite>
+          <sprite>sprites\sprVolt2Idle</sprite>
+          <sprite>sprites\sprVolt2Jump</sprite>
+          <sprite>sprites\sprVolt2Mask</sprite>
+          <sprite>sprites\sprVolt2Shoot</sprite>
+          <sprite>sprites\sprVolt2Shot</sprite>
+          <sprite>sprites\sprVolt2TossedShield</sprite>
+          <sprite>sprites\sprVolt2Intro</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -6071,6 +6088,14 @@
         <object>objects\objPicoKun</object>
         <object>objects\objBubbleManWaterSprout</object>
         <object>objects\objGutsDozerHand</object>
+      </objects>
+      <objects name="DOSPERFECTION">
+        <object>objects\objVoltMan2</object>
+        <objects name="Projectiles">
+          <object>objects\objVoltmanDischarge2</object>
+          <object>objects\objVoltmanShot2</object>
+          <object>objects\objVoltRoofDetector2</object>
+        </objects>
       </objects>
     </objects>
     <objects name="Gimmicks">
