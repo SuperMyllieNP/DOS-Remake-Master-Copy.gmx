@@ -3741,6 +3741,9 @@
         </sprites>
         <sprites name="Sonic">
           <sprite>sprites\sprSonicMan</sprite>
+          <sprite>sprites\sprSonicManPose</sprite>
+          <sprite>sprites\sprSonicManWave</sprite>
+          <sprite>sprites\sprSonicManWaveRebound</sprite>
           <sprite>sprites\mskSonicMan</sprite>
           <sprite>sprites\sprSonicManMine</sprite>
         </sprites>
@@ -6071,10 +6074,12 @@
       <objects name="DOS">
         <object>objects\objDynaMan</object>
         <object>objects\objSonicMan</object>
+        <object>objects\objSonicManNew</object>
         <object>objects\objVoltMan</object>
         <objects name="Projectiles">
           <object>objects\objDynaDynamite</object>
           <object>objects\objSonicMine</object>
+          <object>objects\objSonicWave</object>
           <object>objects\objVoltBarrier</object>
           <object>objects\objVoltmanDischarge</object>
           <object>objects\objVoltmanShot</object>
