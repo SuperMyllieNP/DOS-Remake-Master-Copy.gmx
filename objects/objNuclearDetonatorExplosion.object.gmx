@@ -35,7 +35,7 @@ blockCollision = 0;
 
 contactDamage = 3;
 
-image_speed = 0.3;
+image_speed = 0.25;
 
 penetrate = 3;
 pierces = 3;

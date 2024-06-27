@@ -30,7 +30,7 @@
 contactDamage = 0;
 blockCollision = 1;
 
-image_speed = 0.3;
+image_speed = 0.15;
 
 penetrate = 3;
 pierces = 3;
@@ -41,11 +41,13 @@ selfDetonationTime = 60*8;
 
 ys = yspeed;
 xs = xspeed;
-spd = 1;
+spd = 0.75;
 throwForce = -3;
-throwReduction = 1;
+throwReduction = 0.75;
 
 dir = 1;
+
+grav = 0.2;
 
 playSFX(sfxBuster);
 </string>
@@ -81,8 +83,16 @@ if(entityCanStep())
         {
             if(yspeed == 0)
             {
-                if((-abs(ys)+throwReduction) &lt; 0) yspeed = (-abs(ys)+throwReduction)*sign(grav);
-                else xspeed = 0;
+                if(throwReduction == 0)
+                {
+                    if(abs(ys/2) &gt; abs(grav)) yspeed = -abs(ys/2)*sign(grav);
+                    else xspeed = 0;
+                }
+                else
+                {
+                    if((-abs(ys)+throwReduction) &lt; 0) yspeed = (-abs(ys)+throwReduction)*sign(grav);
+                    else xspeed = 0;
+                }
             }
         }
         else

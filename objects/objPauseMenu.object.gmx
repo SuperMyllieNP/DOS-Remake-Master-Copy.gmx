@@ -63,6 +63,8 @@ retryConfirm = 0;
 exitConfirm = 0;
 hotBarArrangeMode = false;
 
+hotBarArrangeTimer = 0;
+
 playerID = 0;
 costumeID = 0;
 parent = noone;
@@ -211,6 +213,7 @@ switch (phase)
                 global.weapon[playerID] = global.weaponHotbar[weaponVisible[option]];
                 playSFX(sfxMenuSelect);
                 phase = 3;
+                hotBarArrangeMode = 0;
             }
             else 
             {
@@ -225,6 +228,7 @@ switch (phase)
                         global.eTanks -= 1;
                         eTankTimer = 0;
                         loopSFX(sfxEnergyRestore);
+                        hotBarArrangeMode = 0;
                     }
                     else
                     {
@@ -938,7 +942,12 @@ if (phase != 0)
                         _v = array_length_1d(letterMap);
                     }
                 }
-                if(num &gt; -1) draw_sprite_ext(sprDOSlettersPause,num,xOff+1,1,1,1,0,col[!cl, 2],1);
+                var _col = col[!cl, 2];
+                if(cl &amp;&amp; !(hotBarArrangeMode == 0 || (hotBarArrangeMode mod 10 &gt; 5))) _col = c_black;
+                if(num &gt; -1)
+                {
+                    draw_sprite_ext(sprDOSlettersPause,num,xOff+1,1,1,1,0,_col,1);
+                }
             }
             
             if (!global.weaponLocked[w] || w == global.weaponID[? objBusterShot])
