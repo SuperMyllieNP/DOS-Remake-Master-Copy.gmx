@@ -86,7 +86,6 @@
     <instance objName="objStopScrollingHorizontal" x="4608" y="224" name="inst_C6AEF2F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objStopScrollingHorizontal" x="4608" y="0" name="inst_46A42C27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objStopScrollingHorizontal" x="2816" y="224" name="inst_84CDF7A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objChangkeyDragon" x="1696" y="64" name="inst_E275898D" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="1760" y="176" name="inst_D848656E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="1760" y="160" name="inst_F0DB1B4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="1760" y="144" name="inst_DE0D9594" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -98,14 +97,6 @@
     <instance objName="objBossBarrier" x="2016" y="144" name="inst_258CC590" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="2016" y="128" name="inst_4F98A24B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="2016" y="112" name="inst_AC7D7565" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHanabiran" x="1904" y="80" name="inst_CA3EC679" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHanabiranSpawnLocation" x="1856" y="112" name="inst_6654BEE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHanabiranSpawnLocation" x="1952" y="112" name="inst_232D9287" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHanabiranSpawnLocation" x="1904" y="176" name="inst_7CA3158B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHanabiranSpawnLocation" x="1968" y="176" name="inst_79503AD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHanabiranSpawnLocation" x="1936" y="176" name="inst_234AEDEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHanabiranSpawnLocation" x="1872" y="176" name="inst_972E150E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHanabiranSpawnLocation" x="1840" y="176" name="inst_CFF4F60E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="2016" y="96" name="inst_42E975D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="2016" y="80" name="inst_D36089DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="2016" y="64" name="inst_7BBCF523" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -119,13 +110,6 @@
     <instance objName="objBossBarrier" x="2272" y="80" name="inst_026CAB98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="2272" y="64" name="inst_9BFABE76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="2272" y="48" name="inst_C2A0182B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStoneHead" x="2160" y="64" name="inst_D964BE2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSHBoulder" x="2128" y="64" name="inst_4F3BB87F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSHBoulder" x="2096" y="64" name="inst_9BF1A4ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSHBoulder" x="2192" y="64" name="inst_0C7EF0BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSHBoulder" x="2224" y="64" name="inst_110CDA5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPaozo" x="2480" y="144" name="inst_4E6B16A6" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPaozo" x="2752" y="176" name="inst_EE73641C" locked="0" code="type = 1;&#xA;" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="2544" y="128" name="inst_D1334A04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="2544" y="112" name="inst_008536F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBossBarrier" x="2544" y="96" name="inst_852F70C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -154,16 +138,6 @@
     <instance objName="objWTank" x="896" y="112" name="inst_50B1B372" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWTank" x="864" y="112" name="inst_719276B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objStopScrollingHorizontal" x="512" y="0" name="inst_CCE2A072" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSHBoulder" x="2160" y="64" name="inst_4B3711AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objJumpSign" x="1024" y="64" name="inst_55C3F0D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objJumpSign" x="1088" y="112" name="inst_45A4A68B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objJumpSign" x="1200" y="80" name="inst_00C26020" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objJumpSign" x="1264" y="144" name="inst_B6C68978" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlideSign" x="1168" y="128" name="inst_24A8196A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlideSign" x="1264" y="48" name="inst_E5106DCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlideSign" x="1360" y="128" name="inst_B8DF4FEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlideSign" x="1456" y="80" name="inst_0F7B184D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlideSign" x="1456" y="80" name="inst_03A651CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBasic" x="0" y="0" w="128" h="128" xo="0" yo="0" id="11294374" name="inst_AABC0A2E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

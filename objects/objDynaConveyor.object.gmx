@@ -65,13 +65,13 @@ if(image_yscale&lt;0)
     y -= sprite_height;
     ystart = y;
 }
-
-spd = 1; // The speed the player moves at when standing on the conveyor belt
-
+if instance_exists(objMegaman)
+spd = objMegaman.walkSpeed/2; // The speed the player moves at when standing on the conveyor belt
+else spd  =1
 imgalarm = 0;
 img = 0;
 
-sprite_index = sprMM2Conveyor;
+sprite_index = sprDynaConveyor;
 
 // merge conveyor belt objects if this one is the leftmost object in the chain
 if (dir == 1)
@@ -113,7 +113,9 @@ if (dir == 1)
             <string>event_inherited();
 
 if (!global.frozen &amp;&amp; !dead &amp;&amp; !global.timeStopped)
-{
+{   
+if image_index &lt; 2 || image_index &gt; 5 image_index = 2
+image_speed = .125
     var exspd = spd * dir;
     
     if (exspd != 0)
@@ -122,8 +124,7 @@ if (!global.frozen &amp;&amp; !dead &amp;&amp; !global.timeStopped)
         {
             if (blockCollision &amp;&amp; !dead &amp;&amp; ground &amp;&amp; grav != 0)
             {
-                if (object_index != objCrusher &amp;&amp; object_index!=objOshitsuOsarettsu &amp;&amp; object_index!=objMetalMan)
-                {
+
                     if(place_meeting(x,y+2*sign(grav), other))
                     {
                         if(!other.hasBelt)
@@ -131,11 +132,11 @@ if (!global.frozen &amp;&amp; !dead &amp;&amp; !global.timeStopped)
                         else
                             shiftObject(exspd*sign(grav), 0, 1);  
                     }
-                }
+                
             }
         }
     }
-}
+}else image_speed=0
 </string>
           </argument>
         </arguments>
@@ -172,23 +173,31 @@ var imgadd;
 
 for (i = 0; i &lt; image_xscale; i += 1)
 {
-    if(i==0&amp;&amp;image_xscale==1)//single block
-    {
-        imgadd = 6*animFrames + animFrames*(dir&lt;0);
+    if i == 0  {
+    img = 0
+    imgadd = 0
     }
-    else if (i == 0)//left block
-    {
-        imgadd = animFrames*(dir&lt;0);
+    else if i == 1  {
+    img = 1
+    
+    imgadd = 0
     }
-    else if(i==image_xscale-1)//right block
-    {
-        imgadd = 4*animFrames + animFrames*(dir&lt;0);
+    else if i == image_xscale-1  {
+    img = 7
+    imgadd = 0
     }
-    else // Middle block
-    {
-        imgadd = 2*animFrames + animFrames*(dir&lt;0);
+    else if i == image_xscale - 2  {
+    img = 6
+    
+    imgadd = 0
     }
-    draw_sprite(sprite_index, img + imgadd, x + i * 16, y);
+    else {
+    img = image_index
+    imgadd = 0
+    }
+   
+    draw_sprite_ext(sprite_index, img + imgadd, x + i * 16, y,image_xscale/abs(image_xscale),1,0,c_white,1);
+    
 }
 </string>
           </argument>

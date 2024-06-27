@@ -2037,185 +2037,198 @@
         <sprite>sprites\sprBusterShotChargedProto</sprite>
         <sprite>sprites\sprBusterShotChargedProtoColourMask</sprite>
         <sprite>sprites\sprBassBullet</sprite>
-        <sprite>sprites\sprSparkChaser</sprite>
-        <sprite>sprites\sprLaserTrident</sprite>
-        <sprite>sprites\sprTornadoBlow</sprite>
-        <sprite>sprites\mskTornadoBlow</sprite>
-        <sprite>sprites\sprMagneticShockwave</sprite>
-        <sprite>sprites\sprMagneticShockwaveParticle</sprite>
-        <sprite>sprites\sprWaterShieldBubble</sprite>
-        <sprite>sprites\sprThunderBeam</sprite>
-        <sprite>sprites\sprThunderBeamVertical</sprite>
-        <sprite>sprites\sprIceWall</sprite>
-        <sprite>sprites\sprIceWallShard</sprite>
-        <sprite>sprites\sprIceWallBreak</sprite>
-        <sprite>sprites\sprMagnetBeam</sprite>
-        <sprite>sprites\sprMagnetBeamEnd</sprite>
-        <sprite>sprites\sprMagnetBeamPickup</sprite>
-        <sprite>sprites\sprFireBall</sprite>
-        <sprite>sprites\sprFireBallExplosion</sprite>
-        <sprite>sprites\sprAcornBomb</sprite>
-        <sprite>sprites\sprAcornBombTop</sprite>
-        <sprite>sprites\sprPollenScatter</sprite>
-        <sprite>sprites\sprFeatherFlurry</sprite>
-        <sprite>sprites\sprIblisHellfireBurnEffect</sprite>
-        <sprite>sprites\sprMintyFreezeIceCubeParts</sprite>
-        <sprite>sprites\sprMintyFreezeCube</sprite>
-        <sprite>sprites\sprMintyFreezeIceCubePartsx2</sprite>
-        <sprite>sprites\sprIblisHellfirePillar</sprite>
-        <sprite>sprites\spr4MIWireAdaptor</sprite>
-        <sprites name="Rush">
-          <sprite>sprites\sprRushMask</sprite>
-          <sprite>sprites\sprRushTeleport</sprite>
-          <sprite>sprites\sprRush</sprite>
-          <sprite>sprites\sprRushCoil</sprite>
-          <sprite>sprites\sprRushJet</sprite>
-          <sprite>sprites\sprRushCycle</sprite>
-        </sprites>
-        <sprites name="MaGMML1">
-          <sprite>sprites\sprMetalBlade</sprite>
-          <sprite>sprites\sprMagicCard</sprite>
-          <sprite>sprites\sprMagicCardVertical</sprite>
-          <sprite>sprites\sprSolarBlaze</sprite>
-          <sprite>sprites\sprSolarBlazeWave</sprite>
-          <sprite>sprites\sprPharaohShotCharging</sprite>
-          <sprite>sprites\sprPharaohShot</sprite>
-          <sprite>sprites\sprPharaohShotCharged</sprite>
-          <sprite>sprites\sprThunderWool</sprite>
-          <sprite>sprites\sprThunderWoolThunder</sprite>
-          <sprite>sprites\sprBlackHoleBombInactive</sprite>
-          <sprite>sprites\sprBlackHoleBomb</sprite>
-          <sprite>sprites\sprBlackHoleBombHitbox</sprite>
-          <sprite>sprites\sprGeminiLaser</sprite>
-          <sprite>sprites\sprGeminiLaserReflect</sprite>
-        </sprites>
-        <sprites name="MaGMML2">
-          <sprite>sprites\sprHornetChaser</sprite>
-          <sprite>sprites\sprJewelSatellite</sprite>
-          <sprite>sprites\sprGrabBuster</sprite>
-          <sprite>sprites\sprGrabBusterPickup</sprite>
-          <sprite>sprites\sprTripleBlade</sprite>
-          <sprite>sprites\sprFlashStopperScreen</sprite>
-          <sprite>sprites\sprWheelCutter</sprite>
-          <sprite>sprites\sprSlashClaw</sprite>
-          <sprite>sprites\sprSuperArrow</sprite>
-          <sprite>sprites\sprWireAdapterWire</sprite>
-          <sprite>sprites\sprWireAdapter</sprite>
-          <sprites name="Sakugarne">
-            <sprite>sprites\sprSakugarne</sprite>
-            <sprite>sprites\sprSakugarneRide</sprite>
-            <sprites name="References">
-              <sprite>sprites\sprSakugarneMegaman</sprite>
-              <sprite>sprites\sprSakugarneMegamanLess</sprite>
+        <sprite>sprites\sprSonicWave</sprite>
+        <sprite>sprites\sprSonicWaveDiagonal</sprite>
+        <sprite>sprites\sprForceField</sprite>
+        <sprite>sprites\sprNuclearDetonator</sprite>
+        <sprite>sprites\sprNuclearDetonatorExploding</sprite>
+        <sprite>sprites\sprNuclearDetonatorExplosion</sprite>
+        <sprites name="INCINERATE">
+          <sprite>sprites\sprSparkChaser</sprite>
+          <sprite>sprites\sprLaserTrident</sprite>
+          <sprite>sprites\sprMagneticShockwave</sprite>
+          <sprite>sprites\mskTornadoBlow</sprite>
+          <sprite>sprites\sprWaterShieldBubble</sprite>
+          <sprite>sprites\sprMagneticShockwaveParticle</sprite>
+          <sprite>sprites\sprThunderBeamVertical</sprite>
+          <sprite>sprites\sprIceWallShard</sprite>
+          <sprite>sprites\sprIceWallBreak</sprite>
+          <sprite>sprites\sprMagnetBeamEnd</sprite>
+          <sprite>sprites\sprMagnetBeam</sprite>
+          <sprite>sprites\sprTornadoBlow</sprite>
+          <sprite>sprites\sprFireBallExplosion</sprite>
+          <sprite>sprites\sprPollenScatter</sprite>
+          <sprite>sprites\sprThunderBeam</sprite>
+          <sprite>sprites\sprAcornBomb</sprite>
+          <sprite>sprites\sprMagnetBeamPickup</sprite>
+          <sprite>sprites\sprFeatherFlurry</sprite>
+          <sprite>sprites\sprMintyFreezeIceCubeParts</sprite>
+          <sprite>sprites\sprIblisHellfireBurnEffect</sprite>
+          <sprite>sprites\sprIblisHellfirePillar</sprite>
+          <sprites name="Misc">
+            <sprites name="Test">
+              <sprite>sprites\sprSkeletuppinPakkajoe</sprite>
+              <sprite>sprites\sprBrickWeapon</sprite>
+              <sprite>sprites\sprBrickWeaponDebris</sprite>
+              <sprite>sprites\sprChillShot</sprite>
+              <sprite>sprites\sprSuperArmDebris</sprite>
+              <sprite>sprites\sprIceSlasher</sprite>
+              <sprite>sprites\sprPlantBarrier</sprite>
+              <sprite>sprites\sprPowerStone</sprite>
+            </sprites>
+            <sprite>sprites\mskWeaponExplosion</sprite>
+          </sprites>
+          <sprite>sprites\spr4MIWireAdaptor</sprite>
+          <sprite>sprites\sprMintyFreezeCube</sprite>
+          <sprites name="MegaEngine">
+            <sprites name="MM5">
+              <sprite>sprites\sprStarCrashInit</sprite>
+              <sprite>sprites\sprStarCrash</sprite>
+            </sprites>
+            <sprites name="MM6">
+              <sprite>sprites\sprSilverTomahawk</sprite>
+              <sprite>sprites\sprWindStorm</sprite>
             </sprites>
           </sprites>
-        </sprites>
-        <sprites name="MaG48HMML">
-          <sprite>sprites\sprFlameMixer</sprite>
-          <sprite>sprites\sprRainFlush</sprite>
-          <sprite>sprites\sprRainFlushParticle</sprite>
-          <sprite>sprites\sprSparkShock</sprite>
-          <sprite>sprites\sprSparkShockParalyze</sprite>
-          <sprite>sprites\sprSearchSnake</sprite>
-          <sprite>sprites\mskSearchSnake</sprite>
-          <sprite>sprites\sprSaltWater</sprite>
-          <sprite>sprites\sprSaltWaterDrop</sprite>
-          <sprite>sprites\sprSaltWaterSplash1</sprite>
-          <sprite>sprites\sprSaltWaterSplash2</sprite>
-          <sprite>sprites\sprConcreteShot</sprite>
-          <sprite>sprites\sprHomingSniper</sprite>
-          <sprite>sprites\sprHomingSniperCrosshair</sprite>
-          <sprite>sprites\sprTenguBlade</sprite>
-          <sprite>sprites\sprTenguDisk</sprite>
-        </sprites>
-        <sprites name="MegaEngine">
-          <sprites name="MM5">
-            <sprite>sprites\sprStarCrashInit</sprite>
-            <sprite>sprites\sprStarCrash</sprite>
+          <sprites name="MaG48HMML">
+            <sprite>sprites\sprFlameMixer</sprite>
+            <sprite>sprites\sprRainFlush</sprite>
+            <sprite>sprites\sprRainFlushParticle</sprite>
+            <sprite>sprites\sprSparkShock</sprite>
+            <sprite>sprites\sprSparkShockParalyze</sprite>
+            <sprite>sprites\sprSearchSnake</sprite>
+            <sprite>sprites\mskSearchSnake</sprite>
+            <sprite>sprites\sprSaltWater</sprite>
+            <sprite>sprites\sprSaltWaterDrop</sprite>
+            <sprite>sprites\sprSaltWaterSplash1</sprite>
+            <sprite>sprites\sprSaltWaterSplash2</sprite>
+            <sprite>sprites\sprConcreteShot</sprite>
+            <sprite>sprites\sprHomingSniper</sprite>
+            <sprite>sprites\sprHomingSniperCrosshair</sprite>
+            <sprite>sprites\sprTenguBlade</sprite>
+            <sprite>sprites\sprTenguDisk</sprite>
           </sprites>
-          <sprites name="MM6">
-            <sprite>sprites\sprSilverTomahawk</sprite>
-            <sprite>sprites\sprWindStorm</sprite>
+          <sprite>sprites\sprAcornBombTop</sprite>
+          <sprites name="Rush">
+            <sprite>sprites\sprRushMask</sprite>
+            <sprite>sprites\sprRushTeleport</sprite>
+            <sprite>sprites\sprRush</sprite>
+            <sprite>sprites\sprRushCoil</sprite>
+            <sprite>sprites\sprRushJet</sprite>
+            <sprite>sprites\sprRushCycle</sprite>
           </sprites>
+          <sprite>sprites\sprMintyFreezeIceCubePartsx2</sprite>
+          <sprites name="MaGMML1">
+            <sprite>sprites\sprMetalBlade</sprite>
+            <sprite>sprites\sprMagicCard</sprite>
+            <sprite>sprites\sprMagicCardVertical</sprite>
+            <sprite>sprites\sprSolarBlaze</sprite>
+            <sprite>sprites\sprSolarBlazeWave</sprite>
+            <sprite>sprites\sprPharaohShotCharging</sprite>
+            <sprite>sprites\sprPharaohShot</sprite>
+            <sprite>sprites\sprPharaohShotCharged</sprite>
+            <sprite>sprites\sprThunderWool</sprite>
+            <sprite>sprites\sprThunderWoolThunder</sprite>
+            <sprite>sprites\sprBlackHoleBombInactive</sprite>
+            <sprite>sprites\sprBlackHoleBomb</sprite>
+            <sprite>sprites\sprBlackHoleBombHitbox</sprite>
+            <sprite>sprites\sprGeminiLaser</sprite>
+            <sprite>sprites\sprGeminiLaserReflect</sprite>
+            <sprites name="MaGMML2">
+              <sprite>sprites\sprHornetChaser</sprite>
+              <sprite>sprites\sprJewelSatellite</sprite>
+              <sprite>sprites\sprGrabBuster</sprite>
+              <sprite>sprites\sprGrabBusterPickup</sprite>
+              <sprite>sprites\sprTripleBlade</sprite>
+              <sprite>sprites\sprFlashStopperScreen</sprite>
+              <sprite>sprites\sprWheelCutter</sprite>
+              <sprite>sprites\sprSlashClaw</sprite>
+              <sprite>sprites\sprSuperArrow</sprite>
+              <sprite>sprites\sprWireAdapterWire</sprite>
+              <sprite>sprites\sprWireAdapter</sprite>
+              <sprites name="Sakugarne">
+                <sprite>sprites\sprSakugarne</sprite>
+                <sprite>sprites\sprSakugarneRide</sprite>
+                <sprites name="References">
+                  <sprite>sprites\sprSakugarneMegaman</sprite>
+                  <sprite>sprites\sprSakugarneMegamanLess</sprite>
+                </sprites>
+              </sprites>
+            </sprites>
+          </sprites>
+          <sprite>sprites\sprIceWall</sprite>
+          <sprite>sprites\sprFireBall</sprite>
         </sprites>
         <sprites name="WeaponIcons">
           <sprite>sprites\sprWeaponIconsMegaBuster</sprite>
           <sprite>sprites\sprWeaponIconsBassBuster</sprite>
-          <sprite>sprites\sprWeaponIconsFireBrand</sprite>
-          <sprite>sprites\sprWeaponIconsSparkChaser</sprite>
-          <sprite>sprites\sprWeaponIconsLaserTrident</sprite>
-          <sprite>sprites\sprWeaponIconsTornadoBlow</sprite>
-          <sprite>sprites\sprWeaponIconsMagneticShockwave</sprite>
-          <sprite>sprites\sprWeaponIconsWaterShield</sprite>
-          <sprite>sprites\sprWeaponIconsBreakDash</sprite>
-          <sprite>sprites\sprWeaponIconsThunderBeam</sprite>
-          <sprite>sprites\sprWeaponIconsIceWall</sprite>
-          <sprite>sprites\sprWeaponIconsRushCoil</sprite>
-          <sprite>sprites\sprWeaponIconsRushJet</sprite>
-          <sprite>sprites\sprWeaponIconsRushCycle</sprite>
-          <sprite>sprites\sprWeaponIconsMagnetBeam</sprite>
-          <sprite>sprites\sprWeaponIconsLotusScatter</sprite>
-          <sprite>sprites\sprWeaponIconsAcornBomb</sprite>
-          <sprite>sprites\sprWeaponIcons4MIWireAdaptor</sprite>
-          <sprite>sprites\sprWeaponIconsFeatherFlurry</sprite>
-          <sprite>sprites\sprWeaponIconsIblisHellfire</sprite>
-          <sprites name="MaGMML1">
-            <sprite>sprites\sprWeaponIconsMetalBlade</sprite>
-            <sprite>sprites\sprWeaponIconsTopSpin</sprite>
-            <sprite>sprites\sprWeaponIconsMagicCard</sprite>
-            <sprite>sprites\sprWeaponIconsSolarBlaze</sprite>
-            <sprite>sprites\sprWeaponIconsPharaohShot</sprite>
-            <sprite>sprites\sprWeaponIconsThunderWool</sprite>
-            <sprite>sprites\sprWeaponIconsBlackHoleBomb</sprite>
-            <sprite>sprites\sprWeaponIconsGeminiLaser</sprite>
+          <sprite>sprites\sprWeaponIconsSonicWave</sprite>
+          <sprite>sprites\sprWeaponIconsForceField</sprite>
+          <sprite>sprites\sprWeaponIconsNuclearDetonator</sprite>
+          <sprites name="INCINERATE">
+            <sprite>sprites\sprWeaponIconsSparkChaser</sprite>
+            <sprite>sprites\sprWeaponIconsLaserTrident</sprite>
+            <sprite>sprites\sprWeaponIconsTornadoBlow</sprite>
+            <sprite>sprites\sprWeaponIconsWaterShield</sprite>
+            <sprite>sprites\sprWeaponIconsBreakDash</sprite>
+            <sprite>sprites\sprWeaponIconsThunderBeam</sprite>
+            <sprite>sprites\sprWeaponIconsRushCoil</sprite>
+            <sprite>sprites\sprWeaponIconsIceWall</sprite>
+            <sprite>sprites\sprWeaponIconsMagnetBeam</sprite>
+            <sprite>sprites\sprWeaponIconsLotusScatter</sprite>
+            <sprite>sprites\sprWeaponIconsFireBrand</sprite>
+            <sprite>sprites\sprWeaponIconsRushCycle</sprite>
+            <sprite>sprites\sprWeaponIconsAcornBomb</sprite>
+            <sprite>sprites\sprWeaponIconsIblisHellfire</sprite>
+            <sprites name="MaG48HMML">
+              <sprite>sprites\sprWeaponIconsFlameMixer</sprite>
+              <sprite>sprites\sprWeaponIconsHomingSniper</sprite>
+              <sprite>sprites\sprWeaponIconsRainFlush</sprite>
+              <sprite>sprites\sprWeaponIconsSparkShock</sprite>
+              <sprite>sprites\sprWeaponIconsSearchSnake</sprite>
+              <sprite>sprites\sprWeaponIconsSaltWater</sprite>
+              <sprite>sprites\sprWeaponIconsConcreteShot</sprite>
+              <sprite>sprites\sprWeaponIconsTenguBlade</sprite>
+            </sprites>
+            <sprites name="MaGMML2">
+              <sprite>sprites\sprWeaponIconsHornetChaser</sprite>
+              <sprite>sprites\sprWeaponIconsJewelSatellite</sprite>
+              <sprite>sprites\sprWeaponIconsGrabBuster</sprite>
+              <sprite>sprites\sprWeaponIconsTripleBlade</sprite>
+              <sprite>sprites\sprWeaponIconsFlashStopper</sprite>
+              <sprite>sprites\sprWeaponIconsSlashClaw</sprite>
+              <sprite>sprites\sprWeaponIconsWheelCutter</sprite>
+              <sprite>sprites\sprWeaponIconsSakugarne</sprite>
+              <sprite>sprites\sprWeaponIconsWire</sprite>
+              <sprite>sprites\sprWeaponIconsSuperArrow</sprite>
+            </sprites>
+            <sprite>sprites\sprWeaponIconsMagneticShockwave</sprite>
+            <sprite>sprites\sprWeaponIcons4MIWireAdaptor</sprite>
+            <sprites name="MaG24HMML">
+              <sprite>sprites\sprWeaponIconsChillShot</sprite>
+              <sprite>sprites\sprWeaponIconsSuperArm</sprite>
+            </sprites>
+            <sprites name="Misc.">
+              <sprite>sprites\sprWeaponIconsSkeletuppinPakkajoe</sprite>
+              <sprite>sprites\sprWeaponIconsBrickWeapon</sprite>
+              <sprite>sprites\sprWeaponIconsPlantBarrier</sprite>
+              <sprite>sprites\sprWeaponIconsPowerStone</sprite>
+              <sprite>sprites\sprWeaponIconsTimeStopper</sprite>
+              <sprite>sprites\sprWeaponIconsIceSlasher</sprite>
+            </sprites>
+            <sprite>sprites\sprWeaponIconsFeatherFlurry</sprite>
+            <sprites name="MaGMML1">
+              <sprite>sprites\sprWeaponIconsMetalBlade</sprite>
+              <sprite>sprites\sprWeaponIconsTopSpin</sprite>
+              <sprite>sprites\sprWeaponIconsMagicCard</sprite>
+              <sprite>sprites\sprWeaponIconsSolarBlaze</sprite>
+              <sprite>sprites\sprWeaponIconsPharaohShot</sprite>
+              <sprite>sprites\sprWeaponIconsThunderWool</sprite>
+              <sprite>sprites\sprWeaponIconsBlackHoleBomb</sprite>
+              <sprite>sprites\sprWeaponIconsGeminiLaser</sprite>
+            </sprites>
+            <sprite>sprites\sprWeaponIconsRushJet</sprite>
           </sprites>
-          <sprites name="MaGMML2">
-            <sprite>sprites\sprWeaponIconsHornetChaser</sprite>
-            <sprite>sprites\sprWeaponIconsJewelSatellite</sprite>
-            <sprite>sprites\sprWeaponIconsGrabBuster</sprite>
-            <sprite>sprites\sprWeaponIconsTripleBlade</sprite>
-            <sprite>sprites\sprWeaponIconsFlashStopper</sprite>
-            <sprite>sprites\sprWeaponIconsSlashClaw</sprite>
-            <sprite>sprites\sprWeaponIconsWheelCutter</sprite>
-            <sprite>sprites\sprWeaponIconsSakugarne</sprite>
-            <sprite>sprites\sprWeaponIconsWire</sprite>
-            <sprite>sprites\sprWeaponIconsSuperArrow</sprite>
-          </sprites>
-          <sprites name="MaG24HMML">
-            <sprite>sprites\sprWeaponIconsChillShot</sprite>
-            <sprite>sprites\sprWeaponIconsSuperArm</sprite>
-          </sprites>
-          <sprites name="MaG48HMML">
-            <sprite>sprites\sprWeaponIconsFlameMixer</sprite>
-            <sprite>sprites\sprWeaponIconsHomingSniper</sprite>
-            <sprite>sprites\sprWeaponIconsRainFlush</sprite>
-            <sprite>sprites\sprWeaponIconsSparkShock</sprite>
-            <sprite>sprites\sprWeaponIconsSearchSnake</sprite>
-            <sprite>sprites\sprWeaponIconsSaltWater</sprite>
-            <sprite>sprites\sprWeaponIconsConcreteShot</sprite>
-            <sprite>sprites\sprWeaponIconsTenguBlade</sprite>
-          </sprites>
-          <sprites name="Misc.">
-            <sprite>sprites\sprWeaponIconsSkeletuppinPakkajoe</sprite>
-            <sprite>sprites\sprWeaponIconsBrickWeapon</sprite>
-            <sprite>sprites\sprWeaponIconsPlantBarrier</sprite>
-            <sprite>sprites\sprWeaponIconsPowerStone</sprite>
-            <sprite>sprites\sprWeaponIconsTimeStopper</sprite>
-            <sprite>sprites\sprWeaponIconsIceSlasher</sprite>
-          </sprites>
-        </sprites>
-        <sprites name="Misc">
-          <sprites name="Test">
-            <sprite>sprites\sprSkeletuppinPakkajoe</sprite>
-            <sprite>sprites\sprBrickWeapon</sprite>
-            <sprite>sprites\sprBrickWeaponDebris</sprite>
-            <sprite>sprites\sprChillShot</sprite>
-            <sprite>sprites\sprSuperArmDebris</sprite>
-            <sprite>sprites\sprIceSlasher</sprite>
-            <sprite>sprites\sprPlantBarrier</sprite>
-            <sprite>sprites\sprPowerStone</sprite>
-          </sprites>
-          <sprite>sprites\mskWeaponExplosion</sprite>
         </sprites>
       </sprites>
       <sprites name="Health/Weapon Bar">
@@ -3081,6 +3094,11 @@
       </sprites>
       <sprite>sprites\sprEnemyBullet</sprite>
       <sprite>sprites\sprCustomSpawner</sprite>
+      <sprites name="DOS">
+        <sprite>sprites\sprInsectobot</sprite>
+        <sprite>sprites\sprInsectobotShoot</sprite>
+        <sprite>sprites\sprInsectobotProjectile</sprite>
+      </sprites>
     </sprites>
     <sprites name="Minibosses">
       <sprites name="MM4">
@@ -3741,11 +3759,11 @@
         </sprites>
         <sprites name="Sonic">
           <sprite>sprites\sprSonicMan</sprite>
-          <sprite>sprites\sprSonicManPose</sprite>
           <sprite>sprites\sprSonicManWave</sprite>
           <sprite>sprites\sprSonicManWaveRebound</sprite>
           <sprite>sprites\mskSonicMan</sprite>
           <sprite>sprites\sprSonicManMine</sprite>
+          <sprite>sprites\sprSonicPose</sprite>
         </sprites>
         <sprites name="Volt">
           <sprite>sprites\sprVoltMask</sprite>
@@ -3771,6 +3789,7 @@
           <sprite>sprites\sprVolt2TossedShield</sprite>
           <sprite>sprites\sprVolt2Intro</sprite>
         </sprites>
+        <sprite>sprites\sprDynaExplosion</sprite>
       </sprites>
     </sprites>
     <sprites name="Gimmicks">
@@ -4186,6 +4205,9 @@
         <sprite>sprites\sprReflectBlockSmall</sprite>
         <sprite>sprites\sprReflectBlockLarge</sprite>
       </sprites>
+      <sprites name="DOS">
+        <sprite>sprites\sprDynaConveyor</sprite>
+      </sprites>
     </sprites>
     <sprites name="Sections">
       <sprite>sprites\sprSectionArrowLeft</sprite>
@@ -4254,6 +4276,10 @@
     </sprites>
     <sprites name="Menu">
       <sprites name="Pause">
+        <sprite>sprites\sprDOSmenuTiles</sprite>
+        <sprite>sprites\sprDOSlettersPause</sprite>
+        <sprite>sprites\sprDOSpauseBarBG</sprite>
+        <sprite>sprites\sprDOSpauseBar</sprite>
         <sprite>sprites\sprPauseMenuBG</sprite>
         <sprite>sprites\sprPauseMenuBarPrimary</sprite>
         <sprite>sprites\sprPauseMenuBarSecondary</sprite>
@@ -5025,6 +5051,7 @@
       <object>objects\objSpike</object>
       <object>objects\objDamageSpike</object>
       <object>objects\objWater</object>
+      <object>objects\objSonicWater</object>
       <object>objects\objBossBarrier</object>
       <object>objects\objBossDoor</object>
       <object>objects\objBossDoorVertical</object>
@@ -5041,817 +5068,18 @@
       </objects>
     </objects>
     <objects name="Enemies">
-      <objects name="MM1">
-        <object>objects\objBeak</object>
-        <object>objects\objBigEye</object>
-        <object>objects\objBlader</object>
-        <object>objects\objBombomb</object>
-        <object>objects\objBombombSpawner</object>
-        <object>objects\objBombombStopper</object>
-        <object>objects\objCrazyRazy</object>
-        <object>objects\objFlea</object>
-        <object>objects\objFlyingShell</object>
-        <object>objects\objFlyingShellSpawner</object>
-        <object>objects\objKillerBullet</object>
-        <object>objects\objKillerBulletSpawner</object>
-        <object>objects\objMM1Met</object>
-        <object>objects\objMM1SniperJoe</object>
-        <object>objects\objPeng</object>
-        <object>objects\objPengSpawner</object>
-        <object>objects\objPicketMan</object>
-        <object>objects\objScrewBomber</object>
-        <object>objects\objShieldGuard</object>
-        <object>objects\objSpine</object>
-        <object>objects\objSuzy</object>
-        <object>objects\objTackleFire</object>
-        <object>objects\objTackleFireSpawner</object>
-        <object>objects\objWatcher</object>
-        <objects name="Projectiles">
-          <object>objects\objBeakBullet</object>
-          <object>objects\objCrazyRazySplit</object>
-          <object>objects\objMM1MetBullet</object>
-          <object>objects\objPicket</object>
-          <object>objects\objShieldGuardShield</object>
-          <object>objects\objShrapnel</object>
-        </objects>
-      </objects>
-      <objects name="MM2">
-        <object>objects\objAtomicChicken</object>
-        <object>objects\objBatton</object>
-        <object>objects\objBigFish</object>
-        <object>objects\objBlocky</object>
-        <object>objects\objClaw</object>
-        <object>objects\objClawSpawner</object>
-        <object>objects\objCrabbot</object>
-        <object>objects\objCrazyCannon</object>
-        <object>objects\objCroaker</object>
-        <object>objects\objFanFiend</object>
-        <object>objects\objGear</object>
-        <object>objects\objGremlin</object>
-        <object>objects\objHothead</object>
-        <object>objects\objLightningLord</object>
-        <object>objects\objM445</object>
-        <object>objects\objMet</object>
-        <object>objects\objMM2Mech</object>
-        <object>objects\objMM2SniperJoe</object>
-        <object>objects\objMole</object>
-        <object>objects\objMoleSpawner</object>
-        <object>objects\objMonking</object>
-        <object>objects\objPipi</object>
-        <object>objects\objPipiSpawner</object>
-        <object>objects\objProptop</object>
-        <object>objects\objRoboRabbit</object>
-        <object>objects\objSchworm</object>
-        <object>objects\objShrink</object>
-        <object>objects\objSpringHead</object>
-        <object>objects\objTelly</object>
-        <object>objects\objTellySpawner</object>
-        <objects name="Projectiles">
-          <object>objects\objBlockySpray</object>
-          <object>objects\objBlockySprayRise</object>
-          <object>objects\objCarrot</object>
-          <object>objects\objCopipi</object>
-          <object>objects\objCrabbotShell</object>
-          <object>objects\objCrazyCannonBullet</object>
-          <object>objects\objLightningLordLightning</object>
-          <object>objects\objMM2MetBullet</object>
-          <object>objects\objPetitCroaker</object>
-          <object>objects\objPierobot</object>
-          <object>objects\objPipiEgg</object>
-          <object>objects\objSchwormWorm</object>
-        </objects>
-      </objects>
-      <objects name="MM3">
-        <object>objects\objBikky</object>
-        <object>objects\objBoltonAndNutton</object>
-        <object>objects\objBomberPepe</object>
-        <object>objects\objBombFlier</object>
-        <object>objects\objBubukan</object>
-        <object>objects\objCannon</object>
-        <object>objects\objChibee</object>
-        <object>objects\objDada</object>
-        <object>objects\objElecn</object>
-        <object>objects\objElectricGabyoall</object>
-        <object>objects\objGiantSpringer</object>
-        <object>objects\objGyoraboi</object>
-        <object>objects\objHammerJoe</object>
-        <object>objects\objHariHari</object>
-        <object>objects\objHaveSuBee</object>
-        <object>objects\objHologran</object>
-        <object>objects\objJamacy</object>
-        <object>objects\objJamacyClimbing</object>
-        <object>objects\objJamacyClimbingTurn</object>
-        <object>objects\objJunkGolem</object>
-        <object>objects\objKomasaburo</object>
-        <object>objects\objMagFly</object>
-        <object>objects\objMechakkero</object>
-        <object>objects\objMetall</object>
-        <object>objects\objMetallDX</object>
-        <object>objects\objNewShotman</object>
-        <object>objects\objNitron</object>
-        <object>objects\objParasyu</object>
-        <object>objects\objPenpen</object>
-        <object>objects\objPenpenSwimming</object>
-        <object>objects\objPeterchy</object>
-        <object>objects\objPetitSnakey</object>
-        <object>objects\objPetitSnakeyPillar</object>
-        <object>objects\objPetitSnakeyPillarCorner1</object>
-        <object>objects\objPetitSnakeyPillarCorner2</object>
-        <object>objects\objPetitSnakeyPillarCorner3</object>
-        <object>objects\objPetitSnakeyPillarCorner4</object>
-        <object>objects\objPetitSnakeyPillarHorizontal</object>
-        <object>objects\objPickelmanBull</object>
-        <object>objects\objPotton</object>
-        <object>objects\objReturningMonking</object>
-        <object>objects\objTadpole</object>
-        <object>objects\objWalkingBomb</object>
-        <object>objects\objYambow</object>
-        <objects name="Projectiles">
-          <object>objects\objBomberPepeEgg</object>
-          <object>objects\objBubukanPole</object>
-          <object>objects\objCannonBall</object>
-          <object>objects\objElecnSpark</object>
-          <object>objects\objElectricGabyoallCurrent</object>
-          <object>objects\objGiantSpringerMissile</object>
-          <object>objects\objGyoraboiMissile</object>
-          <object>objects\objHammerJoeHammer</object>
-          <object>objects\objHaveSuBeeHive</object>
-          <object>objects\objHologranVoid</object>
-          <object>objects\objJunkDebris</object>
-          <object>objects\objMetallDXBullet</object>
-          <object>objects\objMM3MetBullet</object>
-          <object>objects\objNewShotmanBullet</object>
-          <object>objects\objNitronFire</object>
-          <object>objects\objNutton</object>
-          <object>objects\objPetitSnakeyPillarDeleter</object>
-          <object>objects\objPottonBomb</object>
-          <object>objects\objSnakeyBullet</object>
-          <object>objects\objThrownJunk</object>
-          <object>objects\objTop</object>
-        </objects>
-      </objects>
-      <objects name="MM4">
-        <object>objects\obj100Watton</object>
-        <object>objects\objBattonton</object>
-        <object>objects\objBiree</object>
-        <object>objects\objDocron</object>
-        <object>objects\objDocronHatch</object>
-        <object>objects\objDompan</object>
-        <object>objects\objGachappon</object>
-        <object>objects\objGaryoby</object>
-        <object>objects\objGyotot</object>
-        <object>objects\objHaehaey</object>
-        <object>objects\objHelipon</object>
-        <object>objects\objImorm</object>
-        <object>objects\objJumbig</object>
-        <object>objects\objLadderPress</object>
-        <object>objects\objM422A</object>
-        <object>objects\objMantan</object>
-        <object>objects\objMetallJump</object>
-        <object>objects\objMetallSpin</object>
-        <object>objects\objMetallSwim</object>
-        <object>objects\objMinoan</object>
-        <object>objects\objMM4ShieldAttacker</object>
-        <object>objects\objMonoRoader</object>
-        <object>objects\objMumaria</object>
-        <object>objects\objPakatto24</object>
-        <object>objects\objPuyoyon</object>
-        <object>objects\objRackaser</object>
-        <object>objects\objRatton</object>
-        <object>objects\objRingRing</object>
-        <object>objects\objSasoreenu</object>
-        <object>objects\objSeaMine</object>
-        <object>objects\objSkeletonJoe</object>
-        <object>objects\objSkullmet</object>
-        <object>objects\objSuperBallMachineJr</object>
-        <object>objects\objSwallown</object>
-        <object>objects\objTaketento</object>
-        <object>objects\objTogehero</object>
-        <object>objects\objTomBoy</object>
-        <object>objects\objTotemPolen</object>
-        <object>objects\objUpnDownSpawner</object>
-        <object>objects\objWallBlaster</object>
-        <objects name="Projectiles">
-          <object>objects\obj100WattonBomb</object>
-          <object>objects\obj100WattonVoid</object>
-          <object>objects\objCoswallown</object>
-          <object>objects\objDompanFireworkSpark</object>
-          <object>objects\objJoeBone</object>
-          <object>objects\objKabatoncueMissile</object>
-          <object>objects\objMinoanFan</object>
-          <object>objects\objMM4MetBullet</object>
-          <object>objects\objUpnDown</object>
-          <object>objects\objSuperBallMachineJrBall</object>
-          <object>objects\objTakentoPropeller</object>
-        </objects>
-      </objects>
-      <objects name="MM5">
-        <object>objects\objApacheJoe</object>
-        <object>objects\objBabyMetall</object>
-        <object>objects\objBBitter</object>
-        <object>objects\objBombier</object>
-        <object>objects\objBombThrown</object>
-        <object>objects\objBounder</object>
-        <object>objects\objCamon</object>
-        <object>objects\objCocco</object>
-        <object>objects\objCorocoro</object>
-        <object>objects\objCrystalJoe</object>
-        <object>objects\objDachone</object>
-        <object>objects\objFoojeen</object>
-        <object>objects\objGiree</object>
-        <object>objects\objGravitron</object>
-        <object>objects\objHirarian427</object>
-        <object>objects\objIrucan</object>
-        <object>objects\objJetBomb</object>
-        <object>objects\objKoukerQ</object>
-        <object>objects\objLyric</object>
-        <object>objects\objMetallCannon</object>
-        <object>objects\objMetallK1000</object>
-        <object>objects\objMetallMommy</object>
-        <object>objects\objMizzle</object>
-        <object>objects\objMousubeil</object>
-        <object>objects\objNewShieldAttacker</object>
-        <object>objects\objNobita</object>
-        <object>objects\objNobitaCieling</object>
-        <object>objects\objPowerMuscler</object>
-        <object>objects\objPukapelly</object>
-        <object>objects\objPukapucker_Bottom</object>
-        <object>objects\objPukapucker_Top</object>
-        <object>objects\objRembakun</object>
-        <object>objects\objRiderJoe</object>
-        <object>objects\objRockThrown</object>
-        <object>objects\objRounder</object>
-        <object>objects\objSpaceMetool</object>
-        <object>objects\objSubeil</object>
-        <object>objects\objSumatran</object>
-        <object>objects\objSuzyG</object>
-        <object>objects\objTaban</object>
-        <object>objects\objTatepakkan</object>
-        <object>objects\objTondeall</object>
-        <object>objects\objTossMachine</object>
-        <object>objects\objTwinCannon</object>
-        <object>objects\objV</object>
-        <object>objects\objYudon</object>
-        <objects name="Projectiles">
-          <object>objects\objApacheJoeProjectile</object>
-          <object>objects\objCrystalJoeBullet</object>
-          <object>objects\objGravitronGumball</object>
-          <object>objects\objMetCannonShot</object>
-          <object>objects\objMM5AimedBullet</object>
-          <object>objects\objRembakunMissile</object>
-          <object>objects\objSkullBomb</object>
-          <object>objects\objThrownBomb</object>
-          <object>objects\objThrownRock</object>
-          <object>objects\objTosserRock</object>
-          <object>objects\objTwinCannonBullet</object>
-          <object>objects\objYudonMissile</object>
-        </objects>
-        <objects name="Don'tUse">
-          <object>objects\objPowerMusclerSmoke</object>
-          <object>objects\objRockExplosion</object>
-          <object>objects\objTatepakkanPlatform</object>
-        </objects>
-      </objects>
-      <objects name="MM6">
-        <object>objects\objAuAu</object>
-        <object>objects\objBatabattan</object>
-        <object>objects\objBenK</object>
-        <object>objects\objBrainBreak</object>
-        <object>objects\objBrown</object>
-        <object>objects\objCannonJoe</object>
-        <object>objects\objCannopeller</object>
-        <object>objects\objChokerOh</object>
-        <object>objects\objColton</object>
-        <object>objects\objCurlinger</object>
-        <object>objects\objCyberGabyoall</object>
-        <object>objects\objDachoneLtdEd</object>
-        <object>objects\objFireBoy</object>
-        <object>objects\objFireTelly</object>
-        <object>objects\objGabgyoJump</object>
-        <object>objects\objGabgyoSwim</object>
-        <object>objects\objHeliButon</object>
-        <object>objects\objHotchkissn</object>
-        <object>objects\objJetButon</object>
-        <object>objects\objKatonbyon</object>
-        <object>objects\objMetallRunAndGun</object>
-        <object>objects\objMolier</object>
-        <object>objects\objPandeeta</object>
-        <object>objects\objPeat</object>
-        <object>objects\objPelicanu</object>
-        <object>objects\objPooker</object>
-        <object>objects\objPowerSlam</object>
-        <object>objects\objPropellerEye</object>
-        <object>objects\objShieldAttackerGTR</object>
-        <object>objects\objShigaraky</object>
-        <object>objects\objSkullWalker</object>
-        <object>objects\objSpringFaceBomb</object>
-        <object>objects\objSRU21P</object>
-        <object>objects\objSubmarineFlier</object>
-        <object>objects\objSW525</object>
-        <object>objects\objTadahou</object>
-        <object>objects\objTatebo</object>
-        <object>objects\objTeck</object>
-        <object>objects\objTwinRoader</object>
-        <object>objects\objWallBlaster2</object>
-        <object>objects\objYaffu</object>
-        <objects name="Projectiles">
-          <object>objects\objAuAuShot</object>
-          <object>objects\objBenKSpear</object>
-          <object>objects\objCannonjoeBullet</object>
-          <object>objects\objCannopellerBall</object>
-          <object>objects\objColtonBullet</object>
-          <object>objects\objFireBoyShot</object>
-          <object>objects\objFireTellyShot</object>
-          <object>objects\objHotchkissnNeedle</object>
-          <object>objects\objKatonbyonBomb</object>
-          <object>objects\objPelicanuFish</object>
-          <object>objects\objPookerProjectile</object>
-          <object>objects\objShigarakyBall</object>
-          <object>objects\objSpringFaceBombHead</object>
-          <object>objects\objSRU21PDebris</object>
-        </objects>
-        <objects name="Don't Use">
-          <object>objects\objBrainBreakGlasses</object>
-          <object>objects\objBrainBreakSmoke</object>
-          <object>objects\objBrownContainer</object>
-          <object>objects\objHeliButonLeaf</object>
-          <object>objects\objPeatEggParticle</object>
-        </objects>
-      </objects>
-      <objects name="MM7">
-        <object>objects\objCyorown</object>
-        <object>objects\objGobots</object>
-        <object>objects\objKaminariKogoro</object>
-        <object>objects\objKintot</object>
-        <object>objects\objStegorus</object>
-        <object>objects\objTelTel</object>
-        <object>objects\objTelTelWeatherCancel</object>
-        <object>objects\objTsuranattori</object>
-        <object>objects\objTurboRoader</object>
-        <objects name="Projectiles">
-          <object>objects\objCyorownBullet</object>
-          <object>objects\objKaminariKogoroLightning</object>
-          <object>objects\objStegorusSpike</object>
-          <object>objects\objStegorusMissile</object>
-          <object>objects\objTelTelWeatherControl</object>
-          <object>objects\objTelTelSnowTile</object>
-        </objects>
-      </objects>
-      <objects name="MM8">
-        <object>objects\objBigTelly</object>
-        <object>objects\objKemumakin</object>
-        <object>objects\objPenpenEV</object>
-        <object>objects\objRabbiton</object>
-        <objects name="Projectiles">
-          <object>objects\objBigTellyBomb</object>
-        </objects>
-        <objects name="Don't Use">
-          <object>objects\objKemumakinCloud</object>
-        </objects>
-      </objects>
-      <objects name="MM9">
-        <object>objects\objAdamski</object>
-        <object>objects\objBallonboo</object>
-        <object>objects\objBigStomper</object>
-        <object>objects\objBokazurah</object>
-        <object>objects\objBombomboy</object>
-        <object>objects\objBunbyCatcher</object>
-        <object>objects\objClassicalCannon</object>
-        <object>objects\objCamouflametall</object>
-        <object>objects\objCaricarry</object>
-        <object>objects\objDeispider</object>
-        <object>objects\objDetarnayappaSpawner</object>
-        <object>objects\objDiarn</object>
-        <object>objects\objFireTotem</object>
-        <object>objects\objFlowerPresenter</object>
-        <object>objects\objGagabyoall</object>
-        <object>objects\objHoohoo</object>
-        <object>objects\objIllusian</object>
-        <object>objects\objJumpRoller</object>
-        <object>objects\objJumpRollerFlameField</object>
-        <object>objects\objKakinbatank</object>
-        <object>objects\objMetallB</object>
-        <object>objects\objMM9MachineGunJoe</object>
-        <object>objects\objNombrellan</object>
-        <object>objects\objNombrellanSpawner</object>
-        <object>objects\objOctone</object>
-        <object>objects\objOkosutobon</object>
-        <object>objects\objPetitDevilGreen</object>
-        <object>objects\objPetitDevilYellow</object>
-        <object>objects\objPopoHeli</object>
-        <object>objects\objSakrets</object>
-        <object>objects\objScissascissor</object>
-        <object>objects\objShadowClone</object>
-        <object>objects\objShieldAttackerRX</object>
-        <object>objects\objSmaplar</object>
-        <object>objects\objSpinCutter</object>
-        <object>objects\objTellyX</object>
-        <object>objects\objTellyXSpawner</object>
-        <object>objects\objTropish</object>
-        <objects name="Projectiles">
-          <object>objects\objBallonbooDead</object>
-          <object>objects\objBokazurahBall</object>
-          <object>objects\objDetarnayappa</object>
-          <object>objects\objCaricarryRockBounce</object>
-          <object>objects\objFlowerPresenterFlower</object>
-          <object>objects\objHoohooRock</object>
-          <object>objects\objIllusianBlock</object>
-          <object>objects\objJumpRollerFlame</object>
-          <object>objects\objOctoneInkball</object>
-          <object>objects\objPetitDevilClone</object>
-          <object>objects\objPopoHeliFire</object>
-          <object>objects\objSakretsBall</object>
-          <object>objects\objScissascissorPart</object>
-        </objects>
-      </objects>
-      <objects name="MM10">
-        <object>objects\objArigockG</object>
-        <object>objects\objBetaHeliMetool</object>
-        <object>objects\objBariIII</object>
-        <object>objects\objBombPotton</object>
-        <object>objects\objBombPottonStopper</object>
-        <object>objects\objRCargoQ</object>
-        <object>objects\objBCargoQ</object>
-        <object>objects\objDarspider</object>
-        <objects name="Dockalocker">
-          <object>objects\objDockalocker</object>
-          <object>objects\objDockalockerTemplate0</object>
-          <object>objects\objDockalockerTemplate1</object>
-          <object>objects\objDockalockerTemplate2</object>
-          <object>objects\objDockalockerTemplate3</object>
-          <object>objects\objDockalockerTemplate4</object>
-        </objects>
-        <object>objects\objFuraibonSpawner</object>
-        <object>objects\objGarinkou</object>
-        <object>objects\objHaikerN</object>
-        <object>objects\objKaonaGeeno</object>
-        <object>objects\objRMechaPitchan</object>
-        <object>objects\objBMechaPitchan</object>
-        <object>objects\objMerserker</object>
-        <object>objects\objMM10Suzy</object>
-        <object>objects\objMolmole</object>
-        <object>objects\objMolmoleSpawner</object>
-        <object>objects\objNewClassicalCannon</object>
-        <object>objects\objNitroTruck</object>
-        <object>objects\objNitroTruckLarge</object>
-        <object>objects\objNitroTruckSpawner</object>
-        <object>objects\objNitroTruckSignal</object>
-        <object>objects\objNumetall</object>
-        <object>objects\objOshitsuOsarettsu</object>
-        <object>objects\objPiledan</object>
-        <object>objects\objPiledanTurret</object>
-        <object>objects\objPiledanBomber</object>
-        <object>objects\objPointan</object>
-        <object>objects\objReturningMachineGunJoe</object>
-        <object>objects\objSearchy</object>
-        <object>objects\objSepaRoader</object>
-        <object>objects\objShotom</object>
-        <object>objects\objShieldAttackerTRL</object>
-        <object>objects\objShrimparge91</object>
-        <object>objects\objSola0</object>
-        <object>objects\objSprinklan</object>
-        <object>objects\objSwallowegg</object>
-        <object>objects\objSwalloweggSpawner</object>
-        <object>objects\objTsurareStamp</object>
-        <object>objects\objWaltriot</object>
-        <object>objects\objYonbainHorizontal</object>
-        <object>objects\objYonbainVertical</object>
-        <objects name="Projectiles">
-          <object>objects\objArigockGSpike</object>
-          <object>objects\objBariIIISoundWave</object>
-          <object>objects\objBombPottonBomb</object>
-          <object>objects\objBombPottonExplosion</object>
-          <object>objects\objCargoQBall</object>
-          <object>objects\objCommandoMineTiler</object>
-          <object>objects\objFuraibon</object>
-          <object>objects\objKaona</object>
-          <object>objects\objMechaPitchanBall</object>
-          <object>objects\objMetoolBullet</object>
-          <object>objects\objNumetallGlob</object>
-          <object>objects\objPointanWindow</object>
-          <object>objects\objSwalloweggEgg</object>
-          <object>objects\objWaltriotMissile</object>
-        </objects>
-        <objects name="Don't use">
-          <object>objects\objBariIIIBody</object>
-          <object>objects\objDarspiderWeb</object>
-          <object>objects\objSepaRoaderCannon</object>
-          <object>objects\objReturningMachinegunJoeShield</object>
-          <object>objects\objShieldAttackerTRLShield</object>
-        </objects>
-      </objects>
-      <objects name="GB I-IV">
-        <object>objects\objBubukanMkII</object>
-        <object>objects\objCuttingWheel</object>
-        <object>objects\objCuttingWheelChase</object>
-        <object>objects\objCuttingWheelStationary</object>
-        <object>objects\objDrillun</object>
-        <object>objects\objGunnerJoe</object>
-        <object>objects\objPickelmanDada</object>
-        <object>objects\objPressn</object>
-        <objects name="Projectiles">
-          <object>objects\objGunnerJoeMissile</object>
-        </objects>
-      </objects>
-      <objects name="GB V">
-        <object>objects\objAlabell</object>
-        <object>objects\objArmaroid</object>
-        <object>objects\objBabyFlies</object>
-        <object>objects\objBabyFliesMedium</object>
-        <object>objects\objBabyFliesSmall</object>
-        <object>objects\objBikkyBomb</object>
-        <object>objects\objBirdy</object>
-        <object>objects\objBireeSpark</object>
-        <object>objects\objBiribaree</object>
-        <object>objects\objBoostun</object>
-        <object>objects\objByouz</object>
-        <object>objects\objCannonRoader</object>
-        <object>objects\objChainsoar</object>
-        <object>objects\objChunco</object>
-        <object>objects\objDoncatch</object>
-        <object>objects\objElecit</object>
-        <object>objects\objFankurow</object>
-        <object>objects\objFeeber</object>
-        <object>objects\objFooley</object>
-        <object>objects\objFukuhorn</object>
-        <object>objects\objGSQ</object>
-        <object>objects\objHandoo</object>
-        <object>objects\objHellMetallDX</object>
-        <object>objects\objLaJaba</object>
-        <object>objects\objMalmet</object>
-        <object>objects\objMonkikki</object>
-        <object>objects\objNibul</object>
-        <object>objects\objOuOu</object>
-        <object>objects\objPalmHopper</object>
-        <object>objects\objParocket</object>
-        <object>objects\objPikashu</object>
-        <object>objects\objShaboan</object>
-        <object>objects\objShuhorn</object>
-        <object>objects\objSibul</object>
-        <object>objects\objSoshiBreaker</object>
-        <object>objects\objSwimBall</object>
-        <object>objects\objTamp</object>
-        <object>objects\objWanderingHead</object>
-        <objects name="Projectiles">
-          <object>objects\objArmaroidMissile</object>
-          <object>objects\objBikkyBombBall</object>
-          <object>objects\objBireeSparkShot</object>
-          <object>objects\objBireeSparkGroundShot</object>
-          <object>objects\objBoostunMissile</object>
-          <object>objects\objChainsoarWheel</object>
-          <object>objects\objDoncatchDebris</object>
-          <object>objects\objElecitShot</object>
-          <object>objects\objElecitSpark</object>
-          <object>objects\objFeeberBubble</object>
-          <object>objects\objFooleyFlash</object>
-          <object>objects\objFooleyShot</object>
-          <object>objects\objGSQBlock</object>
-          <object>objects\objGSQDebris</object>
-          <object>objects\objHandooHand</object>
-          <object>objects\objHellMetallDX2</object>
-          <object>objects\objOuOuBall</object>
-          <object>objects\objPalmHopperMissile</object>
-          <object>objects\objSoshiBreakerCube</object>
-          <object>objects\objSoshiBreakerDebris</object>
-        </objects>
-      </objects>
-      <objects name="CFTF">
-        <object>objects\objAceManbow</object>
-        <object>objects\objButterdroid</object>
-        <object>objects\objChuckmagnet</object>
-        <object>objects\objDocbaton</object>
-        <object>objects\objFatool</object>
-        <object>objects\objGlooper</object>
-        <object>objects\objHammerfall</object>
-        <object>objects\objHopps</object>
-        <object>objects\objHornetRacer</object>
-        <object>objects\objLEC</object>
-        <object>objects\objMorningJoe</object>
-        <object>objects\objPierrobug</object>
-        <object>objects\objSnippscissor</object>
-        <object>objects\objSonicBill</object>
-        <object>objects\objTomsmort</object>
-        <object>objects\objTwinShooterS</object>
-        <object>objects\objWanderBell</object>
-        <objects name="Projectiles">
-          <object>objects\objCFTFAimedBullet</object>
-          <object>objects\objGloop</object>
-          <object>objects\objGloopBall</object>
-          <object>objects\objGloopBreaker</object>
-          <object>objects\objLECBubble</object>
-          <object>objects\objPierrobugBall</object>
-          <object>objects\objMorningJoeStar</object>
-        </objects>
-      </objects>
       <objects name="Don't Use">
         <object>objects\objEnemyBullet</object>
         <object>objects\objHarmfulExplosion</object>
       </objects>
       <object>objects\objCustomSpawner</object>
+      <object>objects\objInsectoSpawner</object>
       <object>objects\objEnemySpawner</object>
       <object>objects\objGenericStopper</object>
+      <object>objects\objInsectobot</object>
+      <object>objects\objEnemyTemplate</object>
     </objects>
     <objects name="Minibosses">
-      <objects name="MM2">
-        <object>objects\objHotDog</object>
-        <object>objects\objLanternFish</object>
-        <objects name="Projectiles">
-          <object>objects\objHotDogFire</object>
-        </objects>
-      </objects>
-      <objects name="MM3">
-        <object>objects\objBigSnakey</object>
-        <object>objects\objGiantMetall</object>
-        <object>objects\objPenPenMaker</object>
-        <object>objects\objTama</object>
-        <objects name="Setup">
-          <object>objects\objSnakeBody</object>
-        </objects>
-        <objects name="Projectiles">
-          <object>objects\objBigSnakeyFire</object>
-          <object>objects\objGiantMetallBall</object>
-          <object>objects\objTamaFlea</object>
-          <object>objects\objTamaYarnBall</object>
-        </objects>
-      </objects>
-      <objects name="MM4">
-        <object>objects\objEscaroo</object>
-        <object>objects\objKabatoncue</object>
-        <object>objects\objMoby</object>
-        <object>objects\objWhopper</object>
-        <objects name="Setup">
-          <object>objects\objKabatoncuePlatform</object>
-        </objects>
-        <objects name="Projectiles">
-          <object>objects\objEscarooBomb</object>
-          <object>objects\objEscarooEyes</object>
-          <object>objects\objKabatoncuePlatformPiece</object>
-          <object>objects\objMobbyBomb</object>
-          <object>objects\objMobbyMissle</object>
-          <object>objects\objWhopperRing</object>
-        </objects>
-      </objects>
-      <objects name="MM5">
-        <object>objects\objOctoboss</object>
-        <object>objects\objOctoperOA</object>
-        <objects name="Projectiles">
-          <object>objects\objDachoneBullet</object>
-          <object>objects\objOctobossBullet</object>
-          <object>objects\objOctoperOABullet1</object>
-        </objects>
-        <objects name="Don't Use">
-          <object>objects\objOctoperDetector</object>
-        </objects>
-      </objects>
-      <objects name="MM6">
-        <object>objects\objGamarnAndGamadayu</object>
-        <object>objects\objGorillaTank</object>
-        <object>objects\objMetallPotton</object>
-        <object>objects\objSquidon</object>
-        <objects name="Projectiles">
-          <object>objects\objGamadayuBomb</object>
-          <object>objects\objGamarnLaser</object>
-          <object>objects\objGorillaTankHand</object>
-          <object>objects\objSquidonIceCube</object>
-          <object>objects\objSquidonMissile</object>
-        </objects>
-      </objects>
-      <objects name="MM7">
-        <object>objects\objMadGrinder</object>
-        <object>objects\objTruckJoe</object>
-        <object>objects\objShirokumachineGTV</object>
-        <objects name="Setup">
-          <object>objects\objTruckJoeStop</object>
-        </objects>
-        <objects name="Projectiles">
-          <object>objects\objMadGrinderBlade</object>
-          <object>objects\objMadGrinderFire</object>
-          <object>objects\objShiroIceBall</object>
-          <object>objects\objShiroShard</object>
-        </objects>
-      </objects>
-      <objects name="MM9">
-        <object>objects\objChangkeyDragon</object>
-        <object>objects\objHanabiran</object>
-        <object>objects\objStoneHead</object>
-        <object>objects\objPaozo</object>
-        <objects name="Setup">
-          <object>objects\objHanabiranSpawnLocation</object>
-          <object>objects\objSHBoulder</object>
-          <object>objects\objSHBouldertUpRight</object>
-          <object>objects\objSHBoulderDownRight</object>
-          <object>objects\objSHBoulderLeftDown</object>
-          <object>objects\objSHBoulderLeftUp</object>
-          <object>objects\objSHBoulderLeftRight</object>
-          <object>objects\objSHBoulderUpDown</object>
-        </objects>
-        <objects name="Projectiles">
-          <object>objects\objChangkeyDragonFire</object>
-          <object>objects\objSHFallingBoulder</object>
-          <object>objects\objHanabiranFlower</object>
-          <object>objects\objPaozoBall</object>
-        </objects>
-        <objects name="Don't use">
-          <object>objects\objChangkeyDragonMask</object>
-          <object>objects\objChangkeyDragonTackleFire</object>
-          <object>objects\objChangkeyDragonTailFire</object>
-          <object>objects\objStoneHeadParticle</object>
-        </objects>
-      </objects>
-      <objects name="MM10">
-        <object>objects\objFenix</object>
-        <object>objects\objSuzak</object>
-        <object>objects\objOctobulb</object>
-        <object>objects\objTheKeeper</object>
-        <object>objects\objTricastle</object>
-        <objects name="Setup">
-          <object>objects\objOctobulbYokuBlock</object>
-          <object>objects\objTheKeeperElectricBarH</object>
-          <object>objects\objTheKeeperElectricBarV</object>
-        </objects>
-        <objects name="Projectiles">
-          <object>objects\objSFFire</object>
-          <object>objects\objTheKeeperBall</object>
-          <object>objects\objTheKeeperShockwave</object>
-          <object>objects\objOctobulbBigSpark</object>
-          <object>objects\objOctobulbRailSpark</object>
-          <object>objects\objOctobulbJellyfish</object>
-        </objects>
-        <objects name="Don't Use">
-          <object>objects\objSuzakAndFenix</object>
-          <object>objects\objTheKeeperHand</object>
-          <object>objects\objOctobulbEnergy</object>
-          <object>objects\objOctobulbInk</object>
-          <object>objects\objTricastleEye</object>
-          <object>objects\objTricastleCannon</object>
-          <object>objects\objTricastlePlatform</object>
-        </objects>
-      </objects>
-      <objects name="MM&amp;B">
-        <object>objects\objMelodyResponseCannon</object>
-        <objects name="Setup">
-          <object>objects\objMelodyResponseButtonUp</object>
-          <object>objects\objMelodyResponseButtonLeft</object>
-          <object>objects\objMelodyResponseButtonDown</object>
-          <object>objects\objMelodyResponseButtonRight</object>
-          <object>objects\objMelodyResponseDoor</object>
-        </objects>
-        <objects name="Projectiles">
-          <object>objects\objMelodyResponseBullet</object>
-        </objects>
-      </objects>
-      <objects name="GB I-IV">
-        <object>objects\objGiantMetCannon</object>
-        <objects name="Projectiles">
-          <object>objects\objGiantMetCannonShot</object>
-        </objects>
-      </objects>
-      <objects name="GB V">
-        <object>objects\objGundrill</object>
-        <object>objects\objHyoey</object>
-        <object>objects\objTKhamen</object>
-        <object>objects\objTyhorn</object>
-        <objects name="Setup">
-          <object>objects\objTKhamenPlatform</object>
-          <object>objects\objTKhamenRockDropper</object>
-        </objects>
-        <objects name="Projectiles">
-          <object>objects\objGundrillRock</object>
-          <object>objects\objHyoeyMissile</object>
-          <object>objects\objTKhamenDropRock</object>
-          <object>objects\objTKhamenRock</object>
-          <object>objects\objTyhornBall</object>
-        </objects>
-        <objects name="Don't Use">
-          <object>objects\objGundrillCover</object>
-          <object>objects\objTKhamenDead</object>
-        </objects>
-      </objects>
-      <objects name="CFTF">
-        <object>objects\objBeeBlader</object>
-        <object>objects\objCombiloid</object>
-        <object>objects\objCombiloidBuddy</object>
-        <object>objects\objDocKumo</object>
-        <object>objects\objKnuckleDuster</object>
-        <object>objects\objOctoGenerator</object>
-        <object>objects\objStompy</object>
-        <object>objects\objTwinShooterG</object>
-        <objects name="Setup">
-          <object>objects\objKnuckleDusterPlatform</object>
-          <object>objects\objOctoGeneratorChildSpawnLocation</object>
-        </objects>
-        <objects name="Projectiles">
-          <object>objects\objBeeBladerProjectile</object>
-          <object>objects\objStompyProjectile</object>
-          <object>objects\objOctoGeneratorChild</object>
-          <object>objects\objTwinShooterGLaser</object>
-          <object>objects\objCombiloidProjectile</object>
-        </objects>
-        <objects name="Don't Use">
-          <object>objects\objCombiloidGun</object>
-          <object>objects\objCombiloidMace</object>
-        </objects>
-      </objects>
       <objects name="Don't Use">
         <objects name="BossDetectors">
           <object>objects\objCentaurDetector</object>
@@ -5862,215 +5090,6 @@
       </objects>
     </objects>
     <objects name="Bosses">
-      <objects name="MM1">
-        <object>objects\objBombMan</object>
-        <object>objects\objCutMan</object>
-        <object>objects\objFireMan</object>
-        <object>objects\objGutsMan</object>
-        <object>objects\objIceMan</object>
-        <object>objects\objOilMan</object>
-        <objects name="Projectiles">
-          <object>objects\objBombManBlast</object>
-          <object>objects\objBombManBomb</object>
-          <object>objects\objCutBullet</object>
-          <object>objects\objFireFlame</object>
-          <object>objects\objFireManStorm</object>
-          <object>objects\objGutsBossBlock</object>
-          <object>objects\objGutsBossBlockRubble</object>
-          <object>objects\objIceManSlasher</object>
-          <object>objects\objOilManOilShot</object>
-          <object>objects\objOilManParticle</object>
-          <object>objects\objOilManPuddle</object>
-        </objects>
-      </objects>
-      <objects name="MM2">
-        <object>objects\objAirMan</object>
-        <object>objects\objBubbleMan</object>
-        <object>objects\objCrashMan</object>
-        <object>objects\objFlashMan</object>
-        <object>objects\objHeatMan</object>
-        <object>objects\objMetalMan</object>
-        <object>objects\objQuickMan</object>
-        <object>objects\objWoodMan</object>
-        <object>objects\objBoobeam</object>
-        <object>objects\objBoobeamControl</object>
-        <object>objects\objGutsDozer</object>
-        <object>objects\objMechaDragon</object>
-        <object>objects\objPicoBrick</object>
-        <objects name="Projectiles">
-          <object>objects\objAirManGust</object>
-          <object>objects\objBoobeamBullet</object>
-          <object>objects\objBubbleBullet</object>
-          <object>objects\objBubbleManLead</object>
-          <object>objects\objCrashBomber</object>
-          <object>objects\objFlashmanTimeStop</object>
-          <object>objects\objHeatManFire</object>
-          <object>objects\objMechaDragonFire</object>
-          <object>objects\objMetalManBlade</object>
-          <object>objects\objQuickManBoomerang</object>
-          <object>objects\objWoodFallingLeaves</object>
-          <object>objects\objWoodLeafShield</object>
-          <object>objects\objWoodRisingLeaves</object>
-        </objects>
-      </objects>
-      <objects name="MM3">
-        <object>objects\objGeminiMan</object>
-        <object>objects\objHardMan</object>
-        <object>objects\objSparkMan</object>
-        <object>objects\objTopMan</object>
-        <object>objects\objKamegoroMaker</object>
-        <objects name="Projectiles">
-          <object>objects\objGemineighbour</object>
-          <object>objects\objGeminiBullet</object>
-          <object>objects\objGeminiManLaser</object>
-          <object>objects\objKamegoro</object>
-          <object>objects\objKamegoroShell</object>
-          <object>objects\objSparkmanProjectile</object>
-          <object>objects\objTopmanTop</object>
-          <object>objects\objHardManKnuckle</object>
-        </objects>
-      </objects>
-      <objects name="MM4">
-        <object>objects\objDustMan</object>
-        <object>objects\objPharaohMan</object>
-        <object>objects\objToadMan</object>
-        <object>objects\objMetallDaddy</object>
-        <objects name="Projectiles">
-          <object>objects\objDustManCrusher</object>
-          <object>objects\objDustManDebris</object>
-          <object>objects\objPharaohManShot</object>
-          <object>objects\objPharaohManShotBig</object>
-          <object>objects\objPharaohManShotHardmode</object>
-          <object>objects\objToadRainParticle</object>
-          <object>objects\objMetallDaddyChild</object>
-        </objects>
-        <objects name="Don't Use">
-          <object>objects\objMetallDaddyHelmet</object>
-        </objects>
-      </objects>
-      <objects name="MM5">
-        <object>objects\objGravityMan</object>
-        <object>objects\objGyroMan</object>
-        <object>objects\objStoneMan</object>
-        <object>objects\objDarkMan4</object>
-        <objects name="Projectiles">
-          <object>objects\objGravityShot</object>
-          <object>objects\objGyroShot</object>
-          <object>objects\objStoneManPowerStone</object>
-          <object>objects\objDarkBarrier</object>
-        </objects>
-      </objects>
-      <objects name="MM6">
-        <object>objects\objBlizzardMan</object>
-        <object>objects\objCentaurMan</object>
-        <object>objects\objPlantMan</object>
-        <object>objects\objYamatoMan</object>
-        <object>objects\objRounderV2</object>
-        <object>objects\objPowerPiston</object>
-        <objects name="Projectiles">
-          <object>objects\objBlizzardAttack</object>
-          <object>objects\objCentaurFlash</object>
-          <object>objects\objCentaurSecondaryBullet</object>
-          <object>objects\objCentaurShot</object>
-          <object>objects\objYamatoSpearhead</object>
-          <object>objects\objPlantBarrierBoss</object>
-          <object>objects\objRounderV2Bomb</object>
-          <object>objects\objPowerPistonRock</object>
-        </objects>
-      </objects>
-      <objects name="MM9">
-        <object>objects\objHoneyWoman</object>
-        <object>objects\objHornetMan</object>
-        <object>objects\objSplashWoman</object>
-        <object>objects\objSharkSubmarineTail</object>
-        <object>objects\objSharkSubmarineBody</object>
-        <object>objects\objSharkSubmarineHead</object>
-        <objects name="Projectiles">
-          <object>objects\objBeeChaser</object>
-          <object>objects\objBeeDropper</object>
-          <object>objects\objHoneycombBomb</object>
-          <object>objects\objHoneyPuddle</object>
-          <object>objects\objSplashFlounder</object>
-          <object>objects\objSplashNote</object>
-          <object>objects\objSplashTrident</object>
-          <object>objects\objSharkSubmarineMissile</object>
-          <object>objects\objSharkSubmarineDolphin</object>
-          <object>objects\objSharkSubmarineLaser</object>
-        </objects>
-        <objects name="Don't Use">
-          <object>objects\prtSharkSubmarine</object>
-          <object>objects\objSharkSubmarineBodyHatch</object>
-          <object>objects\objSharkSubmarineCannon</object>
-        </objects>
-      </objects>
-      <objects name="MM10">
-        <object>objects\objChillMan</object>
-        <object>objects\objCommandoMan</object>
-        <object>objects\objSolarMan</object>
-        <objects name="Projectiles">
-          <object>objects\objChillDebry</object>
-          <object>objects\objChillSpike</object>
-          <object>objects\objChillSpikeGenerator</object>
-          <object>objects\objChillSpikeSpike</object>
-          <object>objects\objCommandoBomb</object>
-          <object>objects\objCommandoBombExplosion</object>
-          <object>objects\objCommandoGroundWave</object>
-          <object>objects\objSolarManBlaze</object>
-          <object>objects\objSolarSun</object>
-        </objects>
-      </objects>
-      <objects name="GB I-IV">
-        <object>objects\objEnker</object>
-        <object>objects\objQuint</object>
-        <object>objects\objPunk</object>
-        <object>objects\objBallade</object>
-        <object>objects\objGiantSuzy</object>
-        <object>objects\objHunterA</object>
-        <object>objects\objHunterB</object>
-        <objects name="Projectiles">
-          <object>objects\objBalladeBalladeCracker</object>
-          <object>objects\objBalladeBalladeMine</object>
-          <object>objects\objEnkerShot</object>
-          <object>objects\objHunterBaby</object>
-          <object>objects\objHunterBPartner</object>
-          <object>objects\objHunterBullet</object>
-          <object>objects\objPunkDebris</object>
-          <object>objects\objPunkScrewCrusher</object>
-          <object>objects\objSakugarneBigRock</object>
-          <object>objects\objSakugarneRock</object>
-          <object>objects\objSakugarneToss</object>
-        </objects>
-      </objects>
-      <objects name="GB V">
-        <object>objects\objMercury</object>
-        <object>objects\objSaturn</object>
-        <object>objects\objUranus</object>
-        <objects name="Projectiles">
-          <object>objects\objMercuryGrabBuster</object>
-          <object>objects\objMercuryGrabBusterPickup</object>
-          <object>objects\objMercurySmallBlob</object>
-          <object>objects\objSaturnBullet</object>
-          <object>objects\objSaturnRing</object>
-          <object>objects\objUranusBlock</object>
-          <object>objects\objUranusFallingRocks</object>
-        </objects>
-      </objects>
-      <objects name="WW">
-        <object>objects\objIronBall</object>
-      </objects>
-      <objects name="CFTF">
-        <object>objects\objDanganMan</object>
-        <object>objects\objKomusoMan</object>
-        <object>objects\objGreyDevil</object>
-        <objects name="Projectiles">
-          <object>objects\objDanganBullet</object>
-          <object>objects\objGreyDevilGloop</object>
-          <object>objects\objKomusoBullet</object>
-          <object>objects\objKomusoDoppler</object>
-          <object>objects\objKomusoFire</object>
-          <object>objects\objKomusoSmoke</object>
-        </objects>
-      </objects>
       <objects name="DOS">
         <object>objects\objDynaMan</object>
         <object>objects\objSonicMan</object>
@@ -6085,15 +5104,6 @@
           <object>objects\objVoltmanShot</object>
         </objects>
       </objects>
-      <objects name="Custom">
-        <object>objects\objBloomWoman</object>
-      </objects>
-      <objects name="Don't Use">
-        <object>objects\objPicoControl</object>
-        <object>objects\objPicoKun</object>
-        <object>objects\objBubbleManWaterSprout</object>
-        <object>objects\objGutsDozerHand</object>
-      </objects>
       <objects name="DOSPERFECTION">
         <object>objects\objVoltMan2</object>
         <objects name="Projectiles">
@@ -6101,6 +5111,7 @@
           <object>objects\objVoltmanShot2</object>
           <object>objects\objVoltRoofDetector2</object>
         </objects>
+        <object>objects\objDynaMan_new</object>
       </objects>
     </objects>
     <objects name="Gimmicks">
@@ -6156,320 +5167,6 @@
           <object>objects\objYokuSpikeTemplate8</object>
         </objects>
       </objects>
-      <objects name="MM1">
-        <object>objects\objElecBlock</object>
-        <object>objects\objElecBlockRotatable</object>
-        <object>objects\objFireBlock</object>
-        <object>objects\objFireBlockRotatable</object>
-        <object>objects\objFirePillar</object>
-        <objects name="Fire Waves">
-          <object>objects\objFireWaveGoDirector</object>
-          <object>objects\objFireWaveGoDown</object>
-          <object>objects\objFireWaveGoLeft</object>
-          <object>objects\objFireWaveGoRight</object>
-          <object>objects\objFireWaveGoUp</object>
-          <object>objects\objFireWaveSpawner</object>
-        </objects>
-        <object>objects\objFootholder</object>
-        <object>objects\objFootholderGuide</object>
-        <object>objects\objGutsLift</object>
-        <object>objects\objLiftEnd</object>
-        <object>objects\objLiftHole</object>
-        <object>objects\objLiftRail</object>
-        <object>objects\objPUHitSwitch</object>
-        <object>objects\objPUSwitchBlockRed</object>
-        <object>objects\objPUSwitchBlockBlue</object>
-        <object>objects\objPUOil</object>
-        <object>objects\objSuperCutterSpawner</object>
-        <object>objects\objWaterJet</object>
-        <object>objects\objSuperArmBlock</object>
-        <object>objects\objSuperArmBlock2x2</object>
-        <objects name="Don't Use">
-          <object>objects\objFireBlockFire</object>
-          <object>objects\objPUOilFire</object>
-          <object>objects\objFireWave</object>
-          <object>objects\objSuperCutter</object>
-        </objects>
-      </objects>
-      <objects name="MM2">
-        <object>objects\objAcidDropSpawner</object>
-        <object>objects\objAirTiki</object>
-        <objects name="Crash Lifts">
-          <object>objects\objCrashLift</object>
-          <object>objects\objLineBottomLeft</object>
-          <object>objects\objLineBottomRight</object>
-          <object>objects\objLineTopRight</object>
-          <object>objects\objLineHorizontal</object>
-          <object>objects\objLineHorizontalDrop</object>
-          <object>objects\objLineTopLeft</object>
-          <object>objects\objLineVertical</object>
-          <object>objects\objLineVerticalDrop</object>
-        </objects>
-        <object>objects\objCrusher</object>
-        <object>objects\objMM2CloudPlatform</object>
-        <object>objects\objMM2Conveyor</object>
-        <object>objects\objMM2FallingPlatform</object>
-        <object>objects\objQuickLaserSpawner</object>
-        <object>objects\objPreciseQuickLaserSpawner</object>
-        <object>objects\objQuickLighting</object>
-        <object>objects\objQuickLightingNormal</object>
-        <object>objects\objSideCrusher</object>
-        <objects name="Don't Use">
-          <object>objects\objQuickLaser</object>
-          <object>objects\objPreciseQuickLaser</object>
-          <object>objects\objTikiHorn</object>
-          <object>objects\objAcidDrop</object>
-        </objects>
-      </objects>
-      <objects name="MM3">
-        <object>objects\objCloudPlatform</object>
-        <object>objects\objCloudPlatformSpawner</object>
-        <object>objects\objDropPlatform</object>
-        <object>objects\objGeminiEgg</object>
-        <object>objects\objJunkBlock</object>
-        <object>objects\objJunkBlockGenerator</object>
-        <object>objects\objKamegoroTornadoMakerH</object>
-        <object>objects\objKamegoroTornadoMakerV</object>
-        <object>objects\objMagnetMachine</object>
-        <object>objects\objNeedleManNeedle</object>
-        <object>objects\objProtomanEncounter</object>
-        <object>objects\objSparkmanPlatform</object>
-        <object>objects\objSparkmanPlatformStop</object>
-        <object>objects\objTileScrollBG</object>
-        <object>objects\objTileScrollSolid</object>
-        <object>objects\objTileScrollSpike</object>
-        <object>objects\objTopLift</object>
-        <object>objects\objTopSpawner</object>
-        <object>objects\objWanaan</object>
-        <objects name="Don't Use">
-          <object>objects\objKamegoroTornado</object>
-          <object>objects\objWanaanChomper</object>
-        </objects>
-      </objects>
-      <objects name="MM4">
-        <object>objects\objBrightmanPlatform</object>
-        <object>objects\objBuildingPlatform</object>
-        <object>objects\objCossackPlatform</object>
-        <object>objects\objCossackSnow</object>
-        <object>objects\objCricket</object>
-        <object>objects\objDrillBoulderSpawner</object>
-        <object>objects\objDustmanBlock</object>
-        <object>objects\objForkBlock</object>
-        <object>objects\objHover</object>
-        <object>objects\objLever</object>
-        <object>objects\objLeverField</object>
-        <object>objects\objQuickSand</object>
-        <object>objects\objQuickSandB</object>
-        <object>objects\objRingmanPlatform</object>
-        <object>objects\objToadRainCtrl</object>
-        <objects name="Don't Use">
-          <object>objects\objDrillBoulder</object>
-          <object>objects\objDrillBoulderParticle</object>
-          <object>objects\objHoverSmoke</object>
-          <object>objects\objBuildingPlatformPiece</object>
-          <object>objects\objToadRain</object>
-        </objects>
-      </objects>
-      <objects name="MM5">
-        <objects name="Block Trains">
-          <object>objects\objBlockTrain</object>
-          <object>objects\objBlockTrainDown</object>
-          <object>objects\objBlockTrainLeft</object>
-          <object>objects\objBlockTrainRight</object>
-          <object>objects\objBlockTrainUp</object>
-        </objects>
-        <object>objects\objBubbleGenerator</object>
-        <object>objects\objBubblePlatformLarge</object>
-        <object>objects\objBubblePlatformSmall</object>
-        <object>objects\objCrystalGenerator</object>
-        <object>objects\objDarkmanBlock</object>
-        <object>objects\objFallingPlatform</object>
-        <object>objects\objFallingTower</object>
-        <object>objects\objFallingTowerStop</object>
-        <object>objects\objGravityFlipDown</object>
-        <object>objects\objGravityFlipUp</object>
-        <object>objects\objLowGravitySetter</object>
-        <object>objects\objMM5SpinningPlatform</object>
-        <object>objects\objMM5WheelConveyor</object>
-        <object>objects\objRollingDrill</object>
-        <object>objects\objTeckyun</object>
-        <object>objects\objTrainShake</object>
-        <object>objects\objWaveManJetSki</object>
-        <object>objects\objWaveManJetSkiStopper</object>
-        <object>objects\objWaveStream</object>
-        <objects name="Wave Man Warps">
-          <object>objects\objWaveManWarpUp</object>
-          <object>objects\objWaveManWarpDown</object>
-          <object>objects\objWaveManWarpLeft</object>
-          <object>objects\objWaveManWarpRight</object>
-          <object>objects\objWaveManWarpStop</object>
-        </objects>
-        <objects name="Don't Use">
-          <object>objects\objRollingDrillField</object>
-          <object>objects\objWaveManWarp</object>
-        </objects>
-      </objects>
-      <objects name="MM6">
-        <object>objects\objBouncyTile</object>
-        <object>objects\objCountBomb</object>
-        <object>objects\objCountBombDown</object>
-        <object>objects\objCountBombLeft</object>
-        <object>objects\objCountBombRight</object>
-        <object>objects\objFanDown</object>
-        <object>objects\objFanLeft</object>
-        <object>objects\objFanRight</object>
-        <object>objects\objFanUp</object>
-        <object>objects\objFlipPlatform</object>
-        <object>objects\objMM6Conveyor</object>
-        <object>objects\objOil</object>
-        <object>objects\objPlantmanPlatform</object>
-        <object>objects\objRotatingSpikePlatform</object>
-        <object>objects\objSpring</object>
-        <object>objects\objTomahawkPlatform</object>
-        <object>objects\objTomahawkPlatformStop</object>
-        <object>objects\objXBlock</object>
-        <object>objects\objXPlatform</object>
-        <object>objects\objXPlatformStop</object>
-      </objects>
-      <objects name="MM7">
-        <object>objects\objControllableLift</object>
-        <object>objects\objJunkMachine</object>
-        <object>objects\objJunkMagnet</object>
-        <object>objects\objJunkMagDebrisSpawner</object>
-        <object>objects\objJunkPlatform</object>
-        <object>objects\objJunkPlatformLarge</object>
-        <object>objects\objRevealingTiles</object>
-        <objects name="Don't Use">
-          <object>objects\objJunkMagDebris</object>
-          <object>objects\objJunkDust</object>
-          <object>objects\objControllableLiftOverlay</object>
-        </objects>
-      </objects>
-      <objects name="MM8">
-        <object>objects\objBoubou</object>
-        <object>objects\objBoubouThick</object>
-        <object>objects\objJumpSign</object>
-        <object>objects\objSlideSign</object>
-        <object>objects\objMM8Door</object>
-        <object>objects\objMegaman8Sled</object>
-        <object>objects\objMegaman8SledSpeedTrigger</object>
-        <object>objects\objMegaman8SledStopper</object>
-        <object>objects\objMM8SkullElevator</object>
-        <object>objects\objMM8SkullSwitch</object>
-        <object>objects\objMM8Switch</object>
-        <object>objects\objTenguWind</object>
-        <object>objects\objTenguWindSpeedTrigger</object>
-        <objects name="Don't Use">
-          <object>objects\objSkullElevatorMask</object>
-          <object>objects\objTenguLeaf</object>
-        </objects>
-      </objects>
-      <objects name="MM9">
-        <object>objects\objBokazurahPlatform</object>
-        <object>objects\objConcreteDown</object>
-        <object>objects\objConcreteUp</object>
-        <object>objects\objCopterPlatform</object>
-        <object>objects\objCopterPlatformStop</object>
-        <object>objects\objGalaxyManPortal</object>
-        <object>objects\objGravLift</object>
-        <object>objects\objHanabiranClockArm</object>
-        <object>objects\objHornetRoll</object>
-        <object>objects\objJewelPlatform</object>
-        <object>objects\objSplashWomanPlatformSpawner</object>
-        <object>objects\objSplashWomanPlatform</object>
-        <object>objects\objMagmaBeamSource</object>
-        <object>objects\objTornadoPlatform</object>
-        <object>objects\objWily4Laser</object>
-        <objects name="Don't Use">
-          <object>objects\objMagmaBeam</object>
-          <object>objects\objMagmaBeamParticle</object>
-        </objects>
-      </objects>
-      <objects name="MM10">
-        <object>objects\objBladeManSeeSaw</object>
-        <object>objects\objChillManBlock</object>
-        <object>objects\objCommandoMine</object>
-        <object>objects\objCompactor</object>
-        <object>objects\objMM10Conveyor</object>
-        <object>objects\objSandstormSpawner</object>
-        <object>objects\objSheepBlockB</object>
-        <object>objects\objSheepBlockG</object>
-        <object>objects\objSheepBlockR</object>
-        <object>objects\objSheepBlockY</object>
-        <object>objects\objSheepSpikeB</object>
-        <object>objects\objSheepSpikeG</object>
-        <object>objects\objSheepSpikeR</object>
-        <object>objects\objSheepSpikeY</object>
-        <object>objects\objSheepConveyor</object>
-        <object>objects\objSheepPlatform</object>
-        <object>objects\objSidewayElevator</object>
-        <object>objects\objStrikeManSoccerBall</object>
-        <object>objects\objStrikeManSpikeySoccerBall</object>
-        <object>objects\objTackleFireDispenser</object>
-        <objects name="Don't Use">
-          <object>objects\objBladeManSeeSawPlatform</object>
-          <object>objects\objSandstorm</object>
-        </objects>
-      </objects>
-      <objects name="MM&amp;B">
-        <object>objects\objAstroWall</object>
-      </objects>
-      <objects name="GB I-IV">
-        <object>objects\objAnglePlatform</object>
-        <object>objects\objBalladeMissile</object>
-        <object>objects\objFireSpike</object>
-        <object>objects\objFluorescentBulb</object>
-        <object>objects\objFusePlatform</object>
-        <object>objects\objFusePlatformStarter</object>
-        <object>objects\objFusePlatformLeft</object>
-        <object>objects\objFusePlatformRight</object>
-        <object>objects\objFusePlatformDown</object>
-        <object>objects\objFusePlatformUp</object>
-        <object>objects\objGutsHover</object>
-        <object>objects\objHunterPlatform</object>
-        <object>objects\objIcicle</object>
-        <object>objects\objIcePlatform</object>
-        <object>objects\objMoveHover</object>
-        <object>objects\objNapalm</object>
-        <object>objects\objRockPlatform</object>
-        <object>objects\objSuperCutterRevenge</object>
-        <objects name="Don't Use">
-          <object>objects\objFusePlatformDeleter</object>
-        </objects>
-      </objects>
-      <objects name="GB V">
-        <object>objects\objBubbleFloor</object>
-        <object>objects\objGirderLarge</object>
-        <object>objects\objGirderMedium</object>
-        <object>objects\objGirderSmall</object>
-        <object>objects\objGravityChangeHigh</object>
-        <object>objects\objGravityChangeLow</object>
-        <object>objects\objGravityChangeNormal</object>
-        <object>objects\objKamapotSpawner</object>
-        <object>objects\objMercuryBlockSpawner</object>
-        <object>objects\objMercuryBlock</object>
-        <object>objects\objLandmine</object>
-        <object>objects\objRoomLowGravSetter</object>
-        <object>objects\objTyhornPlatformSpawn</object>
-        <object>objects\objUranusPlatform</object>
-        <object>objects\objVenusWaterfallSpawner</object>
-        <objects name="Don't Use">
-          <object>objects\objKamapot</object>
-          <object>objects\objTyhornPlatform</object>
-          <object>objects\objUranusPlatformSegment</object>
-          <object>objects\objVenusWaterfallDrop</object>
-          <object>objects\objVenusWaterfallStart</object>
-          <object>objects\objVenusWaterfallSegment</object>
-          <object>objects\objVenusWaterfallEnd</object>
-        </objects>
-      </objects>
-      <objects name="CFTF">
-        <object>objects\objCFTFConveyor</object>
-        <object>objects\objDanganPlatform</object>
-        <object>objects\objDanganPlatformSpawner</object>
-        <object>objects\objKomusoMine</object>
-        <object>objects\objKonroPlatform</object>
-      </objects>
       <objects name="Don't Use">
         <object>objects\prtCustomCamera</object>
         <object>objects\objMovingPlatformTest</object>
@@ -6478,6 +5175,9 @@
         <object>objects\objStatusEffect</object>
         <object>objects\prtRail</object>
         <object>objects\prtRailPlatform</object>
+      </objects>
+      <objects name="Game">
+        <object>objects\objDynaConveyor</object>
       </objects>
     </objects>
     <objects name="Sections">
@@ -6547,114 +5247,119 @@
           <object>objects\objBusterShotCharged</object>
           <object>objects\objBusterShotHalfChargedProto</object>
           <object>objects\objBusterShotChargedProto</object>
-          <object>objects\objSparkChaser</object>
-          <object>objects\objLaserTrident</object>
-          <object>objects\objWaterShield</object>
-          <object>objects\objTornadoBlow</object>
-          <object>objects\objThunderBeam</object>
-          <object>objects\objMagneticShockwave</object>
-          <object>objects\objIceWall</object>
-          <object>objects\objBreakDash</object>
-          <object>objects\objRushCoil</object>
-          <object>objects\objRushJet</object>
-          <object>objects\objRushCycle</object>
-          <object>objects\objMagnetBeam</object>
-          <object>objects\objFireBall</object>
-          <object>objects\obj4MIWireAdaptor</object>
-          <objects name="Misc.">
-            <object>objects\objNormalBusterShot</object>
-            <object>objects\objTornadoEffect</object>
-            <object>objects\objBubblePopEffect</object>
-            <object>objects\objRushTeleport</object>
-            <object>objects\objRushTeleportBlock</object>
-            <object>objects\objWeaponExplosion</object>
-            <object>objects\objProtoShield</object>
-            <object>objects\objJumpColliderV2</object>
-            <object>objects\objJumpDamager</object>
-            <object>objects\objJumpCollider</object>
-            <object>objects\objBausTail</object>
-          </objects>
-          <objects name="MaGMML1">
-            <object>objects\objMetalBlade</object>
-            <object>objects\objGeminiLaser</object>
-            <object>objects\objSolarBlaze</object>
-            <object>objects\objTopSpin</object>
-            <object>objects\objThunderWool</object>
-            <object>objects\objPharaohShot</object>
-            <object>objects\objBlackHoleBomb</object>
-            <object>objects\objMagicCard</object>
-            <objects name="Misc.">
-              <object>objects\objBHBEffect</object>
+          <object>objects\objNuclearDetonator</object>
+          <object>objects\objNuclearDetonatorExplosion</object>
+          <object>objects\objSonicWaveWeapon</object>
+          <object>objects\objForceField</object>
+          <objects name="INCINERATE">
+            <object>objects\objSparkChaser</object>
+            <object>objects\objLaserTrident</object>
+            <object>objects\objWaterShield</object>
+            <object>objects\objTornadoBlow</object>
+            <object>objects\objThunderBeam</object>
+            <object>objects\objIceWall</object>
+            <object>objects\objMagneticShockwave</object>
+            <object>objects\objBreakDash</object>
+            <objects name="Other Examples">
+              <object>objects\objTimeStopper</object>
+              <object>objects\objPowerStone</object>
+              <object>objects\objPlantBarrier</object>
+              <object>objects\objBrickWeapon</object>
+              <object>objects\objIceSlasher</object>
+              <object>objects\objSkeletuppinPakkajoe</object>
+              <objects name="Misc.">
+                <object>objects\objBrickWeaponDebris</object>
+              </objects>
             </objects>
-          </objects>
-          <objects name="MaGMML2">
-            <object>objects\objHornetChaser</object>
-            <object>objects\objJewelSatellite</object>
-            <object>objects\objGrabBuster</object>
-            <object>objects\objTripleBlade</object>
-            <object>objects\objFlashStopper</object>
-            <object>objects\objSlashClaw</object>
-            <object>objects\objWheelCutter</object>
-            <object>objects\objSakugarne</object>
-            <object>objects\objWireAdapter</object>
-            <object>objects\objSuperArrow</object>
-            <objects name="Misc.">
-              <object>objects\objGrabBusterPickup</object>
-              <object>objects\objSlashEffect</object>
+            <object>objects\objRushCycle</object>
+            <object>objects\objMagnetBeam</object>
+            <objects name="MaG24HMML">
+              <object>objects\objSuperArm</object>
+              <object>objects\objChillShot</object>
+              <objects name="Misc.">
+                <object>objects\objChillSpikeLanded</object>
+                <object>objects\objChillDebris</object>
+                <object>objects\objSuperArmBlockProjectile</object>
+                <object>objects\objSuperArmDebris</object>
+              </objects>
             </objects>
-          </objects>
-          <objects name="MaG24HMML">
-            <object>objects\objSuperArm</object>
-            <object>objects\objChillShot</object>
-            <objects name="Misc.">
-              <object>objects\objChillSpikeLanded</object>
-              <object>objects\objChillDebris</object>
-              <object>objects\objSuperArmBlockProjectile</object>
-              <object>objects\objSuperArmDebris</object>
+            <objects name="Custom">
+              <object>objects\objAcornBomb</object>
+              <object>objects\objAcornBombTop</object>
+              <object>objects\objPollenScatter</object>
+              <object>objects\objPollenScatterDescent</object>
+              <object>objects\objPollenScatterPoof</object>
+              <object>objects\objFeatherFlurry</object>
+              <object>objects\objIblisHellfireFireball</object>
+              <object>objects\objIblisHellfirePillar</object>
+              <object>objects\objIblisHellfireBurnEffect</object>
+              <object>objects\objIblisHellfireDamager</object>
+              <object>objects\objIblisHellfireBurnImage</object>
+              <object>objects\objMintyFreeze</object>
+              <object>objects\objShoulderBash</object>
+              <object>objects\objMintyFreezeIceCube</object>
             </objects>
-          </objects>
-          <objects name="MaG48HMML">
-            <object>objects\objFlameMixer</object>
-            <object>objects\objRainFlush</object>
-            <object>objects\objSparkShock</object>
-            <object>objects\objSearchSnake</object>
-            <object>objects\objTenguBlade</object>
-            <object>objects\objSaltWater</object>
-            <object>objects\objConcreteShot</object>
-            <object>objects\objHomingSniper</object>
-            <objects name="Misc.">
-              <object>objects\objSparkShockParalyze</object>
-              <object>objects\objTenguDash</object>
-              <object>objects\objTenguDisk</object>
+            <object>objects\objFireBall</object>
+            <objects name="MaG48HMML">
+              <object>objects\objFlameMixer</object>
+              <object>objects\objRainFlush</object>
+              <object>objects\objSparkShock</object>
+              <object>objects\objSearchSnake</object>
+              <object>objects\objTenguBlade</object>
+              <object>objects\objSaltWater</object>
+              <object>objects\objConcreteShot</object>
+              <object>objects\objHomingSniper</object>
+              <objects name="Misc.">
+                <object>objects\objSparkShockParalyze</object>
+                <object>objects\objTenguDash</object>
+                <object>objects\objTenguDisk</object>
+              </objects>
             </objects>
-          </objects>
-          <objects name="Other Examples">
-            <object>objects\objTimeStopper</object>
-            <object>objects\objPowerStone</object>
-            <object>objects\objPlantBarrier</object>
-            <object>objects\objBrickWeapon</object>
-            <object>objects\objIceSlasher</object>
-            <object>objects\objSkeletuppinPakkajoe</object>
-            <objects name="Misc.">
-              <object>objects\objBrickWeaponDebris</object>
+            <objects name="MaGMML1">
+              <object>objects\objMetalBlade</object>
+              <object>objects\objGeminiLaser</object>
+              <object>objects\objSolarBlaze</object>
+              <object>objects\objTopSpin</object>
+              <object>objects\objThunderWool</object>
+              <object>objects\objPharaohShot</object>
+              <object>objects\objBlackHoleBomb</object>
+              <object>objects\objMagicCard</object>
+              <objects name="Misc.">
+                <object>objects\objBHBEffect</object>
+              </objects>
             </objects>
-          </objects>
-          <objects name="Custom">
-            <object>objects\objAcornBomb</object>
-            <object>objects\objAcornBombTop</object>
-            <object>objects\objPollenScatter</object>
-            <object>objects\objPollenScatterDescent</object>
-            <object>objects\objPollenScatterPoof</object>
-            <object>objects\objFeatherFlurry</object>
-            <object>objects\objIblisHellfireFireball</object>
-            <object>objects\objIblisHellfirePillar</object>
-            <object>objects\objIblisHellfireBurnEffect</object>
-            <object>objects\objIblisHellfireDamager</object>
-            <object>objects\objIblisHellfireBurnImage</object>
-            <object>objects\objMintyFreeze</object>
-            <object>objects\objShoulderBash</object>
-            <object>objects\objMintyFreezeIceCube</object>
-            <object>objects\object1369</object>
+            <objects name="MaGMML2">
+              <object>objects\objHornetChaser</object>
+              <object>objects\objJewelSatellite</object>
+              <object>objects\objGrabBuster</object>
+              <object>objects\objTripleBlade</object>
+              <object>objects\objFlashStopper</object>
+              <object>objects\objSlashClaw</object>
+              <object>objects\objWheelCutter</object>
+              <object>objects\objSakugarne</object>
+              <object>objects\objWireAdapter</object>
+              <object>objects\objSuperArrow</object>
+              <objects name="Misc.">
+                <object>objects\objGrabBusterPickup</object>
+                <object>objects\objSlashEffect</object>
+              </objects>
+            </objects>
+            <object>objects\objRushCoil</object>
+            <object>objects\obj4MIWireAdaptor</object>
+            <object>objects\objRushJet</object>
+            <objects name="Misc.">
+              <object>objects\objTornadoEffect</object>
+              <object>objects\objBubblePopEffect</object>
+              <object>objects\objRushTeleport</object>
+              <object>objects\objRushTeleportBlock</object>
+              <object>objects\objWeaponExplosion</object>
+              <object>objects\objProtoShield</object>
+              <object>objects\objJumpColliderV2</object>
+              <object>objects\objJumpDamager</object>
+              <object>objects\objJumpCollider</object>
+              <object>objects\objBausTail</object>
+              <object>objects\objNormalBusterShot</object>
+            </objects>
           </objects>
         </objects>
       </objects>
@@ -6719,6 +5424,7 @@
     <room>rooms\rmInit</room>
     <room>rooms\lvlCopyThisRoom</room>
     <room>rooms\lvlShowcaseHUB</room>
+    <room>rooms\lvlPharaohMan</room>
     <rooms name="Engine">
       <room>rooms\rmDisclaimer</room>
       <room>rooms\rmTitleScreen</room>
@@ -6746,10 +5452,7 @@
     </rooms>
     <rooms name="Custom Levels">
       <room>rooms\lvlVictoryTest</room>
-      <room>rooms\lvlEddieTest</room>
     </rooms>
-    <room>rooms\lvlGutsMan</room>
-    <room>rooms\lvlCutMan</room>
   </rooms>
   <constants number="36">
     <constant name="PL_LOCK_MAX">14</constant>

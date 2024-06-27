@@ -30,7 +30,7 @@
 image_speed = 0;
 
 //@cc
-objectToStop = objMM4ShieldAttacker;
+objectToStop = objMegaman;
 
 //@cc if true, the stopper will be detected as ground
 isGround=false;

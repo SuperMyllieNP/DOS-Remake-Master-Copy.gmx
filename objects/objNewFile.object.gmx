@@ -118,7 +118,7 @@ if (!controlsLocked)
             }
             
             // initial weapons:
-            setWeaponLocked(objRushCoil, false);
+            // sorry nothing
             
             // go to stage select
             global.nextRoom = rmStageSelect;

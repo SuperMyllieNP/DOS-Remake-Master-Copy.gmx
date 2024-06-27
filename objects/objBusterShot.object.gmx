@@ -178,27 +178,22 @@ else
     default:
     case "Mega Man":
     {
-        weaponSetup("MEGA BUSTER", -1, -1, sprWeaponIconsMegaBuster);
+        weaponSetup("MEGA BUSTER", -1, -1, sprWeaponIconsMegaBuster, "P");
         break;
     }
     case "Proto Man":
     {
-        weaponSetup("PROTO BUSTER", -1, -1, sprWeaponIconsMegaBuster);
+        weaponSetup("PROTO BUSTER", -1, -1, sprWeaponIconsMegaBuster, "P");
         break;
     }
     case "Bass":
     {
-        weaponSetup("BASS BUSTER", -1, -1, sprWeaponIconsMegaBuster);
+        weaponSetup("BASS BUSTER", -1, -1, sprWeaponIconsMegaBuster, "P");
         break;
     }
     case "Roll":
     {
-        weaponSetup("ROLL BUSTER", -1, -1, sprWeaponIconsMegaBuster);
-        break;
-    }
-    case "Mario":
-    {
-        weaponSetup("FIRE BRAND", -1, -1, sprWeaponIconsFireBrand);
+        weaponSetup("ROLL BUSTER", -1, -1, sprWeaponIconsMegaBuster, "P");
         break;
     }
 }

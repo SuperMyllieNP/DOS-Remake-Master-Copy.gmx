@@ -72,6 +72,7 @@ freshSaveFile();
         exit;
     }
     
+    /*
     if ((demoTimer++) mod 500 == 495)
     {
         if (!recordInputPlayback(
@@ -80,6 +81,8 @@ freshSaveFile();
             canProceed = false;
         exit;
     }
+    */
+    
     dir = global.keyDownPressed[0] - global.keyUpPressed[0];
     if (dir != 0)
     {

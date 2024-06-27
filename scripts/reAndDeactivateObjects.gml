@@ -23,7 +23,7 @@ if (deac)
         }
     }
     
-    var specialObjects = makeArray(objQuickSand, prtRail); // these objects behave differently, but we still want to deactivate them after a transition
+    var specialObjects = makeArray(prtRail); // these objects behave differently, but we still want to deactivate them after a transition
     var n = array_length_1d(specialObjects);
     
     with (all)

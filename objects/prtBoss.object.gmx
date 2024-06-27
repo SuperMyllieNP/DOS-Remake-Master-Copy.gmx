@@ -721,6 +721,21 @@ if (quickSpawn || global.aliveBosses &lt;= 0)
             name = other.elementName;
             script = other.elementScript;
             code = other.elementCode;
+            switch other.object_index {
+            case objDynaMan:
+            case objDynaMan_new:
+            image_index = 0
+            break
+            case objSonicMan:
+            case objSonicManNew:
+            image_index = 2
+            break
+            case objVoltMan:
+            case objVoltMan2:
+            image_index = 1
+            
+            break       
+            }
         }
     }
     else

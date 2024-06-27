@@ -30,6 +30,9 @@ if (showReady)
         readyTimer += 1;
     }
     
+    // hold slide to quick respawn
+    if(global.keySlide[playerID] && readyTimer < 72) readyTimer = 72;
+    
     var readyIndicator;
     readyIndicator = readyTimer mod 12;
     if (readyIndicator >= 6 && readyIndicator

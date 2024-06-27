@@ -3,11 +3,11 @@
 
 if (instance_exists(target))
 {
-    var angle;
-    angle = point_direction(spriteGetXCenter(), spriteGetYCenter(),
+    var ang;
+    ang = point_direction(spriteGetXCenter(), spriteGetYCenter(),
         spriteGetXCenterObject(target),
         spriteGetYCenterObject(target));
-    
+    angle = ang
     xspeed = cos(degtorad(angle)) * argument0;
     yspeed = -sin(degtorad(angle)) * argument0;
 }
