@@ -1848,6 +1848,7 @@
       <sounds name="DOSPERFECTION">
         <sound>sound\sfxVolt2Charge</sound>
         <sound>sound\sfxVolt2Launch</sound>
+        <sound>sound\sfxSonicMan2SonicMine</sound>
         <sound>sound\sfxVolt2Loop</sound>
       </sounds>
     </sounds>
@@ -3752,19 +3753,6 @@
         </sprites>
       </sprites>
       <sprites name="DOS">
-        <sprites name="Dyna">
-          <sprite>sprites\sprDynaMan</sprite>
-          <sprite>sprites\sprDynaManIntro</sprite>
-          <sprite>sprites\sprDynaDynamite</sprite>
-        </sprites>
-        <sprites name="Sonic">
-          <sprite>sprites\sprSonicMan</sprite>
-          <sprite>sprites\sprSonicManWave</sprite>
-          <sprite>sprites\sprSonicManWaveRebound</sprite>
-          <sprite>sprites\mskSonicMan</sprite>
-          <sprite>sprites\sprSonicManMine</sprite>
-          <sprite>sprites\sprSonicPose</sprite>
-        </sprites>
         <sprites name="Volt">
           <sprite>sprites\sprVoltMask</sprite>
           <sprite>sprites\sprVoltIdle</sprite>
@@ -3776,6 +3764,15 @@
           <sprite>sprites\sprVoltBarrier</sprite>
           <sprite>sprites\sprVoltTossedShield</sprite>
           <sprite>sprites\sprVoltShot</sprite>
+        </sprites>
+        <sprites name="Sonic">
+          <sprite>sprites\sprSonicMan</sprite>
+          <sprite>sprites\sprSonicManMine</sprite>
+        </sprites>
+        <sprites name="Dyna">
+          <sprite>sprites\sprDynaDynamite</sprite>
+          <sprite>sprites\sprDynaMan</sprite>
+          <sprite>sprites\sprDynaManIntro</sprite>
         </sprites>
       </sprites>
       <sprites name="DOSPERFECTION">
@@ -3789,7 +3786,20 @@
           <sprite>sprites\sprVolt2TossedShield</sprite>
           <sprite>sprites\sprVolt2Intro</sprite>
         </sprites>
-        <sprite>sprites\sprDynaExplosion</sprite>
+        <sprites name="Sonic">
+          <sprite>sprites\sprSonicMan2</sprite>
+          <sprite>sprites\sprSonicManWave2</sprite>
+          <sprite>sprites\sprSonicManWaveRebound2</sprite>
+          <sprite>sprites\mskSonicMan2</sprite>
+          <sprite>sprites\sprSonicManMine2</sprite>
+          <sprite>sprites\sprSonicPose2</sprite>
+        </sprites>
+        <sprites name="Dyna">
+          <sprite>sprites\sprDynaMan2</sprite>
+          <sprite>sprites\sprDynaManIntro2</sprite>
+          <sprite>sprites\sprDynaDynamite2</sprite>
+          <sprite>sprites\sprDynaExplosion2</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Gimmicks">
@@ -5091,14 +5101,12 @@
     </objects>
     <objects name="Bosses">
       <objects name="DOS">
+        <object>objects\objVoltMan</object>
         <object>objects\objDynaMan</object>
         <object>objects\objSonicMan</object>
-        <object>objects\objSonicManNew</object>
-        <object>objects\objVoltMan</object>
         <objects name="Projectiles">
           <object>objects\objDynaDynamite</object>
           <object>objects\objSonicMine</object>
-          <object>objects\objSonicWave</object>
           <object>objects\objVoltBarrier</object>
           <object>objects\objVoltmanDischarge</object>
           <object>objects\objVoltmanShot</object>
@@ -5106,12 +5114,16 @@
       </objects>
       <objects name="DOSPERFECTION">
         <object>objects\objVoltMan2</object>
+        <object>objects\objDynaMan2</object>
+        <object>objects\objSonicMan2</object>
         <objects name="Projectiles">
+          <object>objects\objSonicMine2</object>
           <object>objects\objVoltmanDischarge2</object>
           <object>objects\objVoltmanShot2</object>
           <object>objects\objVoltRoofDetector2</object>
+          <object>objects\objSonicWave2</object>
+          <object>objects\objDynaDynamite2</object>
         </objects>
-        <object>objects\objDynaMan_new</object>
       </objects>
     </objects>
     <objects name="Gimmicks">
@@ -5423,6 +5435,7 @@
   <rooms name="rooms">
     <room>rooms\rmInit</room>
     <room>rooms\lvlCopyThisRoom</room>
+    <room>rooms\lvlBossCompareTest</room>
     <room>rooms\lvlShowcaseHUB</room>
     <room>rooms\lvlPharaohMan</room>
     <rooms name="Engine">

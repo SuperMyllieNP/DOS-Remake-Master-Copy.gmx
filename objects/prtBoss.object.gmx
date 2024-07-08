@@ -723,11 +723,11 @@ if (quickSpawn || global.aliveBosses &lt;= 0)
             code = other.elementCode;
             switch other.object_index {
             case objDynaMan:
-            case objDynaMan_new:
+            case objDynaMan2:
             image_index = 0
             break
             case objSonicMan:
-            case objSonicManNew:
+            case objSonicMan2:
             image_index = 2
             break
             case objVoltMan:
