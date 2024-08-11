@@ -31,7 +31,7 @@ faction = 1;
 shiftVisible = 2;
 
 despawnRange = -1;
-
+global.hydroHit= false
 stopOnFlash = 0;
 
 killOverride = false;
@@ -494,7 +494,8 @@ global.damage *= contactDamageMultiplier;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>playerGetHit(global.damage);
+            <string>if place_meeting(x,bbox_bottom+16,objBitManYoku) &amp;&amp; ground y += 2
+playerGetHit(global.damage);
 </string>
           </argument>
         </arguments>

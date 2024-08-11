@@ -35,6 +35,7 @@ image_speed = 1 / 6;
 stopOnFlash = false;
 
 collectMe = false;
+angle = 0
 </string>
           </argument>
         </arguments>
@@ -58,7 +59,7 @@ collectMe = false;
           <argument>
             <kind>1</kind>
             <string>event_inherited();
-
+image_xscale = 1
 if (!global.frozen)
 {
     if (collectMe)
@@ -73,16 +74,38 @@ if (!global.frozen)
         }
     }
     else
-    {
-        if (image_index &gt; 1)
-        {
-            image_index = 0;
-        }
+    {var imageAmount = (sprite_get_number(sprite_index) - 1)
+    var angleOffset = 15
+            if ((angle &gt;= (360 - angleOffset)) || (angle &lt; angleOffset))
+        var refAngle = 0
+    else if ((angle &gt;= angleOffset) &amp;&amp; (angle &lt; (45 + angleOffset)))
+        refAngle = 45
+    else if ((angle &gt;= (45 + angleOffset)) &amp;&amp; (angle &lt; (90 + angleOffset)))
+        refAngle = 90
+    else if ((angle &gt;= (90 + angleOffset)) &amp;&amp; (angle &lt; (135 + angleOffset)))
+        refAngle = 135
+    else if ((angle &gt;= (135 + angleOffset)) &amp;&amp; (angle &lt; (180 + angleOffset)))
+        refAngle = 180
+    else if ((angle &gt;= (180 + angleOffset)) &amp;&amp; (angle &lt; (225 + angleOffset)))
+        refAngle = 225
+    else if ((angle &gt;= (225 + angleOffset)) &amp;&amp; (angle &lt; (270 + angleOffset)))
+        refAngle = 270
+    else if ((angle &gt;= (270 + angleOffset)) &amp;&amp; (angle &lt; (315 + angleOffset)))
+        refAngle = 315
+    else
+        refAngle = 0
+    baseImage = (floor((refAngle / 45)) * 2)
+    
+    text="Thanks to mmm devs for this code:)"
+    animImage =0
+    
+    image_index = (baseImage + animImage)
         if (xcoll != 0 || ycoll != 0)
         {
             expl = instance_create(x, y, objHarmfulExplosion);
             expl.contactDamage = 4;
             expl.stopOnFlash = false;
+            expl.sprite_index = sprDynaExplosion
             playSFX(sfxExplosion);
             instance_destroy();
         }

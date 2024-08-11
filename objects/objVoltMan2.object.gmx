@@ -37,12 +37,13 @@ reflectProjectilesLeft = false;
 blockCollision = true;
 
 ground = false;
-
+guardCancel = 0
 pose = sprVolt2Intro;
 poseImgSpeed = 8/60;
 attackTimer = 0;
 phase = 0;
 myGrav = 1;
+introType = 1
 jumpsMade = 0;
 jumpsMax = 3;
 redetectRoof = 0;
@@ -146,9 +147,19 @@ enemyDamageValue(objIceSlasher, 1);
           <argument>
             <kind>1</kind>
             <string>event_inherited();
-
+if !global.frozen 
+if startIntro  {
+        y = ystart
+        canFillHealthBar = false;
+        image_index = 2;
+        startIntro = false;
+        isIntro = true;
+        visible = true;
+        calibrateDirection();
+    }
 if entityCanStep()
 {
+
     if isFight {
     
         image_speed = 0;
@@ -157,9 +168,11 @@ if entityCanStep()
 
         if (instance_exists(objVoltBarrier))
         {
+            guardCancel = 3
             objVoltBarrier.x = x;
             objVoltBarrier.y = y - 4;
         }
+        else guardCancel = 0
         
         switch phase {
           case 0: // get into the shocker
@@ -424,6 +437,29 @@ else
     image_speed = 0;
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="21">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>other.guardCancel = guardCancel
 </string>
           </argument>
         </arguments>
