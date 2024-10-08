@@ -133,6 +133,7 @@ if (global.livesRemaining &lt;= 0 &amp;&amp; global.livesEnabled &amp;&amp; glob
         global.nextRoom = rmGameOver;
     }
 }
+
 </string>
           </argument>
         </arguments>
@@ -820,9 +821,6 @@ if (!global.frozen)
         global.shakeFactorY = 0;
     }
 }
-
-// hold slide to quick respawn
-if(global.keySlide[0] &amp;&amp; alarm[0] &gt; 1) alarm[0] = 1;
 </string>
           </argument>
         </arguments>

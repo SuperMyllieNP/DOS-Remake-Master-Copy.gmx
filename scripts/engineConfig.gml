@@ -14,10 +14,10 @@ global.screenHeight = 224;
 paletteSetup();
 
 // Can the player charge the buster? (MM4 and onward)
-global.enableCharge = false;
+global.enableCharge = true;
 
 // Can the player slide? (MM3 and onward)
-global.enableSlide = false;
+global.enableSlide = true;
 
 // what kind of print() warning levels should be displayed?
 global.warningLevel = WL_ERR;

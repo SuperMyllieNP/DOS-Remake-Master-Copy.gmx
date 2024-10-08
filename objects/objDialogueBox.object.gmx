@@ -271,28 +271,18 @@ offset += 1;
 var ypos = view_yview - 8 * boxOffset;
 if (pos == 1)
 {
-    ypos = view_yview + view_hview + 8 * boxOffset;
+    ypos = view_yview + view_hview - 64;
 }
-draw_sprite_part_ext(sprDialogueBox, 0, 0, 0, 48, 64, view_xview[0], ypos, 1, 1, image_blend, image_alpha); // mugshot section
-draw_sprite_part_ext(sprDialogueBox, 0, 48, 0, 1, 64, view_xview[0] + 48, ypos, view_wview[0] - 56, 1, image_blend, image_alpha); // content section
-draw_sprite_part_ext(sprDialogueBox, 0, 48, 0, 8, 64, view_xview[0] + view_wview[0] - 8, ypos, 1, 1, image_blend, image_alpha); // right border
-
-draw_sprite_part(sprDialogueBox, 0, 1, 4, 2, 4, view_xview + 4 + (floor(offset / 8) mod 10) * 2, ypos + 4); // moving light
-
+draw_set_color(c_black)
+draw_rectangle(0,ypos,room_width,room_height,false)
+draw_set_color(c_white)
 // text
 if (showtext)
 {
-    draw_sprite_part(sprite_index, -1, 0, 0, 32, 32, view_xview[0] + 5, ypos + 18);
-    
     draw_set_halign(fa_left);
     draw_set_valign(fa_left);
     draw_set_color(c_white);
-    
-    if (string_length(name)) // Draw name
-    {
-        draw_text_colour(view_xview[0] + 43, ypos + 6, name, nameCol, nameCol, nameCol, nameCol, 1);
-    }
-    
+
     // These variables checks if the current line reaches over the boundry.
     var line = 0;
     var length = floor((view_wview[0] - 56) / 8);
@@ -370,7 +360,7 @@ if (showtext)
         }
         
         // Finally draw a single letter *clap*
-        draw_text_colour(view_xview[0] + 43 + (count * 8) + xd, ypos + 19 + (line * 8) + yd, drawChar, colour, colour, colour, colour, 1);
+        draw_text_colour(view_xview[0] + 8 + (count * 8) + xd, ypos + 19 + (line * 8) + yd, drawChar, colour, colour, colour, colour, 1);
         
         count += 1;
     }

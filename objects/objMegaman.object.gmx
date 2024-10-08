@@ -32,6 +32,8 @@ shiftVisible = 2;
 
 despawnRange = -1;
 global.hydroHit= false
+global.megaOil = false
+oilTimer = 7*60
 stopOnFlash = 0;
 
 killOverride = false;
@@ -311,6 +313,18 @@ if paletteRefresh == 0
     case "Baus":
         playerStepEventBaus();
         break;   
+}
+if global.megaOil {
+       inked= true
+    if !global.frozen {
+    
+        oilTimer--
+        if oilTimer &lt;= 0 {
+            oilTimer = 7*60
+            global.megaOil = false
+            inked = false
+        }
+    }
 }
 </string>
           </argument>

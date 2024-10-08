@@ -45,8 +45,9 @@ phase = 0;
 myGrav = 1;
 introType = 1
 jumpsMade = 0;
-jumpsMax = 3;
+jumpsMax = 1;
 redetectRoof = 0;
+turns = 0
 chargeSound = false;
 
 attackTimerMax[0] = 80;
@@ -288,7 +289,7 @@ if entityCanStep()
                             instance_destroy();
                     }
                 }
-                sprite_index = sprVolt2Shoot;
+                sprite_index = sprVolt2Jump;
                 with (objVoltRoofDetector2)
                     instance_destroy();
             }
@@ -350,7 +351,11 @@ if entityCanStep()
                 image_index = 0;
                 attackTimer = 0;
                 jumpsMade = 0;
-                jumpsMax = choose(1,2,3);
+                
+                if turns == 0
+                jumpsMax = 4;
+                else if turns == 1 jumpsMax = 3
+                turns++
             }
             break;
           case 3: // jumping
@@ -361,10 +366,10 @@ if entityCanStep()
                 sprite_index = sprVolt2Idle;
                 xspeed = 0;
             }
-            if (ground == true &amp;&amp; jumpsMade &lt; jumpsMax &amp;&amp; attackTimer &gt; 5)
+            if (ground == true &amp;&amp; jumpsMade &lt; jumpsMax) &amp;&amp; attackTimer &gt;= 5
             {
-                yspeed = (irandom_range(-14,-16)/2.5);
-                xspeed = (irandom_range(4,6)/2.5) * image_xscale;
+                yspeed = (random_range(-14,-16)/2.5);
+                xspeed = (random_range(2.95,4.42)/1/3) * image_xscale;
                 sprite_index = sprVolt2Jump;
                 image_index = 0;
                 jumpsMade += 1;

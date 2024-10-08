@@ -335,6 +335,7 @@ if (!global.frozen)
                     }
                     else
                     {
+                        if image_index &lt; 2.3 playSFX(sfxClamp)
                         image_index += .15;
                         if (image_index &gt;= 8)
                             image_index = 4;

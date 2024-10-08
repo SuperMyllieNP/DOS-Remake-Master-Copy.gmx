@@ -139,6 +139,14 @@ letterMap[18] = "L";
 letterMap[19] = "T";
 
 allowExtraOptions = false;
+for (var i = 0; i &lt; array_length_1d(letterMap)-11;i++) {
+    if i &lt; 10
+    global.weaponLetter[i]= letterMap[i+10]
+    else global.weaponLetter[i]= "P"
+    global.weaponIcon[i] = letterMap[i]
+}
+global.weaponLetter[array_length_1d(letterMap)-10]= global.livesRemaining
+global.weaponLetter[array_length_1d(letterMap)-9]= global.eTanks
 </string>
           </argument>
         </arguments>

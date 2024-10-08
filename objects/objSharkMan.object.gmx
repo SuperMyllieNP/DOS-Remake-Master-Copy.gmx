@@ -291,6 +291,7 @@ if (entityCanStep())
                 {
                     if (timer == 1)
                     {
+                        playSFX(sfxSharkBite)
                         image_index = 2;
                         calibrateDirection();
                         xspeed = 0;

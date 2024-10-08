@@ -137,10 +137,12 @@ enemyDamageValue(objIceSlasher, 1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited()
-if !global.frozen {
-if startIntro  {
-        y = ystart
+            <string>event_inherited();
+if (!global.frozen)
+{
+    if (startIntro)
+    {
+        y = ystart;
         canFillHealthBar = false;
         image_index = 2;
         startIntro = false;
@@ -149,56 +151,65 @@ if startIntro  {
         calibrateDirection();
     }
 }
-if entityCanStep() {
-if isFight {
-switch phase {
-case 0:
+if (entityCanStep())
+{
+    if (isFight)
+    {
+        switch (phase)
+        {
+            case 0:
+                if (instance_exists(objMegaman))
+                    if (distance_to_point(objMegaman.x, y) &lt; 20)
+                    {
+                        phase = 1;
+                        calibrateDirection();
+                        playSFX(sfxFishSlash)
+                    }
+                    else
+                    {
+                        image_speed = 0.15;
+                        xspeed = 2 * image_xscale;
+                        sprite_index = sprFishWalk;
+                        if (place_meeting(x + xspeed, y, objSolid))
+                            image_xscale *= -1;
+                    }
+                else
+                {
+                    image_speed = 0.15;
+                    xspeed = 2 * image_xscale;
+                    sprite_index = sprFishWalk;
+                    if (place_meeting(x + xspeed, y, objSolid))
+                        image_xscale *= -1;
+                }
+                break;
+            case 1:
+                timer = 0;
+                xspeed = 0;
+                sprite_index = sprFishSlash;
+                image_speed = .25;
+                if (image_index &gt;= image_number - 1)
+                {
+                    phase = 2;
+                    image_speed = 0;
+                    calibrateDirection();
+                }
+                break;
+            case 2:
+                sprite_index = sprFishStand;
+                timer++;
+                if (timer &gt; 30)
+                {
+                    timer = 0;
+                    phase = 0;
+                    image_speed = 0.15;
+                }
+                break;
+        }
+    }
+}
+else
+    image_speed = 0;
 
-if instance_exists(objMegaman)
-if distance_to_point(objMegaman.x,y) &lt; 20  {
-phase = 1
-calibrateDirection()
-}
-else {
-image_speed = 0.15
-xspeed = 2 * image_xscale
-sprite_index = sprFishWalk
-if place_meeting(x+xspeed,y,objSolid) image_xscale *= -1
-}
-else {
-image_speed = 0.15
-xspeed = 2 * image_xscale
-sprite_index = sprFishWalk
-if place_meeting(x+xspeed,y,objSolid) image_xscale *= -1
-}
-break
-case 1:
-timer = 0
-xspeed = 0
-sprite_index = sprFishSlash
-image_speed = .25
-if image_index &gt;= image_number - 1 {
-
-phase = 2
-image_speed= 0
-calibrateDirection()
-}
-break
-case 2:
-sprite_index = sprFishStand
-timer++
-if timer &gt; 30 {
-timer = 0
-phase = 0
-image_speed = 0.15
-}
-break
-}
-
-
-}
-
-}else image_speed = 0
 </string>
           </argument>
         </arguments>

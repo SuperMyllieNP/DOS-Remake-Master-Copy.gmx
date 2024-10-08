@@ -204,7 +204,7 @@ if (entityCanStep())
                     if timer == 1 image_index = 4
                     if timer == 10 image_index = 5
                     if timer == 20 {
-                    
+                    playSFX(sfxHydroShoot)
                         image_index = 6
                         if image_xscale == 1 {
                             with instance_create(x,y,objHydroWater) {
@@ -311,7 +311,7 @@ if (entityCanStep())
                     }
                 break
                 case 5:
-                
+                    playSFX(sfxHydroPunch)
                     timer++
                     if timer == 10 image_index = 8
                     if timer == 20 image_index = 9

@@ -87,6 +87,7 @@ if (entityCanStep())
                      if objMegaman.bbox_bottom &gt;= bbox_top &amp;&amp; objMegaman.bbox_bottom &lt;= bbox_bottom + 10{
                     timer = 0
                     sprite_index = sprWalkRoseShoot
+                    playSFX(sfxWalkingRoseShoot)
                     }
                     else timer =0 
                 }

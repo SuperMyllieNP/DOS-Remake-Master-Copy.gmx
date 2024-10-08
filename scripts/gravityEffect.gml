@@ -9,7 +9,9 @@ if (!ground)
     if (object_index == objMegaman)
     {
         grav = (gravAccel * gravfactor * gravDir) * !playerIsLocked(PL_LOCK_GRAVITY);
+        if !global.megaOil
         waterGrav = (gravWater * gravfactor * gravDir) * !playerIsLocked(PL_LOCK_GRAVITY);
+        else waterGrav = ((gravWater * gravfactor * gravDir)* 1.8) * !playerIsLocked(PL_LOCK_GRAVITY);
     }
     
     if (inWater)

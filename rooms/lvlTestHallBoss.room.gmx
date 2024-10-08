@@ -192,6 +192,7 @@ with(prtBoss)
     <instance objName="objSectionArrowUp" x="11872" y="176" name="inst_90417727" locked="0" code="" scaleX="1" scaleY="4.26666688919067" colour="4294967295" rotation="0"/>
     <instance objName="objSectionArrowUp" x="12128" y="176" name="inst_A4BA69C6" locked="0" code="" scaleX="1" scaleY="4.26666688919067" colour="4294967295" rotation="0"/>
     <instance objName="objSectionArrowUp" x="12368" y="176" name="inst_7E7979CF" locked="0" code="" scaleX="1" scaleY="4.26666688919067" colour="4294967295" rotation="0"/>
+    <instance objName="objSonicMan" x="12240" y="160" name="inst_990CA68F" locked="0" code="useEndStageBehavior = false;&#xA;itemDrop = objYashichi;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objVoltMan" x="12496" y="176" name="inst_458F983E" locked="0" code="itemDrop = objEnergyElement;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWater" x="12032" y="0" name="inst_AC635FFE" locked="0" code="" scaleX="16" scaleY="14" colour="4294967295" rotation="0"/>
     <instance objName="objTeleporter" x="336" y="176" name="inst_8692D3C7" locked="0" code="X = 10000+16;&#xA;Y = 176;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -100,7 +100,4 @@ else // Setup of each of the weapons
     global.weaponID[? obj] = global.totalWeapons;
     global.weaponObject[global.totalWeapons] = obj;
     global.weaponHotbar[global.totalWeapons] = global.totalWeapons;
-    
-    if(argument_count >= 5) global.weaponLetter[global.totalWeapons] = argument[4];
-    else global.weaponLetter[global.totalWeapons] = "";
 }

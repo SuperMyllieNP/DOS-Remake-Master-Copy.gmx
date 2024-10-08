@@ -67,9 +67,11 @@ if ground {
 xspeed =0
 image_index = 2
 timer++
+if timer == 1 playSFX(sfxHydroSplash)
 if timer == 10 {xspeed = 1 * image_xscale
 yspeed = -4
 timer = 1
+
 }
 }
 else {

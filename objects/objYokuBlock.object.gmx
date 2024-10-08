@@ -53,7 +53,7 @@ neverDespawn = true;
 wait = 120;
 
 //@cc the sprite to use (optional)
-sprite = noone;
+sprite = sprYokuBitMan;
 
 //@cc if false no sound will play once it appears (optional)
 doSFX = true;

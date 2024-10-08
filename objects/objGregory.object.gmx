@@ -36,6 +36,7 @@ xspeed= 0
 yspeed= 0
 phase = 0
 timer = 0
+bark = choose(true,false,false)
 </string>
           </argument>
         </arguments>
@@ -90,6 +91,7 @@ if (entityCanStep())
             phase = 1
             yspeed = -4
             xspeed = 2 * image_xscale
+            if bark playSFX(sfxGregoryBark)
             }
         break
         case 1:
@@ -104,6 +106,7 @@ if (entityCanStep())
         image_index = image_number-1
         calibrateDirection()
         timer = 0
+        bark = choose(true,false,false)
         phase = 0
         }
         break

@@ -26,7 +26,7 @@ if (!playerIsLocked(PL_LOCK_MOVE))
             else
             {
                 if (place_meeting(x, y + gravDir, objIce)
-                    || (instance_exists(statusObject) && statusObject.statusOnIce)) // Ice
+                    || (instance_exists(statusObject) && statusObject.statusOnIce)) ||global.megaOil// Ice
                 {
                     if (xspeed * image_xscale < walkSpeed)
                     {
@@ -45,7 +45,7 @@ if (!playerIsLocked(PL_LOCK_MOVE))
             if (xspeed != 0)
             {
                 if (!place_meeting(x, y + gravDir, objIce)
-                    && !(instance_exists(statusObject) && statusObject.statusOnIce)) // Normal physics
+                    && !(instance_exists(statusObject) && statusObject.statusOnIce)) && !global.megaOil// Normal physics
                 {
                     xspeed = 0;
                 }

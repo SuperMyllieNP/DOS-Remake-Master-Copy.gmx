@@ -87,6 +87,7 @@ if (entityCanStep())
                 if objMegaman.x &lt; x &amp;&amp; image_xscale == -1 || objMegaman.x &gt; x &amp;&amp; image_xscale== 1 {
                     xspeed= 0 
                     timer = 0
+                    playSFX(sfxTrapBite)
                     sprite_index = sprFlytrapChomp
                 }
                 
