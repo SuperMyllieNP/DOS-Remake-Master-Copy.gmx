@@ -82,7 +82,6 @@ spawnN = 0;
 spawnedCount = 0;
 
 alarm[0] = 1;
-//
 
 canHit = false;
 image_speed = 0;
@@ -156,10 +155,7 @@ if (entityCanStep())
         if (allowSpawn)
         {
             // spawn the object:
-	var j = 0;
-if image_xscale = 1 j = view_xview[0]
-else j = view_xview[0]+256
-            var obj = instance_create(j+image_xscale*15, y + 8, object);
+            var obj = instance_create(x + 8, y + 8, object);
             pastObjId = obj
             // keep tally if counting own:
             if (countOwn)
