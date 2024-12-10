@@ -77,9 +77,6 @@
     <instance objName="objSpike" x="80" y="192" name="inst_E17CD2AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpike" x="160" y="192" name="inst_60840058" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpike" x="176" y="192" name="inst_A1127497" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPetrolManMarker" x="32" y="144" name="inst_664232CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPetrolManMarker" x="128" y="144" name="inst_3FCC4B76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPetrolManMarker" x="224" y="144" name="inst_C1869826" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPetrolPlatform" x="80" y="160" name="inst_562AC220" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPetrolPlatform" x="160" y="160" name="inst_D07CFF38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPetrolPlatform" x="176" y="160" name="inst_5E3CD8F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

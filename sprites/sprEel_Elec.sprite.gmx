@@ -2,7 +2,7 @@
 <sprite>
   <type>0</type>
   <xorig>26</xorig>
-  <yorigin>14</yorigin>
+  <yorigin>8</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
@@ -26,7 +26,5 @@
     <frame index="3">images\sprEel_Elec_3.png</frame>
     <frame index="4">images\sprEel_Elec_4.png</frame>
     <frame index="5">images\sprEel_Elec_5.png</frame>
-    <frame index="6">images\sprEel_Elec_6.png</frame>
-    <frame index="7">images\sprEel_Elec_7.png</frame>
   </frames>
 </sprite>
