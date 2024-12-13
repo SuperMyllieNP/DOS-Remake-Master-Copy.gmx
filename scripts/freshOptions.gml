@@ -25,7 +25,7 @@ global.showColoredTextOverlaysBlue = 1;
 global.showColoredTextOverlaysOpacity = 1;
 global.vsync = 0;
 
-global.playerSpriteMax = 5;
+global.playerSpriteMax = 4;
 for (i = 0; i < global.playerSpriteMax; i += 1)
 {
     global.playerSprite[i] = sprRockman;
@@ -33,12 +33,6 @@ for (i = 0; i < global.playerSpriteMax; i += 1)
 global.playerSprite[1] = sprProtoman;
 global.playerSprite[2] = sprBass;
 global.playerSprite[3] = sprRoll;
-global.playerSprite[4] = sprMario;
-global.playerSprite[5] = sprBaus;
-//global.playerSprite[6] = sprFermata;
-//global.playerSprite[7] = sprMetool;
-//global.playerSprite[8] = sprQuote;
-global.playerSprite[9] = sprBassAlt;
 
 // Options - Default values
 for (i = 0; i < 4; i += 1)

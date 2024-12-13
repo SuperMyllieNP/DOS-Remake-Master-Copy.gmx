@@ -32,9 +32,10 @@ healthpoints = healthpointsStart;
 contactDamage = 4;
 grav = 0;
 init = true
-xspeed= .5
-yspeed= .5
+xspeed= 0
+yspeed= 0
 phase = 0
+timer = 0
 
 </string>
           </argument>
@@ -82,6 +83,7 @@ else if (dead)
 {
     //reset custom variables here!
     timer = 0
+    image_speed  = 0;
     image_index = 0;
 }
 </string>

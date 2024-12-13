@@ -133,7 +133,6 @@ if (global.livesRemaining &lt;= 0 &amp;&amp; global.livesEnabled &amp;&amp; glob
         global.nextRoom = rmGameOver;
     }
 }
-
 </string>
           </argument>
         </arguments>

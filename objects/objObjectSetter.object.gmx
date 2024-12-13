@@ -294,13 +294,23 @@ obj[5] = objWater;
 obj[6] = objBossBarrier;
 obj[7] = objBossDoor;
 obj[8] = objBossDoorVertical;
+obj[9] = objLineHorizontalDrop;
 obj[10] = objStandSolid;
 obj[11] = objSlopeR;
 obj[12] = objSlopeL;
 obj[13] = objSlopeRLong;
 obj[14] = objSlopeLLong;
 obj[15] = objDamageSpike;
-
+obj[16] = objLiftRail;
+obj[17] = objLiftHole;
+obj[18] = objLiftEnd;
+obj[19] = objLineVertical;
+obj[20] = objLineHorizontal;
+obj[21] = objLineTopLeft;
+obj[22] = objLineTopRight;
+obj[23] = objLineBottomLeft;
+obj[24] = objLineBottomRight;
+obj[25] = objLineVerticalDrop;
 obj_n = array_length_1d(obj);
 
 // scan key for objects

@@ -90,7 +90,7 @@ parent.hitTimer = 0;
 
 if(entityCanStep())
 {
-    if(parent)
+    if instance_exists(parent)
     {
         image_xscale = parent.image_xscale;
         image_yscale = parent.image_yscale;
@@ -124,7 +124,7 @@ if(entityCanStep())
 
 if(entityCanStep())
 {
-    if(parent)
+    if instance_exists(parent)
     {
         parent.hitTimer = -9999;
     }
@@ -207,7 +207,7 @@ if (!playerIsLocked(PL_LOCK_SHOOT) &amp;&amp; global.keyShootPressed[playerID] &
     if(!myBarrier)
     {
         i = fireWeapon(0, 0, objForceField, 1, 0, 1, 0);
-        if (i)
+        if instance_exists(i)
         {
             i.image_xscale = image_xscale;
             i.image_yscale = image_yscale;
@@ -242,7 +242,7 @@ if (!playerIsLocked(PL_LOCK_SHOOT) &amp;&amp; global.keyShootPressed[playerID] &
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>weaponSetup("FORCE FIELD", make_color_rgb(228,0,88), make_color_rgb(255,169,254), sprWeaponIconsForceField, "V");
+            <string>weaponSetup("FORCE FIELD", make_color_rgb(228,0,88), make_color_rgb(255,169,254), sprWeaponIconsForceField);
 </string>
           </argument>
         </arguments>
@@ -266,6 +266,7 @@ if (!playerIsLocked(PL_LOCK_SHOOT) &amp;&amp; global.keyShootPressed[playerID] &
           <argument>
             <kind>1</kind>
             <string>/// nope
+
 </string>
           </argument>
         </arguments>

@@ -172,7 +172,7 @@ if (!global.frozen)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>weaponSetup("WATER SHOOTER", make_color_rgb(0, 128, 136), make_color_rgb(0, 255, 255), sprWeaponIconsWaterShooter);
+            <string>weaponSetup("WATER SHOOTER", make_color_rgb(0, 128, 136), make_color_rgb(0, 255, 255), sprWeaponIconsWaterShooter, "W");
 </string>
           </argument>
         </arguments>

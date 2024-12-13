@@ -1,0 +1,64 @@
+// 2024-12-08 14:54:20
+#event properties (no comments/etc. here are saved)
+parent_index = prtEntity;
+sprite_index = sprBaZSentry;
+uses_physics = false;
+
+#event create
+event_inherited();
+
+healthpointsStart = 1;
+healthpoints = healthpointsStart;
+contactDamage = 0;
+grav = 0;
+init = true
+xspeed= 0
+yspeed= 0
+phase = 0
+timer = 0
+canhit= true
+
+#event step
+if (init)
+{
+    gib = -10
+    init = 0;
+    //set specific variables to make obj more unique
+}
+event_inherited();
+
+if (entityCanStep())
+{
+if instance_exists(gib) {
+with gib instance_destroy()
+}
+ timer++;
+if(timer == 120 && instance_exists(objMegaman) && abs(target.x - x) < 80)
+{
+    timer = 0;
+    with(instance_create(x,y,objEnemyBullet)) {
+    sprite_index = sprWall_Cannon_Ball
+    {
+        if instance_exists(objMegaman)
+{
+  dir = point_direction(x,y,objMegaman.x,bboxGetYCenterObject(objMegaman)); // get the angle the bullet has to fly
+  spd = 6
+}
+    }
+}
+
+        }
+{ 
+  image_speed = 0.125
+            }
+if(timer >= 200) timer = 0;
+}
+else if (dead)
+{
+    //reset custom variables here!
+    image_index = 0;
+if !instance_exists(gib) {
+    var g = instance_create(x,y,objBaZSentryDED);
+   gib = g
+}
+}

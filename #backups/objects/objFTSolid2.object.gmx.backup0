@@ -1,0 +1,4 @@
+// 2024-12-09 19:13:24
+#event properties (no comments/etc. here are saved)
+parent_index = objSolid;
+uses_physics = false;

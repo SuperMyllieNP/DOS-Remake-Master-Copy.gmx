@@ -50,12 +50,6 @@ else if instance_exists(parent)
             dir = 0;
             break;
         }
-        case "Mario": 
-        {
-            scrBusterMario_Create();
-            dir = 0;
-            break;
-        }
     }
 }
 </string>
@@ -90,11 +84,6 @@ if (!global.frozen &amp;&amp; object_index != objNormalBusterShot &amp;&amp; ins
         case "Bass": 
         {
             scrBusterBass_Step();
-            break;
-        }
-        case "Mario": 
-        {
-            scrBusterMario_Step();
             break;
         }
     }
@@ -142,12 +131,6 @@ else
         case "Proto Man":
         {
             scrBusterProto_14();
-            break;
-        }
-        case "Mario":
-        {
-            scrBusterMario_14();
-            break;
         }
     }
 }
@@ -194,11 +177,6 @@ else
     case "Roll":
     {
         weaponSetup("ROLL BUSTER", -1, -1, sprWeaponIconsMegaBuster);
-        break;
-    }
-    case "Mario":
-    {
-        weaponSetup("FIRE BRAND", -1, -1, sprWeaponIconsFireBrand);
         break;
     }
 }

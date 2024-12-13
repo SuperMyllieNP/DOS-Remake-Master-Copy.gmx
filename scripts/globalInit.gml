@@ -231,6 +231,3 @@ global.factionStance[7, 7] = 0;
 global.roomExternalCache = ds_map_create();
 global.roomExternalFileName = ds_map_create();
 global.roomExternalSetupMap = ds_map_create();
-
-//Other Variables
-global.MMBColor = false;

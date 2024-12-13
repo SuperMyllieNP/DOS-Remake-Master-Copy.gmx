@@ -14,10 +14,10 @@ global.screenHeight = 224;
 paletteSetup();
 
 // Can the player charge the buster? (MM4 and onward)
-global.enableCharge = true;
+global.enableCharge = false;
 
 // Can the player slide? (MM3 and onward)
-global.enableSlide = true;
+global.enableSlide = false;
 
 // what kind of print() warning levels should be displayed?
 global.warningLevel = WL_ERR;
@@ -27,7 +27,7 @@ global.warningLevel = WL_ERR;
 global.respawnDonateThreshold = 5;
 
 // if this is set to false, 1-ups restore health to full and game overs do not occur.
-global.livesEnabled = false;
+global.livesEnabled = true;
 
 // number of lives before getting a game over.
 global.defaultLives = 2;

@@ -113,11 +113,11 @@ if (myItem &gt;= 0)
             }
             else if (randItem &lt; 120)
             {
-                item = choose(objLifeEnergySmall, objWeaponEnergySmall, objBoltBig);
+                item = choose(objLifeEnergySmall, objWeaponEnergySmall);
             }
             else if (randItem &lt; 240)
             {
-                item = objBoltSmall;
+                item = objLifeEnergySmall;
             }
         }
     }

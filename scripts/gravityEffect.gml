@@ -9,11 +9,10 @@ if (!ground)
     if (object_index == objMegaman)
     {
         grav = (gravAccel * gravfactor * gravDir) * !playerIsLocked(PL_LOCK_GRAVITY);
-        if !global.megaOil
         waterGrav = (gravWater * gravfactor * gravDir) * !playerIsLocked(PL_LOCK_GRAVITY);
-        else waterGrav = ((gravWater * gravfactor * gravDir)* 1.8) * !playerIsLocked(PL_LOCK_GRAVITY);
     }
     
+    if !place_meeting(x,y,objSonicFan) {
     if (inWater)
     {
         yspeed += waterGrav;
@@ -22,7 +21,7 @@ if (!ground)
     {
         yspeed += grav;
     }
-    
+    }
     if (yspeed * sign(grav) > 7)
     {
         yspeed = 7 * sign(grav);

@@ -37,8 +37,6 @@ character[1] = "Mega Man";
 character[2] = "Proto Man";
 character[3] = "Bass";
 character[4] = "Roll";
-character[5] = "Mario";
-character[6] = "Baus";
 selectedCharacter = 0;
 
 for (var i = 0; i &lt; global.playerCount; i++)
@@ -108,7 +106,7 @@ if (!controlsLocked)
         else if (selection == 1)
         {
             selectedCharacter += 1;
-            if selectedCharacter &gt; 6
+            if selectedCharacter &gt; 4
             {
                 selectedCharacter = 0;
             }
@@ -117,7 +115,7 @@ if (!controlsLocked)
         else if (selection == 2)
         {
             player += 1;
-            for (var i = 0; i &lt; 7; i++)
+            for (var i = 0; i &lt; 5; i++)
             {
                 if global.characterSelected[player] == character[i]
                 {

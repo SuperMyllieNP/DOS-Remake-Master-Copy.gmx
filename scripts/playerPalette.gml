@@ -60,26 +60,6 @@ switch (global.playerSprite[costumeID])
         sakugarnePrimaryCol = rockPrimaryCol; // make_color_rgb(0, 184, 0);
         sakugarneSecondaryCol = rockSecondaryCol; // make_color_rgb(184, 248, 120);
         break;
-    case sprMario:
-        rockPrimaryCol = make_color_rgb(0, 111, 236);
-        rockSecondaryCol = make_color_rgb(220, 0, 88);
-        
-        rushPrimaryCol = make_color_rgb(216, 40, 0);
-        rushSecondaryCol = make_color_rgb(0, 168, 0);
-        
-        sakugarnePrimaryCol = rockPrimaryCol; // make_color_rgb(0, 184, 0);
-        sakugarneSecondaryCol = rockSecondaryCol; // make_color_rgb(184, 248, 120);
-        break;
-    case sprBaus:
-        rockPrimaryCol = make_color_rgb(124, 8, 0);
-        rockSecondaryCol = make_color_rgb(128, 208, 16);
-        
-        rushPrimaryCol = make_color_rgb(168, 0, 16);
-        rushSecondaryCol = make_color_rgb(252, 196, 216);
-        
-        sakugarnePrimaryCol = rockPrimaryCol; // make_color_rgb(0, 184, 0);
-        sakugarneSecondaryCol = rockSecondaryCol; // make_color_rgb(184, 248, 120);
-        break;
 }
 
 // Setting weapon colors.

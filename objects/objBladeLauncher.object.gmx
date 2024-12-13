@@ -177,7 +177,7 @@ if (!global.frozen)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>weaponSetup("BLADE LAUNCHER", make_color_rgb(184, 0, 184), make_color_rgb(191, 175, 255), sprWeaponIconsBladeLauncher);
+            <string>weaponSetup("BLADE LAUNCHER", make_color_rgb(184, 0, 184), make_color_rgb(191, 175, 255), sprWeaponIconsBladeLauncher, "B");
 </string>
           </argument>
         </arguments>

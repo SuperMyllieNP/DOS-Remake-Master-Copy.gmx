@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>prtEntity</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -28,7 +28,7 @@
             <string>event_inherited();
 
 healthpointsStart = 3;
-contactDamage = 6;
+contactDamage = 4;
 canDamage=true;
 canHit=true;
 animTimer = 3
@@ -57,7 +57,7 @@ animTimer = 3
             <string>event_inherited();
 
 if(entityCanStep())
-{ xspeed = 2.5*image_xscale; 
+{ xspeed = 1.2*image_xscale; 
         if((xspeed == 0 &amp;&amp; xcoll != 0) || checkFall(16*image_xscale)) 
         {
             image_xscale *= -1; 
@@ -68,7 +68,7 @@ if(entityCanStep())
 
             }
                 {          
-                 animTimer+=.5
+                 animTimer+=.25
 image_index = floor (animTimer/3);
                     }
                 }

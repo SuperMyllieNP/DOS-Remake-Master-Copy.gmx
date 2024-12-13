@@ -564,15 +564,7 @@ for (i = 0; i &lt; specialDamageValuesTotal; i++)
 dead = 1;
 
 var _ex = instance_create(bboxGetXCenter(), bboxGetYCenter(), objExplosion);
-
-if (itemDrop == objKey)
-{
-    _ex = instance_create(bboxGetXCenter() - 8, bboxGetYCenter() - 8, objKey);
-    _ex.yspeed = -4;
-    _ex.homingTimer = 90;
-    playSFX(sfxKeySpawn);
-}
-else if(itemDrop == objEnergyElement)
+if(itemDrop == objEnergyElement)
 {
     _ex = instance_create(bboxGetXCenter() - 8, bboxGetYCenter() - 8, objEnergyElement);
 }
@@ -695,9 +687,6 @@ playSFX(sfxEnemyHit);
                 {
                     case 1:
                         flashcol = 0;
-                        break;
-                    case 2:
-                        flashcol = make_color_rgb(50, 255, 172);
                         break;
                     default:
                         flashcol = make_color_rgb(0, 120, 255);

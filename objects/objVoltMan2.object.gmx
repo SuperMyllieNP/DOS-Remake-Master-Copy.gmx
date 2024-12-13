@@ -71,60 +71,6 @@ enemyDamageValue(objBusterShot, 3);
 enemyDamageValue(objBusterShotHalfCharged, 3);
 enemyDamageValue(objBusterShotCharged, 5);
 
-// MaGMML3
-enemyDamageValue(objSparkChaser, 1);
-enemyDamageValue(objLaserTrident, 3);
-enemyDamageValue(objWaterShield, 2);
-enemyDamageValue(objTornadoBlow, 1);
-enemyDamageValue(objThunderBeam, 0);
-enemyDamageValue(objMagneticShockwave, 6);
-enemyDamageValue(objIceWall, 2);
-enemyDamageValue(objBreakDash, 1);
-
-// MaGMML2
-enemyDamageValue(objHornetChaser, 0);
-enemyDamageValue(objJewelSatellite, 0);
-enemyDamageValue(objGrabBuster, 1);
-enemyDamageValue(objTripleBlade, 1);
-enemyDamageValue(objWheelCutter, 1);
-enemyDamageValue(objSlashClaw, 6);
-enemyDamageValue(objSakugarne, 3);
-enemyDamageValue(objSuperArrow, 6);
-enemyDamageValue(objWireAdapter, 1);
-
-// MaGMML1
-enemyDamageValue(objMetalBlade, 4);
-enemyDamageValue(objGeminiLaser, 2);
-enemyDamageValue(objSolarBlaze, 2);
-enemyDamageValue(objTopSpin, 0);
-enemyDamageValue(objThunderWool, 0);
-enemyDamageValue(objPharaohShot, 1);
-enemyDamageValue(objBlackHoleBomb, 1);
-enemyDamageValue(objMagicCard, 2);
-
-// MaG48HMML
-enemyDamageValue(objFlameMixer, 2);
-enemyDamageValue(objRainFlush, 7);
-enemyDamageValue(objSparkShock, 0);
-enemyDamageValue(objSearchSnake, 2);
-enemyDamageValue(objTenguBlade, 1);
-enemyDamageValue(objTenguDash, 2);
-enemyDamageValue(objTenguDisk, 1);
-enemyDamageValue(objSaltWater, 4);
-enemyDamageValue(objConcreteShot, 1);
-enemyDamageValue(objHomingSniper, 1);
-
-// MaG24HMML
-enemyDamageValue(objSuperArmBlockProjectile, 4);
-enemyDamageValue(objSuperArmDebris, 4);
-enemyDamageValue(objChillShot, 2);
-enemyDamageValue(objChillSpikeLanded, 2);
-
-// Misc.
-enemyDamageValue(objPowerStone, 1);
-enemyDamageValue(objPlantBarrier, 3);
-enemyDamageValue(objBrickWeapon, 1);
-enemyDamageValue(objIceSlasher, 1);
 </string>
           </argument>
         </arguments>

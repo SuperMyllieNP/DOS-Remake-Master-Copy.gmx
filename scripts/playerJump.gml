@@ -12,7 +12,7 @@ canMinJump = true;
 
 jumpCounter += 1;
 
-if (multiJumpDashCancel == true && jumpCounter > 1)
+if (jumpCounter > 1 && multiJumpDashCancel == true)
 {
     dashJumped = false;
 }

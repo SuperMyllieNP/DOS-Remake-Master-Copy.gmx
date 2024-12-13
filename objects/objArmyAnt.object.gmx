@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 
-healthpointsStart = 3;
+healthpointsStart = 1;
 contactDamage = 6;
 canDamage=true;
 canHit=true;

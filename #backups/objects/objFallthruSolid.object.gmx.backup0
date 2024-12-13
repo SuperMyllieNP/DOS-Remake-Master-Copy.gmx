@@ -1,0 +1,20 @@
+// 2024-12-09 19:15:52
+#event properties (no comments/etc. here are saved)
+parent_index = objTopSolid;
+sprite_index = sprSolid;
+visible = false;
+uses_physics = false;
+
+#event create
+event_inherited()
+
+#event step
+event_inherited();
+if instance_exists(objMegaman) {
+            if place_meeting(x,bbox_top-1,objMegaman) && objMegaman.ground {
+            if global.keyDownPressed[0] && global.keyJumpPressed[0]{
+            with objMegaman y += 2
+            }
+            
+            }
+            }

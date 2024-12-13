@@ -17,10 +17,7 @@
     <TextureGroup0>87</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>24</width>
-  <height>24</height>
-  <frames>
-    <frame index="0">images\sprSparkShockParalyze_0.png</frame>
-    <frame index="1">images\sprSparkShockParalyze_1.png</frame>
-  </frames>
+  <width>32</width>
+  <height>32</height>
+  <frames/>
 </sprite>

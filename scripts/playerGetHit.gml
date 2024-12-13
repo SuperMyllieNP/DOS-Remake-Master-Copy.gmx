@@ -60,18 +60,12 @@ if (!isHit)
         // knockback speed:
         if (!playerIsLocked(PL_LOCK_MOVE))
         {
-            if !instance_exists(objHydroMan)
             xspeed = image_xscale * -0.5;
-            else{
-            if objHydroMan.phase == 5
-            xspeed = objHydroMan.image_xscale * 5.5;
-            else xspeed = image_xscale * -0.5;
-            }
             yspeed = (-1.5 * gravDir) * (yspeed * gravDir <= 0);
         }
         
         // lock controls during knockback:
-            hitLock = lockPoolLock(localPlayerLock[PL_LOCK_MOVE],
+        hitLock = lockPoolLock(localPlayerLock[PL_LOCK_MOVE],
             localPlayerLock[PL_LOCK_JUMP],
             localPlayerLock[PL_LOCK_CLIMB],
             localPlayerLock[PL_LOCK_SLIDE],

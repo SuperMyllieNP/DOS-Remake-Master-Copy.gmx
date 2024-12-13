@@ -84,9 +84,8 @@ if (xspeed != 0)
     // make semisolids solid if they can be used as a slope
     if (slp != 0)
     {
-        with (objTopSolid) 
+        with (objTopSolid)
         {
-            if object_index != objFallthruSolid
             solid=0;
             if (place_meeting(x - other.xspeed, y, myid))
             {

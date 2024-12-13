@@ -31,9 +31,7 @@ faction = 1;
 shiftVisible = 2;
 
 despawnRange = -1;
-global.hydroHit= false
-global.megaOil = false
-oilTimer = 7*60
+
 stopOnFlash = 0;
 
 killOverride = false;
@@ -57,7 +55,6 @@ jumpSpeedWater = 0.1;
 // jumpSpeedWater = 4.85 + grav*2;
 
 walkSpeed = 1.3; // walkSpeed = 1.296875;
-oilWalk = 0.3;
 maxVspeed = 7;
 
 premask = mask_index;
@@ -171,7 +168,7 @@ jumpCounterMax = 1; //If you want multiple jumps then increase this
 //Dash things
 dashSlide = false; // Dash enabled?
 dashJumped = false;
-multiJumpDashCancel = false; //controls whether dash momentum is removed after multiple jumps.
+multiJumpDashCancel = true; //controls whether dash momentum is removed after multiple jumps.
 
 //Contact Damage Multiplier
 contactDamageMultiplier = 1; //you can increase this to multiply the amount of damage mega man takes from a certain object.
@@ -194,8 +191,6 @@ animSpinOffset = 0;
 animSpinTurn = 1;
 
 paletteRefresh = 0;
-
-victoryFrames = 0;
 </string>
           </argument>
         </arguments>
@@ -247,27 +242,15 @@ victoryFrames = 0;
         break;
     case "Mega Man":
         costumeID = 0;
-        victoryFrames = 8;
         break;
     case "Proto Man":
         costumeID = 1;
-        victoryFrames = 5;
         break;
     case "Bass":
-        costumeID = 2 + (7 * global.MMBColor);
-        victoryFrames = 7;
+        costumeID = 2;
         break;
     case "Roll":
         costumeID = 3;
-        victoryFrames = 8;
-        break;
-    case "Mario":
-        costumeID = 4;
-        victoryFrames = 9;
-        break;
-    case "Baus":
-        costumeID = 5;
-        victoryFrames = 9;
         break;
 }
 if paletteRefresh == 0
@@ -305,25 +288,9 @@ if paletteRefresh == 0
         playerStepEventDefault();
         break;
     case "Proto Man":
+    {
         playerStepEventProto();
-        break;    
-    case "Mario":
-        playerStepEventMario();
-        break;   
-    case "Baus":
-        playerStepEventBaus();
-        break;   
-}
-if global.megaOil {
-       inked= true
-    if !global.frozen {
-    
-        oilTimer--
-        if oilTimer &lt;= 0 {
-            oilTimer = 7*60
-            global.megaOil = false
-            inked = false
-        }
+        break;
     }
 }
 </string>
@@ -370,7 +337,7 @@ if (spawned)
         {
             jumpCounterMax = 2; //Bass has double jumping
             dashSlide = true; //Bass can dash
-            multiJumpDashCancel = false; //dash momentum no longer applies when a jump is done in midair with bass
+            multiJumpDashCancel = true; //dash momentum no longer applies when a jump is done in midair with bass
             firstSlideMask = mskMegaman;//This also applies to dash masks
             secondSlideMask = mskMegaman;//same as above
             costumeID = 2;
@@ -380,19 +347,6 @@ if (spawned)
         {
             costumeID = 3;
             break;
-        }
-        case "Mario":
-        {
-            costumeID = 4;
-            break;        
-        }
-        case "Baus":
-        {
-            contactDamageMultiplier = 0.5;
-            dashSlide = true;
-            costumeID = 5;
-            multiJumpDashCancel = false;
-            break;        
         }
     }
     switch (global.characterSelected[0])
@@ -419,18 +373,6 @@ if (spawned)
         case "Roll":
         {
             global.weaponName[0] = "ROLL BUSTER"
-            global.weaponIcon[0] = sprWeaponIconsMegaBuster;
-            break;
-        }
-        case "Mario":
-        {
-            global.weaponName[0] = "FIRE BRAND"
-            global.weaponIcon[0] = sprWeaponIconsFireBrand;
-            break;
-        }
-        case "Baus":
-        {
-            global.weaponName[0] = "BAUSZOOKA"
             global.weaponIcon[0] = sprWeaponIconsMegaBuster;
             break;
         }
@@ -508,8 +450,7 @@ global.damage *= contactDamageMultiplier;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x,bbox_bottom+16,objBitManYoku) &amp;&amp; ground y += 2
-playerGetHit(global.damage);
+            <string>playerGetHit(global.damage);
 </string>
           </argument>
         </arguments>

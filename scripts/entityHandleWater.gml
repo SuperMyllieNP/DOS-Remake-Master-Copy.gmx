@@ -116,7 +116,6 @@ if (inWater != -1) // If inWater is set to -1 then there can be no interaction w
                     {
                         event_user(0);
                     }
-                    if place_meeting(x,y,objOilWater) sprite_index = sprOilSplash
                 }
             }
             if (xw != 0)
@@ -133,9 +132,7 @@ if (inWater != -1) // If inWater is set to -1 then there can be no interaction w
                     with (splash)
                     {
                         event_user(0);
-                        if place_meeting(x,y,objOilWater) sprite_index = sprOilSplash
                     }
-                    
                 }
             }
         }

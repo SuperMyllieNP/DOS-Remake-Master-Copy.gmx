@@ -24,10 +24,5 @@
     <frame index="1">images\sprEnergyElement_1.png</frame>
     <frame index="2">images\sprEnergyElement_2.png</frame>
     <frame index="3">images\sprEnergyElement_3.png</frame>
-    <frame index="4">images\sprEnergyElement_4.png</frame>
-    <frame index="5">images\sprEnergyElement_5.png</frame>
-    <frame index="6">images\sprEnergyElement_6.png</frame>
-    <frame index="7">images\sprEnergyElement_7.png</frame>
-    <frame index="8">images\sprEnergyElement_8.png</frame>
   </frames>
 </sprite>

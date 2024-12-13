@@ -1,0 +1,108 @@
+// 2024-12-08 16:07:33
+#event properties (no comments/etc. here are saved)
+parent_index = prtPlayerProjectile;
+sprite_index = sprForceField;
+uses_physics = false;
+
+#event create
+event_inherited();
+
+contactDamage = 3;
+blockCollision = 0;
+
+image_speed = 0.25;
+
+penetrate = 3;
+pierces = 1;
+
+playSFX(sfxElectricShot);
+
+grav = 0;
+ammoConsumption = 28/(1*60*60);
+
+#event destroy
+event_inherited();
+
+parent.hitTimer = 0;
+
+#event step
+event_inherited();
+
+if(entityCanStep())
+{
+    if(parent)
+    {
+        if(global.ammo[playerID,ds_map_find_value(global.weaponID,objForceField)] > 0)
+        {
+            global.ammo[playerID,ds_map_find_value(global.weaponID,objForceField)] -= ammoConsumption;
+        }
+        else
+        {
+            event_user(10);
+        }
+    }
+    else event_user(10);
+}
+
+#event step_begin
+event_inherited();
+
+if(entityCanStep())
+{
+    if instance_exists(parent)
+    {
+        parent.hitTimer = -9999;
+    }
+}
+
+#event step_end
+event_inherited();
+
+if(entityCanStep())
+{
+    if instance_exists(parent)
+    {
+        image_xscale = parent.image_xscale;
+        image_yscale = parent.image_yscale;
+        x = parent.x;
+        y = parent.y;
+    }
+}
+
+#event other_user7 nope
+
+
+#event other_user12
+weaponSetup("FORCE FIELD", make_color_rgb(228,0,88), make_color_rgb(255,169,254), sprWeaponIconsForceField);
+
+#event other_user14
+// EV_WEAPON_CONTROL
+
+var myBarrier = 0;
+for(var j = 0; j < instance_number(objForceField); j++)
+{
+    var checkedBarrier = instance_find(objForceField,j);
+    if(checkedBarrier.parent == self)
+    {
+        myBarrier = checkedBarrier;
+        j = instance_number(objForceField);
+    }
+}
+if (!playerIsLocked(PL_LOCK_SHOOT) && global.keyShootPressed[playerID] && global.ammo[playerID,global.weapon[playerID]])
+{
+    if(!myBarrier)
+    {
+        i = fireWeapon(0, 0, objForceField, 1, 0, 1, 0);
+        if instance_exists(i)
+        {
+            i.image_xscale = image_xscale;
+            i.image_yscale = image_yscale;
+        }
+    }
+    else
+    {
+        with(myBarrier) event_user(10);
+        shootTimer = 0;
+        isShoot = 1;
+    }
+}

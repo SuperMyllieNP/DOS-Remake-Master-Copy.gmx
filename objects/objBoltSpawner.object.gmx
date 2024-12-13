@@ -41,7 +41,7 @@ checkT = 0
 isSolid= 1
 canHit = false
 canDamage  =false
-boldID = -10
+boltID = -10
 </string>
           </argument>
         </arguments>

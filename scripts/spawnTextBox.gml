@@ -11,7 +11,7 @@ if ((object_index==objNPC||object_is_ancestor(object_index,objNPC))&&npcID != 0)
 {
     i.parent = npcID;
 }
-i.pos = 1;
+i.pos = argument[0];
 i.origin = id;
 i.o_event = argument[1];
 i.name = argument[2];
