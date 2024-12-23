@@ -1,0 +1,59 @@
+// 2024-12-22 15:42:38
+#event properties (no comments/etc. here are saved)
+parent_index = prtEntity;
+sprite_index = sprWallLaserProjectile;
+uses_physics = false;
+
+#event create
+event_inherited();
+
+grav = 0;
+contactDamage = 2;
+reflectable = 0;
+image_speed = 1 / 4;
+canHit =false
+blockCollision = false
+stopOnFlash = false;
+
+collectMe = false;
+stunLock = false;
+timer = 0
+spd = 3
+
+bounceCount = 0
+image_speed =0
+
+#event step
+event_inherited();
+
+if (entityCanStep())
+{
+    
+    timer++
+    if timer == 1 {
+        xspeed = spd
+        yspeed = -spd
+        image_xscale = -1
+    }
+    
+    if bounceCount < 3 {
+        if place_meeting(x,y+yspeed,objSolid) {
+            yspeed *= -1
+            image_index = !image_index
+            bounceCount++
+        }
+        if place_meeting(x+xspeed,y,objSolid) {
+            xspeed *= -1
+            image_xscale *= -1
+            bounceCount++
+        }
+    }
+    else instance_destroy()
+
+}
+
+#event other_outside
+instance_destroy()
+
+#event other_outside_view0
+instance_destroy()

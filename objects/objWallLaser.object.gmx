@@ -69,33 +69,36 @@ event_inherited();
 
 if (entityCanStep())
 {
+if timer &lt;= 1 image_speed = 0
+if insideView() {
 if instance_exists(gib) {
 with gib instance_destroy()
 }
+
  timer++;
-if(timer == 120 &amp;&amp; instance_exists(objMegaman) &amp;&amp; abs(target.x - x) &lt; 80)
+if(timer == 120 &amp;&amp; instance_exists(objMegaman))
 {
-    with(instance_create(x,y,objEnemyBullet)) {
-    sprite_index = sprWall_Cannon_Ball
-    {
-        if instance_exists(objMegaman)
-{
-  dir = point_direction(x,y,objMegaman.x,bboxGetXCenterObject(objMegaman)); // get the angle the bullet has to fly
-  dir = floor(dir/45 + 0.5)*45; // constrain the angle to card+diag
-  xspeed = cos(degtorad(dir))*6; // convert the angle to horizontal speed
-  yspeed = -sin(degtorad(dir))*6; // convert the angle to vertical speed
-}
-    }
+    
+    image_speed = 0.125
+    with(instance_create(x+8,y+8,objWallLazerBullet)) {
+    sprite_index = sprWallLaserProjectile
+    
+        calibrateDirection()
+    
+    
+    
 }
 
-        }
+        }}
 { 
-  image_speed = 0.125
+  
             }
 if(timer &gt;= 200) timer = 0;
+if timer &gt;= 130 image_speed = 0
 }
 else if (dead)
 {
+    timer = 0
     //reset custom variables here!
     image_index = 0;
 if !instance_exists(gib) {

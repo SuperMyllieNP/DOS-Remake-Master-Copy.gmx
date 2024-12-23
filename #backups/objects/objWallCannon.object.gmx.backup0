@@ -1,7 +1,7 @@
-// 2024-12-22 15:42:07
+// 2024-12-22 15:42:29
 #event properties (no comments/etc. here are saved)
 parent_index = prtEntity;
-sprite_index = sprBaZSentry;
+sprite_index = sprWall_Cannon;
 uses_physics = false;
 
 #event create
@@ -32,23 +32,25 @@ if (entityCanStep())
 if instance_exists(gib) {
 with gib instance_destroy()
 }
-if insideView() {
  timer++;
 if(timer == 120 && instance_exists(objMegaman))
 {
-    timer = 0;
-    with(instance_create(x,y,objEnemyBullet)) {
+    if insideView() {
+    with(instance_create(x+8,y+8,objEnemyBullet)) {
     sprite_index = sprWall_Cannon_Ball
     {
         if instance_exists(objMegaman)
 {
   dir = point_direction(x,y,objMegaman.x,bboxGetYCenterObject(objMegaman)); // get the angle the bullet has to fly
-  spd = 3
+  dir = floor(dir/45 + 0.5)*45; // constrain the angle to card+diag
+  xspeed = cos(degtorad(dir))*3; // convert the angle to horizontal speed
+  yspeed = -sin(degtorad(dir))*3; // convert the angle to vertical speed
+}}
+    
 }
-    }
 }
 
-        }}
+        }
 { 
   image_speed = 0.125
             }
@@ -59,7 +61,7 @@ else if (dead)
     //reset custom variables here!
     image_index = 0;
 if !instance_exists(gib) {
-    var g = instance_create(x,y,objBaZSentryDED);
+    var g = instance_create(x,y,objWallCannonDED);
    gib = g
 }
 }

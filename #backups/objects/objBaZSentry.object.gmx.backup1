@@ -1,4 +1,4 @@
-// 2024-12-08 14:53:11
+// 2024-12-08 14:54:20
 #event properties (no comments/etc. here are saved)
 parent_index = prtEntity;
 sprite_index = sprBaZSentry;
@@ -42,9 +42,7 @@ if(timer == 120 && instance_exists(objMegaman) && abs(target.x - x) < 80)
         if instance_exists(objMegaman)
 {
   dir = point_direction(x,y,objMegaman.x,bboxGetYCenterObject(objMegaman)); // get the angle the bullet has to fly
-  dir = floor(dir/45 + 0.5)*45; // constrain the angle to card+diag
-  xspeed = cos(degtorad(dir))*6; // convert the angle to horizontal speed
-  yspeed = -sin(degtorad(dir))*6; // convert the angle to vertical speed
+  spd = 6
 }
     }
 }

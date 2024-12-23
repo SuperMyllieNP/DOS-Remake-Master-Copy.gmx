@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited();
-
+instance_create(x+16,y+16,objBigExplosion)
+respawn = false
 healthpointsStart = 0;
 healthpoints = healthpointsStart;
 contactDamage = 0;
@@ -35,8 +36,8 @@ init = true
 xspeed= 0
 yspeed= 0
 phase = 0
-canhit = false
-
+canHit = false
+canDamage = false
 </string>
           </argument>
         </arguments>
