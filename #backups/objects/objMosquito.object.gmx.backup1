@@ -1,0 +1,63 @@
+// 2024-12-31 18:33:35
+#event properties (no comments/etc. here are saved)
+parent_index = prtEntity;
+sprite_index = sprMosquito;
+uses_physics = false;
+
+#event create
+event_inherited();
+
+healthpointsStart = 2;
+healthpoints = healthpointsStart;
+contactDamage = 4;
+grav = 0;
+init = true
+xspeed= 0
+yspeed= 0
+phase = 0
+
+orbit = 24; // Orbit distance
+angle = 0; // Current orbital angle
+spd = .5; // Orbital speed
+centerX = x; // x of orbital center
+centerY = y; // y of orbital center
+
+
+
+#event step
+if (init)
+{
+    orbit = 32; // Orbit distance
+angle = 0; // Current orbital angle
+spd = .5; // Orbital speed
+centerX = x; // x of orbital center
+centerY = y; // y of orbital center
+    init = 0;
+    //set specific variables to make obj more unique
+}
+
+event_inherited();
+
+if (entityCanStep())
+{
+    // Orbital motion
+    angle += spd;
+    if(angle >= 360) angle -= 360;
+    spd = irandom_range(1,10)
+    // Update position
+    centerX += 1 * image_xscale
+    calibrateDirection()
+    x = lengthdir_x(orbit, angle) + centerX;
+    y = lengthdir_y(orbit, angle) + centerY;
+    //code here
+}
+else if (dead)
+{
+    //reset custom variables here!
+    image_index = 0;
+    orbit = 32; // Orbit distance
+    angle = 0; // Current orbital angle
+    spd = .5; // Orbital speed
+    centerX = xstart; // x of orbital center
+    centerY = ystart; // y of orbital center
+}

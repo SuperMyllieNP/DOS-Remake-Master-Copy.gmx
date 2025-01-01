@@ -1,0 +1,40 @@
+// 2024-12-31 19:12:50
+#event properties (no comments/etc. here are saved)
+parent_index = prtEntity;
+sprite_index = sprBaZSentryDED;
+uses_physics = false;
+
+#event create
+event_inherited();
+instance_create(x-16,y-16,objBigExplosion)
+respawn = false
+healthpointsStart = 0;
+healthpoints = healthpointsStart;
+contactDamage = 0;
+grav = 0;
+init = true
+xspeed= 0
+yspeed= 0
+phase = 0
+canHit = false
+canDamage = false
+
+#event step
+if (init)
+{
+    init = 0;
+    //set specific variables to make obj more unique
+}
+
+event_inherited();
+
+if (entityCanStep())
+{
+    //code here
+}
+else if (dead)
+{
+    //reset custom variables here!
+    image_index = 0;
+
+}

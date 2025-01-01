@@ -73,7 +73,7 @@ if (entityCanStep())
     {
         image_index = 0;
         shootTimer += 1;
-        if (shootTimer &gt;= 90)
+        if (shootTimer &gt;= 10)
         {
             shooting = true;
             shootTimer = 0;
@@ -85,7 +85,7 @@ if (entityCanStep())
         shootTimer += 1;
         if (shootTimer &gt;= 32)
         {
-            if (shootAmount &lt; 3)
+            if (shootAmount &lt; 1)
             {
                 shootTimer = 0;
                 i = instance_create(x + 6 * image_xscale, y - 9,
@@ -94,7 +94,7 @@ if (entityCanStep())
                 playSFX(sfxEnemyShootClassic);
                 shootAmount += 1;
             }
-            if (shootAmount &gt;= 3)
+            if (shootAmount &gt;= 1)
             {
                 shootTimer = 0;
                 shootAmount = 0;

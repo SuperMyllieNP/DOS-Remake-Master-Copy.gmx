@@ -1,0 +1,38 @@
+// 2024-12-31 18:29:21
+#event properties (no comments/etc. here are saved)
+parent_index = prtEntity;
+sprite_index = sprSentryBullet;
+uses_physics = false;
+
+#event create
+event_inherited();
+
+grav = 0.25;
+contactDamage = 2;
+reflectable = 0;
+image_speed = 0
+
+canHit =false
+blockCollision = false
+
+
+#event step
+event_inherited();
+image_xscale = 1
+if (!global.frozen)
+{
+    if place_meeting(x,bbox_bottom,objSolid) {
+    with instance_create(x,y,objSentryBulletShatter) {xspeed = -2.5
+    yspeed = -4}
+     with instance_create(x,y,objSentryBulletShatter) {xspeed = 2.5
+    yspeed = -4}
+     with instance_create(x,y,objSentryBulletShatter) {xspeed = -1.5
+    yspeed = -4}
+     with instance_create(x,y,objSentryBulletShatter) {xspeed = 1.5 
+    yspeed = -4}
+    instance_destroy()
+    }
+    
+    
+}
+else image_speed =0

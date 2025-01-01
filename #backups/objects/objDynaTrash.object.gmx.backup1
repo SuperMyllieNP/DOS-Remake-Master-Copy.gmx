@@ -1,0 +1,45 @@
+// 2024-12-31 18:36:57
+#event properties (no comments/etc. here are saved)
+parent_index = prtEntity;
+sprite_index = sprDynaTrash;
+uses_physics = false;
+
+#event create
+event_inherited();
+
+healthpointsStart = 4;
+healthpoints = healthpointsStart;
+contactDamage = 5;
+grav = 0.25;
+init = true
+xspeed= 0
+yspeed= 0
+phase = 0
+image_speed = 0
+timer = 0;
+canDamage = true
+isSolid = false
+canHit = true
+blockCollision = true
+
+#event step
+event_inherited()
+if !global.frozen
+if ground {
+    isSolid = true
+    canHit = false
+}
+else {
+    isSolid = false
+    canHit = true
+}
+
+#event collision:objSpike
+grav = 0
+timer++
+y += 0.5
+if timer > 15 {
+    dieToSpikes = true;
+    instance_destroy() //fucking die bc megamix's
+    //stupid entity system won't do it for me
+}

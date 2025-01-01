@@ -36,7 +36,7 @@ xspeed= 0
 yspeed= 0
 phase = 0
 
-orbit = 32; // Orbit distance
+orbit = 24; // Orbit distance
 angle = 0; // Current orbital angle
 spd = .5; // Orbital speed
 centerX = x; // x of orbital center
@@ -67,7 +67,7 @@ centerY = y; // y of orbital center
             <kind>1</kind>
             <string>if (init)
 {
-    orbit = 32; // Orbit distance
+    orbit = 24; // Orbit distance
 angle = 0; // Current orbital angle
 spd = .5; // Orbital speed
 centerX = x; // x of orbital center

@@ -50,7 +50,7 @@ image_speed = 0;
           <argument>
             <kind>1</kind>
             <string>if instance_exists(objMegaman) {if objMegaman.climbing = false &amp;&amp; objMegaman.inWater &gt;= 1{
-with objMegaman shiftObject(walkSpeed/4 * -image_xscale, 0, true)
+with objMegaman shiftObject(walkSpeed/3 * -1, 0, true)
 }
 }
 </string>

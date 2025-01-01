@@ -155,7 +155,7 @@ if (entityCanStep())
         if (allowSpawn)
         {
             // spawn the object:
-            var obj = instance_create(x + 8, y + 8, object);
+            var obj = instance_create(view_xview[0] + (256-16), y, object);
             pastObjId = obj
             // keep tally if counting own:
             if (countOwn)

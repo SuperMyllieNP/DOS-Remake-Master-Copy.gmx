@@ -1,0 +1,80 @@
+// 2024-12-31 19:17:45
+#event properties (no comments/etc. here are saved)
+parent_index = prtPlayerProjectile;
+sprite_index = sprBladeLauncher;
+uses_physics = false;
+
+#event create
+event_inherited();
+
+bulletLimitCost = 3;
+
+contactDamage = 1;
+
+image_speed = 0.5;
+
+penetrate = 3;
+pierces = 2;
+attackDelay = 8;
+continu = true
+timer = 0;
+j = 0;
+alarm[1] = 1
+
+
+#event alarm1
+if continu {
+
+    i = instance_create(x, y, object_index);
+    
+    if (instance_exists(i))
+    {
+        i.image_xscale = image_xscale
+        i.grav = -.05
+        i.continu = false
+        
+    }
+   
+    i = instance_create(x, y, object_index);
+    
+    if (instance_exists(i))
+    {
+        i.image_xscale = image_xscale
+        i.grav = -.1
+        i.continu = false
+        
+    }
+}
+
+#event step
+ event_inherited();
+
+if (!global.frozen)
+{
+    image_speed = 0.2
+    xspeed = 3 * image_xscale
+    if place_meeting(x,y,objSolid) {
+        instance_destroy()
+        var i = 0;
+        repeat(4) {
+            
+            with instance_create(x,y,objShredDebris) {
+                sprite_index = sprBladeLauncherDebris
+                image_index = i
+            }
+            i++
+        }
+    }
+}
+
+#event other_user12
+weaponSetup("BLADE LAUNCHER", make_color_rgb(184, 0, 184), make_color_rgb(191, 175, 255), sprWeaponIconsBladeLauncher, "B");
+
+#event other_user14
+if (global.keyShootPressed[playerID] && !playerIsLocked(PL_LOCK_SHOOT))
+{
+
+        i = fireWeapon(20, 0, objBladeLauncher, 3, 1, 1, 0);
+
+    
+}

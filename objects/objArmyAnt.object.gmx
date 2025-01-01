@@ -58,7 +58,7 @@ animTimer = 3
 
 if(entityCanStep())
 { xspeed = 1.2*image_xscale; 
-        if((xspeed == 0 &amp;&amp; xcoll != 0) || checkFall(16*image_xscale)) 
+        if(place_meeting(x+xspeed,y,objSolid)) 
         {
             image_xscale *= -1; 
             xspeed *= -0.5 * image_xscale 

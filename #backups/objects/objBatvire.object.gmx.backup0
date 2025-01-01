@@ -1,0 +1,49 @@
+// 2024-12-31 18:31:44
+#event properties (no comments/etc. here are saved)
+parent_index = prtEntity;
+sprite_index = sprBatVire;
+uses_physics = false;
+
+#event create
+event_inherited();
+
+healthpointsStart = 1;
+healthpoints = healthpointsStart;
+contactDamage = 4;
+grav = 0;
+init = true
+xspeed= 0
+yspeed= 0
+phase = 0
+timer = 0
+
+
+#event step
+if (init)
+{
+    init = 0;
+    //set specific variables to make obj more unique
+timer = 0;
+}
+
+event_inherited();
+
+if (entityCanStep())
+{
+  timer++
+if timer == 1 {
+    var xdir = cos(degtorad(point_direction(x,y,objMegaman.x,objMegaman.y))) * 1.5
+    var ydir = -sin(degtorad(point_direction(x,y,objMegaman.x,objMegaman.y))) * 1.5
+        image_speed = .25
+xspeed = xdir
+yspeed = ydir
+            }
+            if timer % 60 == 0 timer = 0
+}
+else if (dead)
+{
+    //reset custom variables here!
+    timer = 0
+    image_speed  = 0;
+    image_index = 0;
+}

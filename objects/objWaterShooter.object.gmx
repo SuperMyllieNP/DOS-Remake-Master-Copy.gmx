@@ -113,7 +113,7 @@ if (!global.frozen)
 {
     
     image_speed = 0.2
-    xspeed = 4.5 * image_xscale
+    xspeed = 3.5 * image_xscale
     if place_meeting(x,y,objSolid) {
         instance_destroy()
         var i;

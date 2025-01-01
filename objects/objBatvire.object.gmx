@@ -78,6 +78,7 @@ if timer == 1 {
 xspeed = xdir
 yspeed = ydir
             }
+            if timer % 60 == 0 timer = 0
 }
 else if (dead)
 {

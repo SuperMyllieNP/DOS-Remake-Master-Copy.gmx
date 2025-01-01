@@ -1,0 +1,83 @@
+// 2024-12-31 18:35:43
+#event properties (no comments/etc. here are saved)
+parent_index = prtEntity;
+sprite_index = sprGunner;
+uses_physics = false;
+
+#event create
+event_inherited();
+
+
+healthpointsStart = 3;
+healthpoints = healthpointsStart;
+contactDamage = 4;
+
+
+facePlayer = true;
+
+// Enemy specific code
+shootTimer = 0;
+shooting = false;
+shootAmount = 0;
+
+respawnRange = -16;
+despawnRange = 16;
+
+#event step
+event_inherited();
+
+if (entityCanStep())
+{
+    // Shooting
+    if (!shooting)
+    {
+        image_index = 0;
+        shootTimer += 1;
+        if (shootTimer >= 90)
+        {
+            shooting = true;
+            shootTimer = 0;
+        }
+    }
+    else
+    {
+        image_index = 1;
+        shootTimer += 1;
+        if (shootTimer >= 32)
+        {
+            if (shootAmount < 1)
+            {
+                shootTimer = 0;
+                i = instance_create(x + 6 * image_xscale, y - 9,
+                    objEnemyBullet);
+                i.xspeed = image_xscale * 2;
+                playSFX(sfxEnemyShootClassic);
+                shootAmount += 1;
+            }
+            if (shootAmount >= 1)
+            {
+                shootTimer = 0;
+                shootAmount = 0;
+                shooting = false;
+            }
+        }
+    }
+}
+else if (dead)
+{
+    shootTimer = 0;
+    shooting = true;
+    shootAmount = 0;
+    image_index = 1;
+    yspeed = -3;
+}
+
+#event other_user11
+if (image_index == 0)
+{
+    if (collision_rectangle(x + 10 * image_xscale, y - 3,
+        x + 12 * image_xscale, y - 20, other.id, false, false))
+    {
+        other.guardCancel = 1;
+    }
+}

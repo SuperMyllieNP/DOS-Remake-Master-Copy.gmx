@@ -1,0 +1,18 @@
+// 2024-12-31 18:32:16
+#event properties (no comments/etc. here are saved)
+parent_index = objWater;
+sprite_index = sprWater;
+visible = false;
+uses_physics = false;
+
+#event create Activates water phisics on entities
+image_speed = 0;
+
+#event collision:objMegaman
+if instance_exists(objMegaman) {if objMegaman.climbing = false && objMegaman.inWater >= 1{
+with objMegaman shiftObject(walkSpeed/3 * -1, 0, true)
+}
+}
+
+#event draw
+draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,false)

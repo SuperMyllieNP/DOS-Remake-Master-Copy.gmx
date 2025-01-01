@@ -62,9 +62,9 @@ image_xscale = 1
 if (!global.frozen)
 {
     if place_meeting(x,bbox_bottom,objSolid) {
-    with instance_create(x,y,objSentryBulletShatter) {xspeed = -3 
+    with instance_create(x,y,objSentryBulletShatter) {xspeed = -2.5
     yspeed = -4}
-     with instance_create(x,y,objSentryBulletShatter) {xspeed = 3 
+     with instance_create(x,y,objSentryBulletShatter) {xspeed = 2.5
     yspeed = -4}
      with instance_create(x,y,objSentryBulletShatter) {xspeed = -1.5
     yspeed = -4}
