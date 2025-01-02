@@ -208,7 +208,7 @@
     <instance objName="objBaZSentry" x="1152" y="512" name="inst_CFE681F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBaZSentry" x="1248" y="576" name="inst_4060D8A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFrogbot" x="400" y="624" name="inst_A62977B8" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFrogbot" x="1120" y="384" name="inst_960B7CB6" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFrogbot" x="1024" y="384" name="inst_960B7CB6" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFrogbot" x="608" y="864" name="inst_5D414945" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFrogbot" x="208" y="864" name="inst_41A9FF57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFrogbot" x="400" y="864" name="inst_785F02CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -359,23 +359,6 @@
     <instance objName="objVerticalScrolling" x="1280" y="448" name="inst_8C71D6ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objVerticalScrolling" x="1536" y="448" name="inst_962CDE30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objVerticalScrolling" x="1280" y="224" name="inst_23547242" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDownScrolling" x="1024" y="672" name="inst_9C721D92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStopScrollingHorizontal" x="1280" y="224" name="inst_7CABF637" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStopScrollingHorizontal" x="1280" y="672" name="inst_3878ACCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStopScrollingHorizontal" x="1280" y="448" name="inst_FAB0ACCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objEel_Ectric" x="1872" y="160" name="inst_157ECFFE" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Gunner" x="2384" y="608" name="inst_2A766974" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSnailBat" x="1040" y="832" name="inst_470F1993" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSnailBat" x="1104" y="992" name="inst_E25B5BE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRightScrolling" x="1024" y="224" name="inst_CA2BEC3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRightScrolling" x="768" y="1120" name="inst_5014F1C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objVerticalScrolling" x="1280" y="672" name="inst_75069C5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objVerticalScrolling" x="1536" y="672" name="inst_51A11E9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objVerticalScrolling" x="1792" y="672" name="inst_5ACB1270" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objVerticalScrolling" x="2048" y="672" name="inst_BCB94AF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objVerticalScrolling" x="1792" y="448" name="inst_5326040D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRightScrolling" x="2048" y="0" name="inst_063E2A17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRightScrolling" x="2304" y="0" name="inst_6CB74F08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tstSonicBLK" x="0" y="1328" w="16" h="16" xo="512" yo="32" id="11323964" name="inst_8C33015B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -8529,9 +8512,6 @@
     <tile bgName="tstSonicBLK" x="656" y="384" w="16" h="16" xo="96" yo="64" id="11333812" name="inst_385AE979" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tstSonicBLK" x="656" y="352" w="16" h="16" xo="80" yo="16" id="11333813" name="inst_7FCBE65B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tstSonicBLK" x="656" y="368" w="16" h="16" xo="80" yo="32" id="11333814" name="inst_0D44F696" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tstFanAnims" x="624" y="640" w="16" h="16" xo="16" yo="0" id="11344718" name="inst_3821069E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tstFanAnims" x="640" y="640" w="16" h="16" xo="32" yo="0" id="11344719" name="inst_4B6224DB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tstFanAnims" x="656" y="640" w="16" h="16" xo="48" yo="0" id="11344720" name="inst_D6B417AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tstSonicBLK" x="2368" y="1296" w="32" h="16" xo="944" yo="48" id="11332874" name="inst_437CFA91" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tstSonicBLK" x="2272" y="1312" w="32" h="16" xo="944" yo="48" id="11332875" name="inst_68008FDA" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tstSonicBLK" x="2144" y="1312" w="32" h="16" xo="944" yo="48" id="11332876" name="inst_F73FB471" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

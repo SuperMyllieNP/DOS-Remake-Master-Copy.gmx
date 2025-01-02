@@ -1,4 +1,4 @@
-// 2024-12-31 18:35:49
+// 2025-01-02 14:55:26
 #event properties (no comments/etc. here are saved)
 parent_index = prtEntity;
 sprite_index = sprGunner;
@@ -23,17 +23,33 @@ shootAmount = 0;
 respawnRange = -16;
 despawnRange = 16;
 
+canShoot = false;
+proximityCheck = 120;
+
+
 #event step
 event_inherited();
 
 if (entityCanStep())
 {
     // Shooting
+    if instance_exists(objMegaman) && !canShoot {
+        image_index = 0
+        if distance_to_object(objMegaman) <= proximityCheck {
+            canShoot = true;
+             shooting = true;
+            shootTimer = 0;
+        }
+        
+    }
+    if canShoot {
+        
+    
     if (!shooting)
     {
         image_index = 0;
         shootTimer += 1;
-        if (shootTimer >= 10)
+        if (shootTimer >= 60)
         {
             shooting = true;
             shootTimer = 0;
@@ -59,7 +75,9 @@ if (entityCanStep())
                 shootTimer = 0;
                 shootAmount = 0;
                 shooting = false;
+                
             }
+        }
         }
     }
 }

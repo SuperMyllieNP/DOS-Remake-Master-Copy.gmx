@@ -42,6 +42,10 @@ shootAmount = 0;
 
 respawnRange = -16;
 despawnRange = 16;
+
+canShoot = false;
+proximityCheck = 120;
+
 </string>
           </argument>
         </arguments>
@@ -69,11 +73,23 @@ despawnRange = 16;
 if (entityCanStep())
 {
     // Shooting
+    if instance_exists(objMegaman) &amp;&amp; !canShoot {
+        image_index = 0
+        if distance_to_object(objMegaman) &lt;= proximityCheck {
+            canShoot = true;
+             shooting = true;
+            shootTimer = 0;
+        }
+        
+    }
+    if canShoot {
+        
+    
     if (!shooting)
     {
         image_index = 0;
         shootTimer += 1;
-        if (shootTimer &gt;= 10)
+        if (shootTimer &gt;= 60)
         {
             shooting = true;
             shootTimer = 0;
@@ -99,7 +115,9 @@ if (entityCanStep())
                 shootTimer = 0;
                 shootAmount = 0;
                 shooting = false;
+                
             }
+        }
         }
     }
 }
