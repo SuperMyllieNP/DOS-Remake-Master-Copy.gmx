@@ -27,21 +27,9 @@
             <kind>1</kind>
             <string>event_inherited();
 
-healthpointsStart = 1;
+healthpointsStart = 2;
 healthpoints = healthpointsStart;
 contactDamage = 4;
-
-enemyDamageValue(objSonicWaveWeapon, 0)
-enemyDamageValue(objForceField, 0)
-enemyDamageValue(objNuclearDetonatorExplosion, 0)
-enemyDamageValue(objBitCannon, 0.5)
-enemyDamageValue(objSharkBoomerangDR, 0)
-enemyDamageValue(objWaterShooter, 0)
-enemyDamageValue(objOilStream, 0)
-enemyDamageValue(objBladeLauncher, 0)
-enemyDamageValue(objTorchArmProj, 0.5)
-enemyDamageValue(objTorchArmHold, 1)
-
 grav = 0.25;
 init = true
 xspeed= 0
@@ -128,31 +116,6 @@ else if (dead)
 image_speed = 0
 }
 else image_speed = 0
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="21">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if other.object_index == objWaterShooter other.guardCancel = 1
-if other.object_index == objOilStream other.guardCancel = 1
-if other.object_index == objBladeLauncher other.guardCancel = 1
 </string>
           </argument>
         </arguments>
