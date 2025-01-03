@@ -31,6 +31,16 @@ healthpointsStart = 8;
 healthpoints = healthpointsStart;
 contactDamage = 4;
 
+enemyDamageValue(objSonicWaveWeapon, 2)
+enemyDamageValue(objForceField, 0)
+enemyDamageValue(objNuclearDetonatorExplosion, 8)
+enemyDamageValue(objBitCannon, 2)
+enemyDamageValue(objSharkBoomerangDR, 1)
+enemyDamageValue(objWaterShooter, 2)
+enemyDamageValue(objOilStream, 1.6)
+enemyDamageValue(objTorchArmProj, 1)
+enemyDamageValue(objTorchArmHold, 2)
+
 category = "mets";
 
 radius = 4 * 16;
@@ -132,6 +142,8 @@ if (image_index == 0)
 {
     other.guardCancel = 1;
 }
+if other.object_index == objForceField other.guardCancel = 1
+if other.object_index == objBladeLauncher other.guardCancel = 1
 </string>
           </argument>
         </arguments>

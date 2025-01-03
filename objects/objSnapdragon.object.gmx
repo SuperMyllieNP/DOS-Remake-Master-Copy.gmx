@@ -27,9 +27,21 @@
             <kind>1</kind>
             <string>event_inherited();
 
-healthpointsStart = 2;
+healthpointsStart = 3;
 healthpoints = healthpointsStart;
-contactDamage = 4;
+contactDamage = 2;
+
+enemyDamageValue(objSonicWaveWeapon, 1)
+enemyDamageValue(objForceField, 1.5)
+enemyDamageValue(objNuclearDetonatorExplosion, 3)
+enemyDamageValue(objBitCannon, 1)
+enemyDamageValue(objSharkBoomerangDR, 3)
+enemyDamageValue(objWaterShooter, 3)
+enemyDamageValue(objOilStream, 1.5)
+enemyDamageValue(objBladeLauncher, 0)
+enemyDamageValue(objTorchArmProj, 3)
+enemyDamageValue(objTorchArmHold, 3)
+
 grav = 0.25;
 init = true
 xspeed= 0
@@ -115,6 +127,29 @@ else if (dead)
 image_speed = 0
 }
 else image_speed = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="21">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>enemyDamageValue(objBladeLauncher, 1)
 </string>
           </argument>
         </arguments>

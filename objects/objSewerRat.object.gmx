@@ -27,11 +27,15 @@
             <kind>1</kind>
             <string>event_inherited();
 
+enemyDamageValue(objWaterShooter, 1)
+enemyDamageValue(objOilStream, 1)
+enemyDamageValue(objTorchArmProj, 1)
+
 phase = 0
 timer = 0
 animTimer = 0 
 
-healthpointsStart = 1;
+healthpointsStart = 2;
 contactDamage = 3;
 canDamage=true;
 canHit=true;

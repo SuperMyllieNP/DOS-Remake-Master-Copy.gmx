@@ -27,16 +27,20 @@
             <kind>1</kind>
             <string>event_inherited();
 
-healthpointsStart = 2;
+healthpointsStart = 1;
 healthpoints = healthpointsStart;
-contactDamage = 4;
+contactDamage = 1;
+
+enemyDamageValue(objTorchArmProj, 0)
+enemyDamageValue(objTorchArmHold, 0)
+
 grav = 0;
 init = true
 xspeed= 0
 yspeed= 0
 phase = 0
 
-orbit = 24; // Orbit distance
+orbit = 32; // Orbit distance
 angle = 0; // Current orbital angle
 spd = .5; // Orbital speed
 centerX = x; // x of orbital center
@@ -67,7 +71,7 @@ centerY = y; // y of orbital center
             <kind>1</kind>
             <string>if (init)
 {
-    orbit = 24; // Orbit distance
+    orbit = 32; // Orbit distance
 angle = 0; // Current orbital angle
 spd = .5; // Orbital speed
 centerX = x; // x of orbital center
@@ -101,6 +105,30 @@ else if (dead)
     centerX = xstart; // x of orbital center
     centerY = ystart; // y of orbital center
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="21">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if other.object_index == objTorchArmProj other.guardCancel = 1
+if other.object_index == objTorchArmHold other.guardCancel = 1
 </string>
           </argument>
         </arguments>
