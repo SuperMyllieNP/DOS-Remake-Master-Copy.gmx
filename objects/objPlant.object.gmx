@@ -29,6 +29,18 @@
 
 healthpointsStart = 2;
 contactDamage = 4;
+
+enemyDamageValue(objSonicWaveWeapon, 1)
+enemyDamageValue(objForceField, 0)
+enemyDamageValue(objNuclearDetonatorExplosion, 2)
+enemyDamageValue(objBitCannon, 1)
+enemyDamageValue(objSharkBoomerangDR, 1)
+enemyDamageValue(objWaterShooter, 2)
+enemyDamageValue(objOilStream, 1)
+enemyDamageValue(objBladeLauncher, 2)
+enemyDamageValue(objTorchArmProj, 0)
+enemyDamageValue(objTorchArmHold, 0)
+
 canDamage=true;
 canHit=true;
 animTimer = 3
@@ -72,6 +84,31 @@ if(entityCanStep())
 image_index = floor (animTimer/3);
                     }
                 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="21">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if other.object_index == objForceField other.guardCancel = 1
+if other.object_index == objTorchArmProj other.guardCancel = 1
+if other.object_index == objTorchArmHold other.guardCancel = 1
 </string>
           </argument>
         </arguments>

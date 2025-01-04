@@ -32,6 +32,16 @@ healthpointsStart = 3;
 healthpoints = healthpointsStart;
 contactDamage = 4;
 
+enemyDamageValue(objSonicWaveWeapon, 1)
+enemyDamageValue(objForceField, 0)
+enemyDamageValue(objNuclearDetonatorExplosion, 1)
+enemyDamageValue(objBitCannon, 0)
+enemyDamageValue(objSharkBoomerangDR, 1)
+enemyDamageValue(objWaterShooter, 0)
+enemyDamageValue(objOilStream, 1)
+enemyDamageValue(objBladeLauncher, 0)
+enemyDamageValue(objTorchArmProj, 0)
+enemyDamageValue(objTorchArmHold, 0)
 
 facePlayer = true;
 
@@ -159,6 +169,16 @@ else if (dead)
         other.guardCancel = 1;
     }
 }
+
+
+if other.object_index == objForceField other.guardCancel = 1
+if other.object_index == objSharkBoomerangDR other.guardCancel = 1
+if other.object_index == objWaterShooter other.guardCancel = 1
+if other.object_index == objBladeLauncher other.guardCancel = 1
+if other.object_index == objTorchArmProj other.guardCancel = 1
+if other.object_index == objTorchArmHold other.guardCancel = 1
+
+
 </string>
           </argument>
         </arguments>

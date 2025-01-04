@@ -747,25 +747,35 @@
         <sprite>sprites\sprBusterShotHalfChargedProto</sprite>
         <sprite>sprites\sprBusterShotChargedProto</sprite>
         <sprite>sprites\sprBusterShotChargedProtoColourMask</sprite>
-        <sprite>sprites\sprBladeLauncherDebris</sprite>
-        <sprite>sprites\sprBladeLauncher</sprite>
-        <sprite>sprites\sprSonicWaveDiagonal</sprite>
-        <sprite>sprites\sprSonicWave</sprite>
         <sprite>sprites\sprNuclearDetonator</sprite>
         <sprite>sprites\sprNuclearDetonatorExploding</sprite>
         <sprite>sprites\sprNuclearDetonatorExplosion</sprite>
-        <sprite>sprites\sprBassBullet</sprite>
-        <sprite>sprites\sprWaterShooter</sprite>
+        <sprite>sprites\sprSonicWaveDiagonal</sprite>
+        <sprite>sprites\sprSonicWave</sprite>
         <sprite>sprites\sprForceField</sprite>
+        <sprite>sprites\sprBitCannonDrill</sprite>
+        <sprite>sprites\sprBitCannonSpark</sprite>
+        <sprite>sprites\sprSharkBoomerang</sprite>
+        <sprite>sprites\sprWaterShooter</sprite>
+        <sprite>sprites\sprOilStreamDR</sprite>
+        <sprite>sprites\sprBladeLauncherDebris</sprite>
+        <sprite>sprites\sprTorchArmProj</sprite>
+        <sprite>sprites\sprTorchArmHold</sprite>
+        <sprite>sprites\sprBladeLauncher</sprite>
+        <sprite>sprites\sprBassBullet</sprite>
         <sprite>sprites\mskWeaponExplosion</sprite>
         <sprites name="WeaponIcons">
           <sprite>sprites\sprWeaponIconsMegaBuster</sprite>
           <sprite>sprites\sprWeaponIconsBassBuster</sprite>
-          <sprite>sprites\sprWeaponIconsBladeLauncher</sprite>
-          <sprite>sprites\sprWeaponIconsForceField</sprite>
-          <sprite>sprites\sprWeaponIconsSonicWave</sprite>
           <sprite>sprites\sprWeaponIconsNuclearDetonator</sprite>
+          <sprite>sprites\sprWeaponIconsSonicWave</sprite>
+          <sprite>sprites\sprWeaponIconsForceField</sprite>
+          <sprite>sprites\sprWeaponIconsBitCannon</sprite>
+          <sprite>sprites\sprWeaponIconsSharkBoomerang</sprite>
           <sprite>sprites\sprWeaponIconsWaterShooter</sprite>
+          <sprite>sprites\sprWeaponIconsOilStream</sprite>
+          <sprite>sprites\sprWeaponIconsBladeLauncher</sprite>
+          <sprite>sprites\sprWeaponIconsTorchArm</sprite>
         </sprites>
       </sprites>
       <sprites name="Health/Weapon Bar">
@@ -817,7 +827,7 @@
         <sprite>sprites\sprFrogBot</sprite>
         <sprite>sprites\sprGunner</sprite>
         <sprite>sprites\sprGregory</sprite>
-        <sprite>sprites\Helmet</sprite>
+        <sprite>sprites\sprHelmet</sprite>
         <sprite>sprites\sprInsectobotProjectile</sprite>
         <sprite>sprites\sprInsectobotShoot</sprite>
         <sprite>sprites\sprInsectobot</sprite>
@@ -1676,6 +1686,7 @@
       <script>scripts\eventExecute.gml</script>
       <script>scripts\combineObjects.gml</script>
       <script>scripts\cleanMem.gml</script>
+      <script>scripts\easyHexColor.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -1715,7 +1726,7 @@
         <object>objects\objSlopeRLong</object>
         <object>objects\objSlopeLLong</object>
       </objects>
-      <objects name="Don&#039;t Use">
+      <objects name="Don't Use">
         <object>objects\prtBossDoor</object>
         <object>objects\objStandSolid</object>
       </objects>
@@ -1779,83 +1790,90 @@
       <object>objects\Heavy_Metall</object>
       <object>objects\Gunner</object>
       <objects name="DOS1">
+        <objects name="Spawners">
+          <object>objects\objBatvireSpawner</object>
+          <object>objects\objPiranhaSpawner</object>
+          <object>objects\objPiranhaSpawnerFast</object>
+          <object>objects\objEel_EctricSpawner</object>
+          <object>objects\objMosquitoSpawner</object>
+          <object>objects\objInsectoSpawner</object>
+          <object>objects\objSpydroSpawner</object>
+          <object>objects\objSentrySpawner</object>
+          <object>objects\objLavaDumpSpawner</object>
+          <object>objects\objLavaDropRedirect</object>
+        </objects>
         <object>objects\objGregory</object>
-        <object>objects\objArkWelder</object>
-        <object>objects\objAssembler</object>
-        <object>objects\objArmyAnt</object>
-        <object>objects\objBaZSentryDED</object>
-        <object>objects\objBatvire</object>
-        <object>objects\objBaZSentry</object>
-        <object>objects\objDrillPress</object>
-        <object>objects\objEel_EctricSpawner</object>
-        <object>objects\objEel_Ectric</object>
         <object>objects\objFrogbot</object>
-        <object>objects\objInsectoSpawner</object>
-        <object>objects\objInsectobot</object>
-        <object>objects\objLavaDumpShot</object>
-        <object>objects\objLavaDumpSpawner</object>
-        <object>objects\objLavaBubble</object>
-        <object>objects\objLavaDropRedirect</object>
-        <object>objects\objLavaDump</object>
-        <object>objects\objMosquitoSpawner</object>
-        <object>objects\objMosquito</object>
+        <object>objects\objBatvire</object>
+        <object>objects\objSewerRat</object>
         <object>objects\objPiranha</object>
         <object>objects\objPiranhaFast</object>
-        <object>objects\objSentryBulletShatter</object>
-        <object>objects\objSentrySpawner</object>
-        <object>objects\objSewerRat</object>
+        <object>objects\objEel_Ectric</object>
+        <object>objects\objRaptorbot</object>
+        <object>objects\objMosquito</object>
+        <object>objects\objInsectobot</object>
+        <object>objects\objSpydroborg</object>
         <object>objects\objSentryBee</object>
         <object>objects\objSentryBullet</object>
-        <object>objects\objSpydroSpawner</object>
-        <object>objects\objPiranhaSpawner</object>
-        <object>objects\objPiranhaSpawnerFast</object>
-        <object>objects\objBatvireSpawner</object>
-        <object>objects\objSpydroborg</object>
+        <object>objects\objSentryBulletShatter</object>
+        <object>objects\objArmyAnt</object>
+        <object>objects\objBaZSentry</object>
+        <object>objects\objBaZSentryDED</object>
+        <object>objects\objAssembler</object>
+        <object>objects\objDrillPress</object>
+        <object>objects\objArkWelder</object>
+        <object>objects\objLavaDump</object>
+        <object>objects\objLavaDumpShot</object>
+        <object>objects\objLavaBubble</object>
         <object>objects\objVoltBolt</object>
       </objects>
       <objects name="DOS3">
+        <objects name="Spawners">
+          <object>objects\objFireDropSpawner</object>
+        </objects>
         <object>objects\objFlytrap</object>
-        <object>objects\objCrabClam</object>
-        <object>objects\objBeeScorpion</object>
-        <object>objects\objFireDropSpawner</object>
-        <object>objects\objFireDrop</object>
-        <object>objects\objFishH</object>
-        <object>objects\objFishEnemyProjectile</object>
-        <object>objects\objFishV</object>
-        <object>objects\objGatorDuck</object>
-        <object>objects\objNautilusN</object>
-        <object>objects\objPlant</object>
-        <object>objects\objSeaweedShot</object>
-        <object>objects\objSeaweed</object>
-        <object>objects\objSnailBat</object>
+        <object>objects\objWalkingRose</object>
         <object>objects\objSnapdragon</object>
         <object>objects\objSnapdragonBullet</object>
+        <object>objects\objGatorDuck</object>
+        <object>objects\objFishH</object>
+        <object>objects\objFishV</object>
+        <object>objects\objFishEnemyProjectile</object>
+        <object>objects\objSeaweed</object>
+        <object>objects\objSeaweedShot</object>
+        <object>objects\objPlant</object>
         <object>objects\objSpiderSnake</object>
+        <object>objects\objSnailBat</object>
+        <object>objects\objNautilusN</object>
+        <object>objects\objCrabClam</object>
         <object>objects\objSeaAnenome</object>
+        <object>objects\objClownfish</object>
+        <object>objects\objBeeScorpion</object>
+        <object>objects\objWallCannon</object>
         <object>objects\objWallCannonDED</object>
         <object>objects\objWallLaser</object>
         <object>objects\objWallLaserDED</object>
-        <object>objects\objWalkingRose</object>
-        <object>objects\objWallCannon</object>
-        <object>objects\objClownfish</object>
+        <object>objects\objFireDrop</object>
       </objects>
       <objects name="DOSRM">
-        <object>objects\objAxeJoeAxe</object>
+        <objects name="Spawners">
+          <object>objects\objOilTellySpawner</object>
+        </objects>
         <object>objects\objAxeJoe</object>
-        <object>objects\objElecHeliShot</object>
+        <object>objects\objAxeJoeAxe</object>
         <object>objects\objElecHeli</object>
+        <object>objects\objElecHeliShot</object>
         <object>objects\objElecHeliBall</object>
-        <object>objects\objOilTellyOil</object>
-        <object>objects\objOilTellySpawner</object>
-        <object>objects\objOilMet</object>
-        <object>objects\objOilTelly</object>
-        <object>objects\objPalmbot</object>
-        <object>objects\objThunderTellyShot</object>
-        <object>objects\objThunderTelly</object>
         <object>objects\objTurtleBot</object>
+        <object>objects\objThunderTelly</object>
+        <object>objects\objThunderTellyShot</object>
+        <object>objects\objOilTelly</object>
+        <object>objects\objOilTellyOil</object>
+        <object>objects\objOilMet</object>
+        <object>objects\objPalmbot</object>
         <object>objects\objGlaveSuzy</object>
       </objects>
-      <objects name="Don&#039;t Use">
+      <objects name="Don't Use">
         <object>objects\objEnemyBullet</object>
         <object>objects\objHarmfulExplosion</object>
       </objects>
@@ -1930,7 +1948,7 @@
           <object>objects\objYokuSpikeTemplate8</object>
         </objects>
       </objects>
-      <objects name="Don&#039;t Use">
+      <objects name="Don't Use">
         <object>objects\prtCustomCamera</object>
         <object>objects\objMovingPlatformTest</object>
         <object>objects\objSolidEntity</object>
@@ -1963,7 +1981,7 @@
           <object>objects\objDownScrolling400px</object>
         </objects>
       </objects>
-      <objects name="Don&#039;t Use">
+      <objects name="Don't Use">
         <object>objects\objStopScrollingVertical</object>
         <object>objects\objSectionArrowLeft</object>
         <object>objects\objSectionArrowRight</object>
@@ -1982,7 +2000,7 @@
       <object>objects\objETank</object>
       <object>objects\objEnergyElement</object>
     </objects>
-    <objects name="Don&#039;t Use">
+    <objects name="Don't Use">
       <objects name="Player">
         <object>objects\objMegaman</object>
         <object>objects\objMegamanSweat</object>
@@ -1998,8 +2016,14 @@
           <object>objects\objNuclearDetonatorExplosion</object>
           <object>objects\objSonicWaveWeapon</object>
           <object>objects\objForceField</object>
+          <object>objects\objBitCannon</object>
+          <object>objects\objSharkBoomerangDR</object>
           <object>objects\objWaterShooter</object>
+          <object>objects\objOilStream</object>
           <object>objects\objBladeLauncher</object>
+          <object>objects\objTorchArmProj</object>
+          <object>objects\objTorchArmHold</object>
+          <object>objects\objTorchArmDR</object>
           <objects name="Misc.">
             <object>objects\objNormalBusterShot</object>
             <object>objects\objProtoShield</object>
