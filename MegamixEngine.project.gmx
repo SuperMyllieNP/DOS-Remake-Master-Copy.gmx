@@ -1186,6 +1186,9 @@
     <sprites name="Menu">
       <sprites name="Pause">
         <sprite>sprites\sprPauseMenuBG</sprite>
+        <sprite>sprites\sprPauseMenuDOS</sprite>
+        <sprite>sprites\sprDOSnum</sprite>
+        <sprite>sprites\sprDOSletter</sprite>
         <sprite>sprites\sprPauseMenuBarPrimary</sprite>
         <sprite>sprites\sprPauseMenuBarSecondary</sprite>
         <sprite>sprites\sprInfinityMark</sprite>
