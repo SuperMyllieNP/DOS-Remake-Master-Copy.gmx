@@ -36,5 +36,5 @@ if (!full)
 }
 
 global.screensize = s;
-
-surface_resize(application_surface, view_wview[0] * global.screensize, view_hview[0] * global.screensize + (global.screensize == 1));
+//s = 1;
+surface_resize(application_surface, global.screenWidth, global.screenHeight);
