@@ -28,7 +28,7 @@
             <string>event_inherited();
 
 grav = 0.25;
-contactDamage = 1;
+contactDamage = 2;
 reflectable = 0;
 image_speed = 1/8
 

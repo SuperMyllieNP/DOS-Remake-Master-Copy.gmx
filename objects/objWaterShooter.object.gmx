@@ -32,7 +32,7 @@ bulletLimitCost = 3;
 contactDamage = 1;
 
 image_speed = 0.5;
-grav = .2
+grav = .15
 penetrate = 3;
 pierces = 2;
 attackDelay = 8;

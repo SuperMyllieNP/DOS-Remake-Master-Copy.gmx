@@ -31,15 +31,10 @@ phase = 0
 timer = 0
 animTimer = 0 
 
-healthpointsStart = 2;
-contactDamage = 2;
+healthpointsStart = 1;
+contactDamage = 3;
 canDamage=true;
 canHit=true;
-
-
-enemyDamageValue(objWaterShooter, 1)
-enemyDamageValue(objOilStream, 1)
-enemyDamageValue(objTorchArmProj, 1)
 </string>
           </argument>
         </arguments>

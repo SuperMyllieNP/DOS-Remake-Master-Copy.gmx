@@ -36,18 +36,6 @@ xspeed= -0.5
 yspeed= 0
 phase = 0
 animTimer = 3
-
-enemyDamageValue(objSonicWaveWeapon, 8)
-enemyDamageValue(objForceField, 0)
-enemyDamageValue(objNuclearDetonatorExplosion, 2)
-enemyDamageValue(objBitCannon, 0)
-enemyDamageValue(objSharkBoomerangDR, 4)
-enemyDamageValue(objWaterShooter, 1.6)
-enemyDamageValue(objOilStream, 8)
-enemyDamageValue(objBladeLauncher, 8)
-enemyDamageValue(objTorchArmProj, 2)
-enemyDamageValue(objTorchArmHold, 4)
-
 </string>
           </argument>
         </arguments>
@@ -85,30 +73,6 @@ if(place_meeting(x+xspeed,y,objSolid))
 image_index = floor (animTimer/3);
                     }
                 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="21">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if other.object_index == objForceField other.guardCancel = 1
-if other.object_index == objBitCannon other.guardCancel = 1
 </string>
           </argument>
         </arguments>
