@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 
-healthpointsStart = 28;
+healthpointsStart = 56;
 healthpoints = healthpointsStart;
 
 healthBarPrimaryColor[1] = 22;
@@ -106,9 +106,14 @@ if (entityCanStep())
     {
         grav = 0
         image_speed = 0;
-        sprite_index = spriteStart;
+        
         image_xscale = 1
         timer++
+        if healthpoints &lt;= 28 {
+            if image_index &lt; 2 {
+                image_index += 0.25
+            }
+        }
         if y &gt; ystart y = ystart
         if timer &lt; 60 y -= 0.25
         else if timer &gt;= 60 &amp;&amp; timer &lt; 60 * 2 y += 0.25
