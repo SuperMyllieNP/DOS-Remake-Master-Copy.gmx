@@ -27,9 +27,21 @@
             <kind>1</kind>
             <string>event_inherited();
 
-healthpointsStart = 2;
+healthpointsStart = 3;
 healthpoints = healthpointsStart;
-contactDamage = 4;
+contactDamage = 2;
+
+enemyDamageValue(objSonicWaveWeapon, 1.5)
+enemyDamageValue(objForceField, 1)
+enemyDamageValue(objNuclearDetonatorExplosion, 3)
+enemyDamageValue(objBitCannon, 1.5)
+enemyDamageValue(objSharkBoomerangDR, 3)
+enemyDamageValue(objWaterShooter, 1)
+enemyDamageValue(objOilStream, 0)
+enemyDamageValue(objBladeLauncher, 1)
+enemyDamageValue(objTorchArmProj, 1.5)
+enemyDamageValue(objTorchArmHold, 3)
+
 grav = 0;
 init = true
 xspeed= 0
@@ -187,6 +199,29 @@ else if (dead)
     sprite_index = sprBeeScorpion;
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="21">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if other.object_index == objOilStream other.guardCancel = 1
 </string>
           </argument>
         </arguments>
