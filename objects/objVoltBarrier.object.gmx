@@ -41,7 +41,7 @@ despawnRange = -1;
 
 healthpointsStart = 1;
 healthpoints = healthpointsStart;
-contactDamage = 2;
+contactDamage = 4;
 
 image_speed = 0.25;
 

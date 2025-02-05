@@ -30,7 +30,7 @@
 blockCollision = 0;
 grav = 0;
 stopOnFlash = false;
-contactDamage = 3;
+contactDamage = 4;
 
 canStep = false;
 alarm[0] = 1;

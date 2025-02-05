@@ -33,7 +33,7 @@ imgSpeed = 0.25
 
 sprite_index = sprTorchArmProj
 
-playSFX(sfxCommandoBombLaunch);
+playSFX(sfxTorchArmFire);
 /*
 pierces = 2; // 0: destroyed when hits. 1: destroyed unless kills. 2: never destroyed
 penetrate = 0; // 0: reflectable. 1: not reflectable, but no damage. 2: bypasses shields

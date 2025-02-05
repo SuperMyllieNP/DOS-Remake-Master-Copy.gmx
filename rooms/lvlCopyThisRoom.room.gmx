@@ -56,14 +56,6 @@
     <instance objName="objSolid" x="128" y="160" name="inst_51923CF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSolid" x="144" y="160" name="inst_07774C3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSolid" x="96" y="160" name="inst_5A9CB10F" locked="0" code="visible = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDefaultSpawn" x="128" y="432" name="inst_C2690C94" locked="0" code="" scaleX="0.5" scaleY="0.300000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="objWallLaser" x="208" y="112" name="inst_293DE6FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSolid" x="224" y="160" name="inst_F4D2ADAF" locked="0" code="" scaleX="1" scaleY="-10" colour="4294967295" rotation="0"/>
-    <instance objName="objSolid" x="0" y="160" name="inst_BE6861CA" locked="0" code="" scaleX="1" scaleY="-10" colour="4294967295" rotation="0"/>
-    <instance objName="objSolid" x="288" y="0" name="inst_DBC2C157" locked="0" code="" scaleX="-21" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objSolid" x="0" y="160" name="inst_E6E11553" locked="0" code="" scaleX="16" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objWallCannon" x="80" y="96" name="inst_56E09202" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBaZSentry" x="48" y="144" name="inst_40B33E60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

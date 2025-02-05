@@ -66,11 +66,19 @@ musicType = "VGM";
 musicTrackNumber = 5;
 
 // Damage Table
-enemyDamageValue(objBusterShot, 1);
+enemyDamageValue(objBusterShot, 2);
 enemyDamageValue(objBusterShotHalfCharged, 1);
 enemyDamageValue(objBusterShotCharged, 3);
-
-// MaGMML3
+enemyDamageValue(objSonicWaveWeapon, 1)
+enemyDamageValue(objForceField, 6)
+enemyDamageValue(objNuclearDetonatorExplosion, 0)
+enemyDamageValue(objBitCannon, 3)
+enemyDamageValue(objSharkBoomerangDR, 0)
+enemyDamageValue(objWaterShooter, 1)
+enemyDamageValue(objOilStream, 0)
+enemyDamageValue(objBladeLauncher, 2)
+enemyDamageValue(objTorchArmProj, 1)
+enemyDamageValue(objTorchArmHold, 2)
 </string>
           </argument>
         </arguments>
@@ -247,6 +255,31 @@ if (entityCanStep())
             <string>event_inherited();
 
 smallJumps = 3 + irandom(4);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="21">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if other.object_index == objNuclearDetonatorExplosion other.guardCancel = 1
+if other.object_index == objSharkBoomerangDR other.guardCancel = 1
+if other.object_index == objOilStream other.guardCancel = 1
 </string>
           </argument>
         </arguments>

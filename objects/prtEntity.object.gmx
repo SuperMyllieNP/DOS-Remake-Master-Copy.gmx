@@ -140,6 +140,9 @@ facePlayer = false;
 specialDamageValues[0] = 0;
 specialDamageValues[1] = 0;
 specialDamageValuesTotal = 0;
+
+//i dont fuckin; know
+oiledUp = 0;
 </string>
           </argument>
         </arguments>
@@ -422,6 +425,15 @@ else if (!global.frozen) // Basically everything prtEntity should usually be doi
             }
         }
     }
+    
+    if oiledUp &gt; 0
+    {
+        oiledUp --;
+    }
+    else
+    {
+        oiledUp = 0;
+    }
 }
 </string>
           </argument>
@@ -456,6 +468,7 @@ if (spawned)
 {
     setTargetStep();
     healthpoints = healthpointsStart;
+    oiledUp = 0;
     
     // face player
     if (facePlayerOnSpawn)
@@ -564,7 +577,15 @@ for (i = 0; i &lt; specialDamageValuesTotal; i++)
 dead = 1;
 
 var _ex = instance_create(bboxGetXCenter(), bboxGetYCenter(), objExplosion);
-if(itemDrop == objEnergyElement)
+
+if (itemDrop == objKey)
+{
+    _ex = instance_create(bboxGetXCenter() - 8, bboxGetYCenter() - 8, objKey);
+    _ex.yspeed = -4;
+    _ex.homingTimer = 90;
+    playSFX(sfxKeySpawn);
+}
+else if(itemDrop == objEnergyElement)
 {
     _ex = instance_create(bboxGetXCenter() - 8, bboxGetYCenter() - 8, objEnergyElement);
 }
@@ -678,7 +699,7 @@ playSFX(sfxEnemyHit);
     if ((ceil(iFrames / 2) mod 4) || !iFrames)
     {
         var iceBlinkTime = 42;
-        if ((ceil(iFrames / 2) mod 2) || (iceTimer &gt; 0 &amp;&amp; (iceTimer &gt; iceBlinkTime || (iceTimer &lt;= iceBlinkTime &amp;&amp; iceTimer mod 4 == 0))))
+        if ((ceil(iFrames / 2) mod 2) || (iceTimer &gt; 0 &amp;&amp; (iceTimer &gt; iceBlinkTime || (iceTimer &lt;= iceBlinkTime &amp;&amp; iceTimer mod 4 == 0))) || oiledUp &gt; 0)
         {
             var flashcol = c_white;
             if (iceTimer &gt; 0 &amp;&amp; (iceTimer &gt; iceBlinkTime || (iceTimer &lt;= iceBlinkTime &amp;&amp; iceTimer mod 4 == 0)))
@@ -693,16 +714,26 @@ playSFX(sfxEnemyHit);
                         break;
                 }
             }
+            else if oiledUp
+            {
+                flashcol = easyHexColor($bb5c0f);
+            }
             
             d3d_set_fog(true, flashcol, 0, 0);
             drawSelf();
             d3d_set_fog(false, 0, 0, 0);
             
-            if (iceTimer &gt; 0 &amp;&amp; (iceTimer &gt; iceBlinkTime || (iceTimer &lt;= iceBlinkTime &amp;&amp; iceTimer mod 4 == 0)))
+            if (iceTimer &gt; 0 &amp;&amp; (iceTimer &gt; iceBlinkTime || (iceTimer &lt;= iceBlinkTime &amp;&amp; iceTimer mod 4 == 0)) || oiledUp &gt; 0)
             {
                 draw_set_blend_mode(bm_add);
                 drawSelf();
                 draw_set_blend_mode(bm_normal);
+            }
+            else if (oiledUp &gt; 0)
+            {
+                draw_set_color(easyHexColor($bb5c0f));
+                drawSelf();
+                draw_set_color(c_white);
             }
         }
         else

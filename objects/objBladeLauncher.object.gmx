@@ -31,6 +31,8 @@ bulletLimitCost = 3;
 
 contactDamage = 1;
 
+playSFX(sfxBladeLauncherFire);
+
 image_speed = 0.5;
 
 penetrate = 3;

@@ -36,7 +36,7 @@ healthBarSecondaryColor[1] = 52;
 hasTriggeredFall = false;
 bossTriggered = true;
 image_speed = 0;
-contactDamage = 6;
+contactDamage = 4;
 pose = sprFishPose
 
 poseImgSpeed = 0.25
@@ -47,7 +47,7 @@ customPose =false
 stunLock = false
 introType = 1
 image_speed = 0;
-contactDamage = 6;
+contactDamage = 4;
 ground = false;
 timer = 0
 phase= 0 
@@ -57,64 +57,19 @@ musicType = "VGM";
 musicTrackNumber = 5;
 
 // Damage Table
-enemyDamageValue(objBusterShot, 1);
+enemyDamageValue(objBusterShot, 2);
 enemyDamageValue(objBusterShotHalfCharged, 1);
 enemyDamageValue(objBusterShotCharged, 3);
-
-// MaGMML3
-enemyDamageValue(objSparkChaser, 1);
-enemyDamageValue(objLaserTrident, 2);
-enemyDamageValue(objWaterShield, 4);
-enemyDamageValue(objTornadoBlow, 1);
-enemyDamageValue(objThunderBeam, 1);
-enemyDamageValue(objMagneticShockwave, 4);
-enemyDamageValue(objIceWall, 1);
-enemyDamageValue(objBreakDash, 1);
-
-// MaGMML2
-enemyDamageValue(objHornetChaser, 1);
-enemyDamageValue(objJewelSatellite, 2);
-enemyDamageValue(objGrabBuster, 2);
-enemyDamageValue(objTripleBlade, 1);
-enemyDamageValue(objWheelCutter, 3);
-enemyDamageValue(objSlashClaw, 4);
-enemyDamageValue(objSakugarne, 2);
-enemyDamageValue(objSuperArrow, 2);
-enemyDamageValue(objWireAdapter, 3);
-
-// MaGMML1
-enemyDamageValue(objMetalBlade, 1);
-enemyDamageValue(objGeminiLaser, 1);
-enemyDamageValue(objSolarBlaze, 4);
-enemyDamageValue(objTopSpin, 1);
-enemyDamageValue(objThunderWool, 2);
-enemyDamageValue(objPharaohShot, 2);
-enemyDamageValue(objBlackHoleBomb, 1);
-enemyDamageValue(objMagicCard, 2);
-
-// MaG48HMML
-enemyDamageValue(objFlameMixer, 4);
-enemyDamageValue(objRainFlush, 2);
-enemyDamageValue(objSparkShock, 2);
-enemyDamageValue(objSearchSnake, 1);
-enemyDamageValue(objTenguBlade, 2);
-enemyDamageValue(objTenguDash, 2);
-enemyDamageValue(objTenguDisk, 2);
-enemyDamageValue(objSaltWater, 2);
-enemyDamageValue(objConcreteShot, 1);
-enemyDamageValue(objHomingSniper, 1);
-
-// MaG24HMML
-enemyDamageValue(objSuperArmBlockProjectile, 1);
-enemyDamageValue(objSuperArmDebris, 1);
-enemyDamageValue(objChillShot, 0);
-enemyDamageValue(objChillSpikeLanded, 0);
-
-// Misc.
-enemyDamageValue(objPowerStone, 1);
-enemyDamageValue(objPlantBarrier, 2);
-enemyDamageValue(objBrickWeapon, 1);
-enemyDamageValue(objIceSlasher, 1);
+enemyDamageValue(objSonicWaveWeapon, 1)
+enemyDamageValue(objForceField, 4)
+enemyDamageValue(objNuclearDetonatorExplosion, 2)
+enemyDamageValue(objBitCannon, 1)
+enemyDamageValue(objSharkBoomerangDR, 2)
+enemyDamageValue(objWaterShooter, 1)
+enemyDamageValue(objOilStream, 1)
+enemyDamageValue(objBladeLauncher, 0)
+enemyDamageValue(objTorchArmProj, 4)
+enemyDamageValue(objTorchArmHold, 8)
 </string>
           </argument>
         </arguments>
@@ -210,6 +165,29 @@ if (entityCanStep())
 else
     image_speed = 0;
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="21">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if other.object_index == objBladeLauncher other.guardCancel = 1
 </string>
           </argument>
         </arguments>

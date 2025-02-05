@@ -30,6 +30,18 @@
 healthpointsStart = 8;
 healthpoints = healthpointsStart;
 contactDamage = 4;
+
+enemyDamageValue(objSonicWaveWeapon, 2)
+enemyDamageValue(objForceField, 0)
+enemyDamageValue(objNuclearDetonatorExplosion, 4)
+enemyDamageValue(objBitCannon, 4)
+enemyDamageValue(objSharkBoomerangDR, 1)
+enemyDamageValue(objWaterShooter, .8)
+enemyDamageValue(objOilStream, 0)
+enemyDamageValue(objBladeLauncher, 0)
+enemyDamageValue(objTorchArmProj, 0)
+enemyDamageValue(objTorchArmHold, 0)
+
 grav = 0.25;
 init = true
 xspeed= 0
@@ -119,6 +131,33 @@ else if (dead)
     timer = 0
     phase = 0
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="21">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if other.object_index == objForceField other.guardCancel = 1
+if other.object_index == objOilStream other.guardCancel = 1
+if other.object_index == objBladeLauncher other.guardCancel = 1
+if other.object_index == objTorchArmProj other.guardCancel = 1
+if other.object_index == objTorchArmHold other.guardCancel = 1
 </string>
           </argument>
         </arguments>

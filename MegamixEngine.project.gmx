@@ -541,29 +541,37 @@
         <sound>sound\sfxKomusoShot</sound>
       </sounds>
       <sounds name="DOS">
-        <sound>sound\sfxWeldDoor</sound>
-        <sound>sound\sound257</sound>
-        <sound>sound\sfxVoltBarrierlLoop</sound>
-        <sound>sound\sound262</sound>
-        <sound>sound\sfxToxShoot</sound>
-        <sound>sound\sfxBitCannon</sound>
-        <sound>sound\sfxTorchArmFire</sound>
-        <sound>sound\sfxWallLaserFire</sound>
-        <sound>sound\sfxArkWelderZap</sound>
-        <sound>sound\sfxBladeLauncherFire</sound>
-        <sound>sound\sfxSonicMineDrop</sound>
-        <sound>sound\sfxDynaCannonFire</sound>
-        <sound>sound\sfxPetrolOilShoot</sound>
-        <sound>sound\sfxFishSlash</sound>
-        <sound>sound\sfxSharkManBite</sound>
-        <sound>sound\sfxToxLand</sound>
-        <sound>sound\sfxHydroPunch</sound>
         <sound>sound\sfxExplosionDOS</sound>
-        <sound>sound\sfxAssemblerGrab</sound>
-        <sound>sound\sfxDOS3Shoot</sound>
-        <sound>sound\sfxFlytrapBite</sound>
-        <sound>sound\sfxGregGrowel</sound>
-        <sound>sound\sfxDrillPress</sound>
+        <sounds name="DOS1">
+          <sound>sound\sfxDrillPress</sound>
+          <sound>sound\sfxArkWelderZap</sound>
+          <sound>sound\sfxGregGrowel</sound>
+          <sound>sound\sfxAssemblerGrab</sound>
+        </sounds>
+        <sounds name="DOS3">
+          <sound>sound\sfxDOS3Shoot</sound>
+          <sound>sound\sfxFlytrapBite</sound>
+          <sound>sound\sfxWallLaserFire</sound>
+          <sound>sound\sfxFireDropHitFloor</sound>
+          <sound>sound\sfxOilDropHitFloor</sound>
+          <sound>sound\sfxWaterDropHitFloor</sound>
+        </sounds>
+        <sounds name="Boss">
+          <sounds name="Wiley">
+            <sound>sound\sfxJacuzziShoot</sound>
+            <sound>sound\sfxAcidDomeBreak</sound>
+          </sounds>
+          <sound>sound\sfxVoltBarrierlLoop</sound>
+          <sound>sound\sfxToxShoot</sound>
+          <sound>sound\sfxHydroPunch</sound>
+          <sound>sound\sfxToxLand</sound>
+          <sound>sound\sfxSharkManBite</sound>
+          <sound>sound\sfxDynaCannonFire</sound>
+          <sound>sound\sfxSonicMineDrop</sound>
+          <sound>sound\sfxFishSlash</sound>
+          <sound>sound\sfxBitManSlam</sound>
+          <sound>sound\sfxVoltDischarge</sound>
+        </sounds>
       </sounds>
     </sounds>
     <sounds name="Gimmick">
@@ -619,6 +627,11 @@
       <sounds name="MM&amp;B">
         <sound>sound\sfxAstroWallBwoop</sound>
       </sounds>
+      <sounds name="DOS">
+        <sound>sound\sfxWeldDoor</sound>
+        <sound>sound\sfxBubblePop</sound>
+        <sound>sound\sfxGate</sound>
+      </sounds>
     </sounds>
     <sounds name="Item">
       <sound>sound\sfxBolt</sound>
@@ -632,13 +645,17 @@
     </sounds>
     <sounds name="Weapon">
       <sounds name="DOS">
-        <sound>sound\sfxWaterShooterSplash</sound>
-        <sound>sound\sfxWaterShooterFire</sound>
-        <sound>sound\sfxSonicWaveRoundabound</sound>
-        <sound>sound\sfxSonicWave</sound>
-        <sound>sound\sfxSharkboomerang</sound>
         <sound>sound\sfxForceFieldStart</sound>
         <sound>sound\sfxForceFieldStop</sound>
+        <sound>sound\sfxSharkBoomerangFire</sound>
+        <sound>sound\sfxSonicWaveFire</sound>
+        <sound>sound\sfxSonicWaveRoundabound</sound>
+        <sound>sound\sfxBladeLauncherFire</sound>
+        <sound>sound\sfxTorchArmFire</sound>
+        <sound>sound\sfxOilStreamFire</sound>
+        <sound>sound\sfxBitCannonFire</sound>
+        <sound>sound\sfxWaterShooterFire</sound>
+        <sound>sound\sfxWaterShooterSplash</sound>
       </sounds>
       <sound>sound\sfxBuster</sound>
       <sound>sound\sfxBusterHalfCharged</sound>
@@ -825,16 +842,16 @@
         <sprite>sprites\sprDrillPress</sprite>
         <sprite>sprites\sprEel_Ectric</sprite>
         <sprite>sprites\sprFrogBot</sprite>
-        <sprite>sprites\sprGunner</sprite>
         <sprite>sprites\sprGregory</sprite>
+        <sprite>sprites\sprGunner</sprite>
         <sprite>sprites\sprHelmet</sprite>
+        <sprite>sprites\sprInsectobot</sprite>
         <sprite>sprites\sprInsectobotProjectile</sprite>
         <sprite>sprites\sprInsectobotShoot</sprite>
-        <sprite>sprites\sprInsectobot</sprite>
-        <sprite>sprites\sprLavaDrop</sprite>
-        <sprite>sprites\sprLavaDump</sprite>
         <sprite>sprites\sprLavaBubble</sprite>
         <sprite>sprites\sprLavaBubblePop</sprite>
+        <sprite>sprites\sprLavaDrop</sprite>
+        <sprite>sprites\sprLavaDump</sprite>
         <sprite>sprites\sprMosquito</sprite>
         <sprite>sprites\sprPiranha</sprite>
         <sprite>sprites\sprRaptorbot</sprite>
@@ -844,7 +861,6 @@
         <sprite>sprites\sprSentryBulletShatter</sprite>
         <sprite>sprites\sprSewerRat</sprite>
         <sprite>sprites\sprSewerRatMask</sprite>
-        <sprite>sprites\sprVoltBolt</sprite>
         <sprite>sprites\sprSpydroborg</sprite>
       </sprites>
       <sprites name="DOS3">
@@ -853,29 +869,31 @@
         <sprite>sprites\sprBeeScorpionReload</sprite>
         <sprite>sprites\sprBeeScorpionShoot</sprite>
         <sprite>sprites\sprBeeScorpShot</sprite>
+        <sprite>sprites\sprClownfish</sprite>
         <sprite>sprites\sprCrabClam</sprite>
-        <sprite>sprites\sprFishH</sprite>
         <sprite>sprites\sprFireDrop</sprite>
         <sprite>sprites\sprFireDropSpawn</sprite>
         <sprite>sprites\sprFireDropSplash</sprite>
+        <sprite>sprites\sprFishH</sprite>
         <sprite>sprites\sprFishRock</sprite>
         <sprite>sprites\sprFishV</sprite>
-        <sprite>sprites\sprFlytrapChomp</sprite>
         <sprite>sprites\sprFlytrap</sprite>
+        <sprite>sprites\sprFlytrapChomp</sprite>
         <sprite>sprites\sprGatorDuck</sprite>
         <sprite>sprites\sprNautilus</sprite>
-        <sprite>sprites\sprOilDropSplash</sprite>
         <sprite>sprites\sprOilDrop</sprite>
         <sprite>sprites\sprOilDropSpawn</sprite>
+        <sprite>sprites\sprOilDropSplash</sprite>
         <sprite>sprites\sprPlant</sprite>
+        <sprite>sprites\sprSeaweed</sprite>
         <sprite>sprites\sprSeaweedBoomerang</sprite>
         <sprite>sprites\sprSeaweedShoot</sprite>
-        <sprite>sprites\sprSeaweed</sprite>
-        <sprite>sprites\sprSnapdragonShoot</sprite>
-        <sprite>sprites\sprSnapdragonShot</sprite>
         <sprite>sprites\sprSnailBat</sprite>
         <sprite>sprites\sprSnapdragon</sprite>
+        <sprite>sprites\sprSnapdragonShoot</sprite>
+        <sprite>sprites\sprSnapdragonShot</sprite>
         <sprite>sprites\sprSpiderSnake</sprite>
+        <sprite>sprites\sprWalkRose</sprite>
         <sprite>sprites\sprWalkRoseShoot</sprite>
         <sprite>sprites\sprWalkRoseShot</sprite>
         <sprite>sprites\sprWall_Cannon</sprite>
@@ -884,11 +902,9 @@
         <sprite>sprites\sprWallLaser</sprite>
         <sprite>sprites\sprWallLaserDED</sprite>
         <sprite>sprites\sprWallLaserProjectile</sprite>
-        <sprite>sprites\sprWalkRose</sprite>
+        <sprite>sprites\sprWaterDrop</sprite>
         <sprite>sprites\sprWaterDropSpawn</sprite>
         <sprite>sprites\sprWaterDropSplash</sprite>
-        <sprite>sprites\sprWaterDrop</sprite>
-        <sprite>sprites\sprClownfish</sprite>
       </sprites>
       <sprites name="DOSRM">
         <sprite>sprites\sprAxeJoe</sprite>
@@ -1054,22 +1070,29 @@
           <sprite>sprites\sprRipabitTurn</sprite>
           <sprite>sprites\sprRipabitWindow</sprite>
         </sprites>
+        <sprites name="Jacuzzi">
+          <sprite>sprites\sprJacuzzi</sprite>
+          <sprite>sprites\sprJacuzziBullet</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Gimmicks">
       <sprites name="DOS">
+        <sprite>sprites\sprBoltSpawner</sprite>
         <sprite>sprites\sprDynaConveyor</sprite>
         <sprite>sprites\sprDynaCrate</sprite>
         <sprite>sprites\sprDynaTrash</sprite>
-        <sprite>sprites\sprBoltSpawner</sprite>
-        <sprite>sprites\sprVoltLightning</sprite>
-        <sprite>sprites\sprPlugPlatform</sprite>
-        <sprite>sprites\sprYokuBitMan</sprite>
         <sprite>sprites\sprHydroPiston</sprite>
         <sprite>sprites\sprPetrolOil</sprite>
         <sprite>sprites\sprPetrolWaterfallBody</sprite>
         <sprite>sprites\sprPetrolWaterfallBottom</sprite>
+        <sprite>sprites\sprPlugPlatform</sprite>
+        <sprite>sprites\sprTorchPlatform</sprite>
+        <sprite>sprites\sprTorchPlatformController</sprite>
+        <sprite>sprites\sprVoltBolt</sprite>
+        <sprite>sprites\sprVoltLightning</sprite>
         <sprite>sprites\sprWeldDoor</sprite>
+        <sprite>sprites\sprYokuBitMan</sprite>
       </sprites>
       <sprites name="General">
         <sprites name="Easy Platforms">
@@ -1165,13 +1188,16 @@
       </sprites>
     </sprites>
     <sprites name="Effects">
-      <sprite>sprites\sprExplosion</sprite>
-      <sprite>sprites\sprBigExplosion</sprite>
-      <sprite>sprites\sprSlideDust</sprite>
-      <sprite>sprites\sprSplash</sprite>
       <sprite>sprites\sprAirBubble</sprite>
+      <sprite>sprites\sprBigExplosion</sprite>
+      <sprite>sprites\sprBubbleEffect</sprite>
+      <sprite>sprites\sprBubbleEffectPop</sprite>
+      <sprite>sprites\sprBubbleEffectSpawnTile</sprite>
+      <sprite>sprites\sprExplosion</sprite>
       <sprite>sprites\sprOilSplash</sprite>
       <sprite>sprites\sprShine</sprite>
+      <sprite>sprites\sprSlideDust</sprite>
+      <sprite>sprites\sprSplash</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\sprLifeEnergySmall</sprite>
@@ -1310,7 +1336,9 @@
         <backgrounds name="Volt">
           <background>background\tstVoltBLK</background>
         </backgrounds>
+        <background>background\tstReactor</background>
       </backgrounds>
+      <background>background\tstTEST</background>
     </backgrounds>
     <background>background\bgNESPalette</background>
   </backgrounds>
@@ -1736,17 +1764,23 @@
     </objects>
     <objects name="Bosses">
       <objects name="DOS1">
-        <object>objects\objDynaMan</object>
-        <object>objects\objDynaMan_new</object>
-        <object>objects\objDynaDynamite</object>
-        <object>objects\objSonicManNew</object>
-        <object>objects\objSonicMine</object>
-        <object>objects\objSonicWave</object>
-        <object>objects\objVoltRoofDetector2</object>
-        <object>objects\objVoltMan2</object>
-        <object>objects\objVoltmanDischarge2</object>
-        <object>objects\objVoltmanShot2</object>
-        <object>objects\objVoltBarrier</object>
+        <objects name="Dyna">
+          <object>objects\objDynaMan</object>
+          <object>objects\objDynaMan_new</object>
+          <object>objects\objDynaDynamite</object>
+        </objects>
+        <objects name="Sonic">
+          <object>objects\objSonicManNew</object>
+          <object>objects\objSonicMine</object>
+          <object>objects\objSonicWave</object>
+        </objects>
+        <objects name="Volt">
+          <object>objects\objVoltMan2</object>
+          <object>objects\objVoltBarrier</object>
+          <object>objects\objVoltRoofDetector2</object>
+          <object>objects\objVoltmanShot2</object>
+          <object>objects\objVoltmanDischarge2</object>
+        </objects>
       </objects>
       <objects name="Mid">
         <object>objects\objFishMan</object>
@@ -1755,38 +1789,59 @@
         <object>objects\objToxLift</object>
       </objects>
       <objects name="DOS3">
-        <object>objects\objBitMan</object>
-        <object>objects\objBitManCannon</object>
-        <object>objects\objBitDebris</object>
-        <object>objects\objBitStunSpark</object>
-        <object>objects\objHydroMan</object>
-        <object>objects\objHydroWater</object>
-        <object>objects\objHydroBubble</object>
-        <object>objects\objPetrolManMarker</object>
-        <object>objects\objPetrolManStream</object>
-        <object>objects\objPetrolGlob</object>
-        <object>objects\objPetrolIce</object>
-        <object>objects\objPetrolMan</object>
-        <object>objects\objPetrolWave</object>
-        <object>objects\objPetrolOil</object>
-        <object>objects\objPetrolPlatform</object>
-        <object>objects\objPetrolSolid</object>
-        <object>objects\objSharkManMarker</object>
-        <object>objects\objSharkMan</object>
-        <object>objects\objSharkManBoomerang</object>
-        <object>objects\objShredMan</object>
-        <object>objects\objShredBlade</object>
-        <object>objects\objShredDebris</object>
-        <object>objects\objWeldFireDown</object>
-        <object>objects\objWeldGlob</object>
-        <object>objects\objWeldMan</object>
-        <object>objects\objWeldFire</object>
+        <objects name="Bit">
+          <object>objects\objBitMan</object>
+          <object>objects\objBitManCannon</object>
+          <object>objects\objBitDebris</object>
+          <object>objects\objBitStunSpark</object>
+        </objects>
+        <objects name="Shark">
+          <object>objects\objSharkManMarker</object>
+          <object>objects\objSharkMan</object>
+          <object>objects\objSharkManBoomerang</object>
+        </objects>
+        <objects name="Wave">
+          <object>objects\objHydroMan</object>
+          <object>objects\objHydroWater</object>
+          <object>objects\objHydroBubble</object>
+        </objects>
+        <objects name="Oil">
+          <object>objects\objPetrolManMarker</object>
+          <object>objects\objPetrolManStream</object>
+          <object>objects\objPetrolGlob</object>
+          <object>objects\objPetrolIce</object>
+          <object>objects\objPetrolMan</object>
+          <object>objects\objPetrolWave</object>
+          <object>objects\objPetrolOil</object>
+          <object>objects\objPetrolPlatform</object>
+          <object>objects\objPetrolSolid</object>
+        </objects>
+        <objects name="Blade">
+          <object>objects\objShredMan</object>
+          <object>objects\objShredBlade</object>
+          <object>objects\objShredDebris</object>
+        </objects>
+        <objects name="Torch">
+          <object>objects\objWeldFireDown</object>
+          <object>objects\objWeldGlob</object>
+          <object>objects\objWeldMan</object>
+          <object>objects\objWeldFire</object>
+        </objects>
       </objects>
       <objects name="WileyBosses">
-        <object>objects\objCrorqBody</object>
-        <object>objects\objCrorq</object>
-        <object>objects\objRipabitBody</object>
-        <object>objects\objRipabit</object>
+        <objects name="CRORQ">
+          <object>objects\objCrorqBody</object>
+          <object>objects\objCrorq</object>
+        </objects>
+        <objects name="RIPABIT">
+          <object>objects\objRipabitBody</object>
+          <object>objects\objRipabit</object>
+          <object>objects\objRozner</object>
+        </objects>
+        <objects name="Jacuzzi">
+          <object>objects\objJacuzzi</object>
+          <object>objects\objJacuzziShot</object>
+        </objects>
       </objects>
     </objects>
     <objects name="Enemies">
@@ -1902,6 +1957,8 @@
         <object>objects\objVoltLightning</object>
         <object>objects\objVoltMagnetOutside</object>
         <object>objects\objVoltMagnet</object>
+        <object>objects\objTorchPlatform</object>
+        <object>objects\objTorchThing</object>
       </objects>
       <objects name="General">
         <object>objects\objMazeWarp</object>
@@ -2020,6 +2077,7 @@
           <object>objects\objSonicWaveWeapon</object>
           <object>objects\objForceField</object>
           <object>objects\objBitCannon</object>
+          <object>objects\objBurnManager</object>
           <object>objects\objSharkBoomerangDR</object>
           <object>objects\objWaterShooter</object>
           <object>objects\objOilStream</object>
@@ -2093,6 +2151,22 @@
   <rooms name="rooms">
     <room>rooms\rmInit</room>
     <room>rooms\lvlCopyThisRoom</room>
+    <room>rooms\room18</room>
+    <room>rooms\lvlSharkBossDemo</room>
+    <room>rooms\lvlOilBossDemo</room>
+    <room>rooms\room19</room>
+    <room>rooms\lvlDynaBossDemo</room>
+    <room>rooms\lvlSonicBossDemo</room>
+    <room>rooms\lvlVoltBossDemo</room>
+    <room>rooms\lvlFishBossDemo</room>
+    <room>rooms\lvlToxBossDemo</room>
+    <room>rooms\lvlBitBossDemo</room>
+    <room>rooms\lvlWaveBossDemo</room>
+    <room>rooms\lvlBladeBossTest</room>
+    <room>rooms\lvlTorchBossDemo</room>
+    <room>rooms\lvlRIPABITBossTest</room>
+    <room>rooms\lvlCRORQBossTest</room>
+    <room>rooms\lvlDrWileysJacuzzi</room>
     <rooms name="Menus">
       <room>rooms\rmTitleScreen</room>
       <room>rooms\rmOptions</room>
@@ -2110,9 +2184,6 @@
       <room>rooms\rmGameOver</room>
       <room>rooms\rmCredits</room>
     </rooms>
-    <room>rooms\lvlSonicDemo</room>
-    <room>rooms\lvlVoltDemo</room>
-    <room>rooms\lvlDynaDemo</room>
   </rooms>
   <constants number="36">
     <constant name="PL_LOCK_MAX">14</constant>

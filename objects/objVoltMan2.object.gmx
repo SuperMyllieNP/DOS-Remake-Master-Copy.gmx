@@ -59,7 +59,7 @@ attackTimerMax[3] = 40;
 healthBarPrimaryColor[1] = 7;
 healthBarSecondaryColor[1] = 34;
 
-contactDamage = 4;
+contactDamage = 2;
 
 // Music
 music = "Mega_Man_5GB.gbs";
@@ -67,9 +67,19 @@ musicType = "VGM";
 musicTrackNumber = 5;
 
 // Damage Table
-enemyDamageValue(objBusterShot, 3);
+enemyDamageValue(objBusterShot, 1);
 enemyDamageValue(objBusterShotHalfCharged, 3);
 enemyDamageValue(objBusterShotCharged, 5);
+enemyDamageValue(objSonicWaveWeapon, 4)
+enemyDamageValue(objForceField, 0)
+enemyDamageValue(objNuclearDetonatorExplosion, 2)
+enemyDamageValue(objBitCannon, 0)
+enemyDamageValue(objSharkBoomerangDR, 1)
+enemyDamageValue(objWaterShooter, 2)
+enemyDamageValue(objOilStream, 1)
+enemyDamageValue(objBladeLauncher, 0)
+enemyDamageValue(objTorchArmProj, 1)
+enemyDamageValue(objTorchArmHold, 2)
 
 </string>
           </argument>
@@ -146,7 +156,7 @@ if entityCanStep()
                 if ((chargeSound == false)
                 &amp;&amp; attackTimer &lt; attackTimerMax[phase] / 4)
                 {
-                    playSFX(sfxVolt2Charge);
+                    playSFX(sfxVoltBarrierlLoop);
                     chargeSound = true;
                 }
             }
@@ -411,6 +421,10 @@ else
           <argument>
             <kind>1</kind>
             <string>other.guardCancel = guardCancel
+
+if other.object_index == objForceField other.guardCancel = 1
+if other.object_index == objBitCannon other.guardCancel = 1
+if other.object_index == objBladeLauncher other.guardCancel = 1
 </string>
           </argument>
         </arguments>

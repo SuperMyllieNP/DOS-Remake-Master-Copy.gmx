@@ -35,7 +35,7 @@ image_speed = 0.25;
 penetrate = 3;
 pierces = 1;
 
-playSFX(sfxElectricShot);
+playSFX(sfxForceFieldStart);
 
 grav = 0;
 ammoConsumption = 28/(1*60*60);

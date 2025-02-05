@@ -106,7 +106,6 @@ if (!global.frozen)
             expl.contactDamage = 4;
             expl.stopOnFlash = false;
             expl.sprite_index = sprDynaExplosion
-            playSFX(sfxDynaExplosion);
             instance_destroy();
         }
     }

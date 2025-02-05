@@ -198,11 +198,19 @@ a.image_speed = 1/2;
             <kind>1</kind>
             <string>///Successful Hit
 event_inherited();
-
-if !other.oiledUp
+if (other.faction == faction)
 {
-    with other {oiledUp = 120;}
+    exit;
 }
+
+with other
+{
+    if !oiledUp &amp;&amp; canIce
+    {
+        oiledUp = 240;
+    }
+}
+
 </string>
           </argument>
         </arguments>

@@ -38,7 +38,7 @@ customPose =true
 hasTriggeredFall = false;
 bossTriggered = true;
 image_speed = 0;
-contactDamage = 6;
+contactDamage = 2;
 ground = false;
 hasFired = false
 jumpMax = 3;
@@ -65,7 +65,16 @@ musicTrackNumber = 5;
 enemyDamageValue(objBusterShot, 1);
 enemyDamageValue(objBusterShotHalfCharged, 1);
 enemyDamageValue(objBusterShotCharged, 3);
-
+enemyDamageValue(objSonicWaveWeapon, 0)
+enemyDamageValue(objForceField, 2)
+enemyDamageValue(objNuclearDetonatorExplosion, 8)
+enemyDamageValue(objBitCannon, 1)
+enemyDamageValue(objSharkBoomerangDR, 2)
+enemyDamageValue(objWaterShooter, 0)
+enemyDamageValue(objOilStream, 1)
+enemyDamageValue(objBladeLauncher, 1)
+enemyDamageValue(objTorchArmProj, 0)
+enemyDamageValue(objTorchArmHold, 0)
 </string>
           </argument>
         </arguments>
@@ -88,7 +97,9 @@ enemyDamageValue(objBusterShotCharged, 3);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// leave this. this is needed. 
+            <string>inWater = -1 // ive got no idea about where this goes so step it is
+
+// leave this. this is needed. 
 event_inherited();
 
 // all of sonic man's events trigger when the game isn't frozen. 
@@ -289,7 +300,7 @@ if (!global.frozen)
                         image_index = 0;
                         var e = instance_create(x, y, objSonicWave)
                             ;
-                            playSFX(sfxSonicWave)
+                            playSFX(sfxSonicWaveFire)
                         if (image_xscale == -1)
                             e.angle = 180;
                         else
@@ -359,6 +370,32 @@ if (!global.frozen)
 }
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="21">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if other.object_index == objSonicWaveWeapon other.guardCancel = 1
+if other.object_index == objWaterShooter other.guardCancel = 1
+if other.object_index == objTorchArmProj other.guardCancel = 1
+if other.object_index == objTorchArmHold other.guardCancel = 1
 </string>
           </argument>
         </arguments>

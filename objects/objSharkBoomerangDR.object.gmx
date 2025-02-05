@@ -39,7 +39,7 @@ xspeed = 0;
 yspeed = 0;
 grav = 0;
 
-playSFX(sfxMetalBlade);
+playSFX(sfxSharkBoomerangFire);
 
 image_speed = 0.35;
 

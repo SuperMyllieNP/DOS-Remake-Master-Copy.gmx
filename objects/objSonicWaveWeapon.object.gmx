@@ -44,7 +44,7 @@ grav = 0;
 spriteNormal = sprSonicWave;
 spriteDiagonal = sprSonicWaveDiagonal;
 
-playSFX(sfxBariIIIShoot);
+playSFX(sfxSonicWaveFire);
 
 spd = 4;
 airSpd = 4;
