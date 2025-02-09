@@ -73,7 +73,7 @@ enemyDamageValue(objTorchArmHold, 4)
             <string>event_inherited();
 
 if(entityCanStep())
-{ xspeed = 1.2*image_xscale; 
+{ xspeed = 2.2*image_xscale; 
         {
 if(place_meeting(x+xspeed,y,objSolid))
             image_xscale *= -1; // turn around visually

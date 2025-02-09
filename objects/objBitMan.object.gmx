@@ -133,7 +133,7 @@ with objBitStunSpark instance_destroy()
         {
             switch phase {
                 case 0:
-                    guardCancel = 3
+                    guardCancel = false
                 
                     if image_index &gt; 1 image_index  = 0
                     timer++
@@ -151,7 +151,7 @@ with objBitStunSpark instance_destroy()
                     }
                 break
                 case 2:
-                    guardCancel = 3
+                    guardCancel = false
                     timer++
                     if timer == 1 image_index = 2
                     if timer == 10 { image_index = 3
@@ -172,7 +172,7 @@ with objBitStunSpark instance_destroy()
                     timer+=0.25
                     
                     image_index = 5 + timer % 2
-                    baseMult = 3
+                    baseMult = 2
                     var extraMult = 0;
                     if healthpoints &lt; 28/4 extraMult = .5
                     else if healthpoints &lt; 14 extraMult = 1
@@ -187,7 +187,7 @@ with objBitStunSpark instance_destroy()
                     }
                 break
                 case 4:
-                    guardCancel =3
+                    guardCancel = false
                     var checkX;
                     timer++
                     xspeed = 0

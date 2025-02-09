@@ -57,6 +57,7 @@
     <instance objName="objSolid" x="240" y="0" name="inst_FA5FA7FD" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="objSolid" x="16" y="0" name="inst_81CD04F9" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objVoltMan2" x="208" y="144" name="inst_499B5416" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objVoltRoofDetector2" x="16" y="16" name="inst_9E8B1141" locked="0" code="" scaleX="4.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tstTEST" x="0" y="160" w="16" h="16" xo="0" yo="48" id="11333815" name="inst_EB57AD59" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

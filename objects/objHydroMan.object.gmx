@@ -112,7 +112,10 @@ if (entityCanStep())
 {
     if (isFight)
     {
-    
+        if xspeed != 0 &amp;&amp; place_meeting(x+xspeed,y,objSolid) {
+            x -= xspeed
+        }
+        
         image_speed = 0;
         sprite_index = spriteStart;
         var box;
@@ -130,7 +133,16 @@ if (entityCanStep())
                         }
                         else if instance_exists(objMegaman) &amp;&amp;distance_to_object(objMegaman) &lt; 16 {
                         phase = 5
+                        
                         calibrateDirection();
+                            with objMegaman {
+                                canMinJump = false;
+                                climbing = 0;
+                                
+                                playerGetHit(6);
+                                yspeed = -1;
+                                xspeed = other.image_xscale * 6
+                            }
                         }
                         else phase = 1
                         
@@ -267,6 +279,7 @@ if (entityCanStep())
                 break
                 case 5:
                     playSFX(sfxHydroPunch)
+                    global.hydroHit = true
                     timer++
                     if timer == 10 image_index = 8
                     if timer == 20 image_index = 9

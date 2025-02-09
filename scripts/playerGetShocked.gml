@@ -17,17 +17,11 @@ if (!isHit && (_IgnoreGround || ground))
         if (instance_exists(vehicle))
         {
             // Rush Cycle absorbs hits
-            if (vehicle.object_index == objRushCycle)
-            {
-                exit; // Rush Cycle SHOCK ABSORBANT! Review needed.
-            }
+           
         }
         else
         {
-            if (instance_exists(objBreakDash))
-            { 
-                xspeed = 0; //stops you dead in your tracks.
-            }
+            
             
             shootTimer = 0;
             isShocked = true;

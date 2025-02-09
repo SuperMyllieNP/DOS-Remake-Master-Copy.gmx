@@ -167,7 +167,7 @@ if (entityCanStep())
                         image_index = 6;
                         var w;
                         w = instance_create(box, y, objWeldGlob);
-                        w.xspeed = 5 * image_xscale;
+                        w.xspeed = 3.5 * image_xscale;
                     }
                     if (timer == 10)
                     {

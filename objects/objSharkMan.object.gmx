@@ -398,8 +398,9 @@ if (entityCanStep())
 
 if other.object_index == objSonicWaveWeapon other.guardCancel = 1
 if other.object_index == objSharkBoomerangDR other.guardCancel = 1
-if other.object_index == objWaterShooter other.guardCancel = 1
-if other.object_index == objOilStream other.guardCancel = 1
+if other.object_index == objBladeLauncher other.guardCancel = 1
+if other.object_index == objTorchArmProj other.guardCancel = 1
+if other.object_index == objTorchArmHold other.guardCancel = 1
 </string>
           </argument>
         </arguments>
